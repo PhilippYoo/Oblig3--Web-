@@ -1,0 +1,93 @@
+body{
+    margin: 0%;
+}
+
+/* Desktop media query*/
+@media screen and (min-width: 1200px) {
+    body {
+      background-color: blue;
+      color: white;
+    }
+
+
+
+
+
+  }
+
+/* Mobile media query */
+@media screen and (max-width: 400px) {
+    body {
+      margin: 0%;
+    }
+    #left{
+        width: 33px;
+        height: 33px;
+        margin-top: 2rem;
+        margin-left: 0.5rem;
+    }
+    #icon-wrapper{
+        margin-right: 5px;
+        margin-left: 13px;
+    }
+    #right{
+        width: 33px;
+        height: 33px;
+        margin-top: 2rem;
+        margin-left: 0.3rem;
+    }
+    #logo{
+        margin-left: 23px;
+        margin-top: 0.8rem;
+    }
+    #kjønn{
+        display: flex;
+        border: 1px solid black;
+        width: 388px;
+        height: 41px;
+    }
+    #banner {
+        display: flex;
+        flex-direction: row;
+        width: 390px;
+        height: 100px;
+        background-color: #F5F5F5;
+    }
+    #tekst-kjønn{
+        margin-left: 45px;
+    }
+    #produktbilde-1{
+        margin-bottom: 20%;
+        border: 1px solid black;
+        border-radius: 1%;
+        height: 140px;
+        width: 331px;
+        margin: auto;
+    }
+    #p-tilbud{
+        margin-top: 4px;
+        text-align: center;
+    }
+    #tilbud{
+        border: 1px solid black;
+        height: 31px;
+        width: 388px;
+    }
+    #overskrift{
+        font-size: 22px;
+    }
+    #produktbilde-2{
+        margin-bottom: 20%;
+        border: 1px solid black;
+        border-radius: 1%;
+        height: 140px;
+        width: 331px;
+        margin: auto;
+    }
+    
+
+
+
+
+
+  }
