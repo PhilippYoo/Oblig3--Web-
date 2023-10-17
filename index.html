@@ -7,7 +7,7 @@
         <title>Forside</title>
     </head>
     <body>
-        <section id="banner">
+        <header id="banner">
             <img id="left" src="img/Bell.png" width="33px" height="33px" alt="Bjelle">
             <img id="left" src="img/bars.png" width="33px" height="33px" alt="Bars">
             <section id="logo">
@@ -17,28 +17,59 @@
             <img id="right" src="img/shopping cart.png" width="33px" height="33px" alt="handlevogn">
             <img id="right" src="img/man.png" width="33px" height="33px" alt="man">
             <img id="right" src="img/glass.png" width="33px" height="33px" alt="glass">
+            </header>
         </section>
-        </section>
-        <section id="kjønn">
+        <nav id="kjønn">
             <p id="tekst-kjønn">Mann</p>
             <p id="tekst-kjønn">Kvinne</p>
             <p id="tekst-kjønn">Barn</p>
             <p id="tekst-kjønn">Tilbud</p>
-        </section>
+        </nav>
+        <main>
         <section id="tilbud">
-            <p id="p-tilbud">35% Høsttilbud</p>
+            <p onclick="klikk()" id="p-tilbud">35% Høsttilbud</p>
         </section>
         <br>
         <section id="produktbilde-1">
-            <img src="img/jordan-1.jpg" width="331px" height="140px"  alt="Jordan 1 sko">
+            <img onclick="klikk()" id="knapp" src="img/jordan-1.jpg" alt="Jordan 1 sko">
 
         </section>
         <br>
-        <section id="produktbilde-2">
-
+        <div id="grid">
+            <section id="child">
+             <section onclick="klikk()">Nike</section> 
+            </section>
+            <section onclick="klikk()" id="child">
+               <section>Adidas</section>
+            </section>
+            <section onclick="klikk()" id="child">
+               <section>Jordan</section>
+            </section>
+            <section id="child">
+                <section onclick="klikk()">Fila</section>
+            </section>
+            <section onclick="klikk()" id="child">
+               <section>Newbalance</section>
+            </section>
+            <section onclick="klikk()" id="child">
+                <section>Hoka</section>
+            </section>
+        </div>
+        <section id="section-carousel">
+          <img id="knapp" src="img/infrared.jpg" alt="Nike infrared sko">
+          <button id="bildeknapp"></button>
         </section>
+    </main>
+
+       
 
 
+        <script>
+            function klikk() {
+                window.location.href = "produkt.html";
+             // console.log("klikket");
+            }
+        </script>
 
 
 
