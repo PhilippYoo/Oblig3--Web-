@@ -3,7 +3,7 @@ body{
 }
 
 /* Desktop media query*/
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1024px) {
     body {
       background-color: blue;
       color: white;
@@ -16,9 +16,27 @@ body{
   }
 
 /* Mobile media query */
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 600px) {
     body {
       margin: 0%;
+    }
+    #grid-div-container {
+        display: grid;
+        grid-template-areas:  "header" 
+                                "nav" 
+                                "main"
+                                "article";
+
+    }
+
+    header{
+        grid-area: header;
+    }
+    nav {
+        grid-area: nav;
+    }
+    main {
+        grid-area: main;
     }
     #left{
         width: 33px;
@@ -44,7 +62,7 @@ body{
         display: flex;
         border: 1px solid black;
         width: 388px;
-        height: 41px;
+        height: 40px;
     }
     #knapp{
         width: 331px; 
@@ -70,12 +88,12 @@ body{
         margin-left: 45px;
     }
     #produktbilde-1{
-        margin-bottom: 20%;
+        margin-top: 5px;
+        margin-left: 25px;
         border: 1px solid black;
         border-radius: 1%;
         height: 140px;
         width: 331px;
-        margin: auto;
     }
     #p-tilbud{
         margin-top: 4px;
@@ -88,7 +106,7 @@ body{
     }
     #tilbud{
         border: 1px solid black;
-        height: 31px;
+        height: 30px;
         width: 388px;
     }
     #overskrift{
@@ -98,7 +116,7 @@ body{
         margin-bottom: 20%;
         border: 1px solid black;
         border-radius: 1%;
-        height: 140px;
+        height: 139px;
         width: 331px;
         margin: auto;
         display: grid;
@@ -118,7 +136,7 @@ body{
 
       #section-carousel {
         margin-top: 13px;
-        height: 140px;
+        height: 139px;
         width: 331px;
         border: 1px solid black;
         border-radius: 2px;
@@ -212,9 +230,37 @@ body{
         border: 1px solid black;
         border-radius: 100%;
       }
+      #fakta-bedrift {
+         width: 331px;
+         margin-left: 29px;
+         height: 124px;
+         border: 1px solid black;
+         grid-area: article;
+         margin-top: 13px;
+      }
+      #overskrift-fakta {
+         margin-left: 20px;
+         margin-top: 8px;
+         font-weight: bolder;
+      }
+      #bedrift-paragraf {
+        margin-top: -14px;
+        margin-left: 20px;
+        font-size: 14px;
+      }
+      #forside-footer {
+        width: 388px;
+        height: 94px;
+        border: 1px solid black;
+      }
 
 
 
 
 
-  }
+
+
+
+    }
+
+        /* Bruk display none for å skille mellom desktop og mobile versjon */

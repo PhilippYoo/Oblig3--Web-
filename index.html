@@ -7,6 +7,7 @@
         <title>Forside</title>
     </head>
     <body>
+        <div id="grid-div-container">
         <header id="banner">
             <img id="left" src="img/Bell.png" width="33px" height="33px" alt="Bjelle">
             <img id="left" src="img/bars.png" width="33px" height="33px" alt="Bars">
@@ -29,7 +30,7 @@
         <section id="tilbud">
             <p onclick="klikk()" id="p-tilbud">35% Høsttilbud</p>
         </section>
-        <br>
+        
         <section id="produktbilde-1">
             <img onclick="klikk()" id="knapp" src="img/jordan-1.jpg" alt="Jordan 1 sko">
 
@@ -56,7 +57,7 @@
             </section>
         </div>
         <section id="section-carousel">
-          <img onclick="klikk()" class="img-carousell" id="knapp2" src="img/infrared.jpg" alt="Nike infrared sko">
+          <img onclick="klikk()" class="img-carousell" id="knapp2" src="img/infrared.jpg" alt="Nettside:Perchance.org promt: nike infrared, cinematic shot, dynamic lighting, 75mm, Technicolor, Panavision, cinemascope, sharp focus, fine details, 8k, HDR, realism, realistic, key visual, film still, superb cinematic color grading, depth of field "> <!--Skrive kilder inni alt-->
           <button id="bildeknapp" onclick="toggleImage()"><img src="img/arrow.png"></button>
           <section id="first-dot"></section>
           <section id="second-dot"></section>
@@ -64,11 +65,20 @@
           <section class="dots" id="second-dot-black"></section>  
         </section>
     </main>
-
+     <article id="fakta-bedrift">
+           <h4 id="overskrift-fakta">Kvalitet siden 2015</h4>
+           <p id="bedrift-paragraf">Vi har siden 2015 hos Trønder Tøfler levert og servert den høyeste grad av trøndersk kvalitet. Vi sørger for å tilfredstille våre kunder, meldemmer og besøkende. Vi startet av med å selge tursko for alle som ville nyte naturen, men nå selger vi alle type sko!</p>
+     </article>
+            <footer id="forside-footer">
+                <section id="øvre-footer"></section>
+                <section id="nedre-footer"></section>
+            </footer>
        
 
 
         <script>
+
+            // Javascript delvis hentet fra OpenAi
             var slide = 0; 
             let img = document.getElementById('knapp2');
             let dot = document.getElementsByClassName('dots');
@@ -80,10 +90,10 @@
             // Add more image URLs as needed
         ]; 
         
-        const dots = [
-            'first-dot-black',
-            'second-dot-black',
-            'third-dot-black',
+        const dots2 = [
+           "second-dot-black",
+            "first-dot-black",
+            "third-dot-black",
         ];
             
 
@@ -95,7 +105,7 @@
 
         function roll(i) {
             img.src = bilder[i];
-            dot.id = dots[i];
+            dot[0].id = dots2[i];
             console.log(dot.id);
             console.log("bilde knappen ble klikket");
                 console.log(slide);
@@ -111,8 +121,12 @@
 
         </script>
 
+</div>
 
 
+
+
+     
 
     </body>
 
