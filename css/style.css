@@ -51,6 +51,14 @@ body{
         height: 140px;
         cursor:pointer;
     }
+
+    #knapp2 {
+        width: 331px; 
+        height: 140px;
+        cursor:pointer;
+    }
+
+
     #banner {
         display: flex;
         flex-direction: row;
@@ -130,6 +138,79 @@ body{
         background-color: #D9D9D9;
         border-radius: 100%;
         border: 0px solid white;
+      }
+      #first-dot {
+        position: absolute;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        top: 124px;
+        left: 170px;
+        width: 20px;
+        height: 20px;
+        background-color: #D9D9D9;
+        border: 1px solid black;
+        border-radius: 100%;
+      }
+      #second-dot {
+        position: absolute;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        top: 124px;
+        left: 143px;
+        width: 20px;
+        height: 20px;
+        background-color: #D9D9D9;
+        border: 1px solid black;
+        border-radius: 100%;
+      }
+      #third-dot {
+        position: absolute;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        top: 124px;
+        left: 197px;
+        width: 20px;
+        height: 20px;
+        background-color: #D9D9D9;
+        border: 1px solid black;
+        border-radius: 100%;
+      }
+
+      #first-dot-black {
+        position: absolute;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        top: 124px;
+        left: 170px;
+        width: 14px;
+        height: 14px;
+        background-color: #000000;
+        border: 1px solid black;
+        border-radius: 100%;
+      }
+      #second-dot-black {
+        position: absolute;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        top: 124px;
+        left: 143px;
+        width: 14px;
+        height: 14px;
+        background-color: #000000;
+        border: 1px solid black;
+        border-radius: 100%;
+      }
+      #third-dot-black {
+        position: absolute;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        top: 124px;
+        left: 197px;
+        width: 14px;
+        height: 14px;
+        background-color: #000000;
+        border: 1px solid black;
+        border-radius: 100%;
       }
 
 

@@ -56,8 +56,12 @@
             </section>
         </div>
         <section id="section-carousel">
-          <img id="knapp" src="img/infrared.jpg" alt="Nike infrared sko">
-          <button id="bildeknapp"></button>
+          <img onclick="klikk()" class="img-carousell" id="knapp2" src="img/infrared.jpg" alt="Nike infrared sko">
+          <button id="bildeknapp" onclick="toggleImage()"><img src="img/arrow.png"></button>
+          <section id="first-dot"></section>
+          <section id="second-dot"></section>
+          <section id="third-dot"></section>
+          <section class="dots" id="second-dot-black"></section>  
         </section>
     </main>
 
@@ -65,10 +69,46 @@
 
 
         <script>
+            var slide = 0; 
+            let img = document.getElementById('knapp2');
+            let dot = document.getElementsByClassName('dots');
+
+            const bilder = [
+            'img/infrared.jpg',
+            'img/airforce.jpg',
+            'img/timberlands.jpg',
+            // Add more image URLs as needed
+        ]; 
+        
+        const dots = [
+            'first-dot-black',
+            'second-dot-black',
+            'third-dot-black',
+        ];
+            
+
+
             function klikk() {
                 window.location.href = "produkt.html";
              // console.log("klikket");
             }
+
+        function roll(i) {
+            img.src = bilder[i];
+            dot.id = dots[i];
+            console.log(dot.id);
+            console.log("bilde knappen ble klikket");
+                console.log(slide);
+        }
+
+        function toggleImage() {
+            slide = (slide + 1) % bilder.length;
+            roll(slide);
+        }
+
+        // Initial display
+        roll(slide);
+
         </script>
 
 
