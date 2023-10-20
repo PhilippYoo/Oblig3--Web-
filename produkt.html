@@ -20,7 +20,7 @@
         <img id="right" src="img/glass.png" width="33px" height="33px" alt="glass">
         </header>
     <main>
-        <section id="produkt-filter">
+        <nav id="produkt-filter">
             <section id="produkt-flex">
                 <section id="h1-wrapper">
            <h3 id="produkt-h1">Produkt</h3>
@@ -28,27 +28,51 @@
            <img id="filter-image" src="img/screenshot_oblig2.png" alt="Skjermbilde oblig2 webutvikling">
            </section>
            <p id="undertekst">X Resultat</p>
+        </nav>
+
+        <section id="image-flex1">
+            <img id="image-resize" src="img/vapormax.jpg" alt="vapormax">
+            <img id="image-resize" src="img/huarache.jpg" alt="huarache">
+        </section>
+        <section id="image-flex2">
+            <article id="article-box">
+                <p id="wrapped-paragraf">Nike VaporMax Svart 2020 modell</p>
+            </article>
+            <article id="article-box">
+                <p id="wrapped-paragraf">Nike Huarache 2013-Re-Release</p>
+            </article>
         </section>
 
-        <section>
-            <img>
-            <img>
+        <section id="image-flex1">
+            <img id="image-resize" src="img/ultraboost.jpg" alt="Sko1">
+            <img id="image-resize" src="img/Jordan4.jpg" alt="Sko2">
         </section>
-        <section>
-            <article></article>
-            <article></article>
+        <section id="image-flex2">
+            <article id="article-box">
+                <p id="wrapped-paragraf">Adidas Ultraboost med ny boost-materialet</p>
+            </article>
+            <article id="article-box">
+                <p id="wrapped-paragraf">Jordan 4 av Nike Air Jordan kolleksjonen med red og black colorway</p>
+            </article>
         </section>
-
-
-
-
-
-
-
-
-
-
+        <section id="stor-bilde">
+            <img id="stor-bilde-img" src="img/rowsneakers.jpg" alt="Balenciaga sko">
+        </section>
+        <section id="beskrivelse-bilde">
+            <p id="wrapped-stor-paragraf">Vi selger også mange andre typer av sko noen av kategoriene våre er Tursko, joggesko og vintersko alt tilpasset for Trøndrværet!</p>
+        </section>
     </main>
+
+    <footer id="forside-footer2">
+        <section id="øvre-footer">
+             <h1 id="footer-tekst">Kundeservice</h1>
+             <img id="øvre-footer-bilde" src="img/down-arrow.png" alt="downpil">
+        </section>
+        <section id="nedre-footer">
+            <h1 id="footer-tekst">Om oss</h1>
+            <img id="nedre-footer-bilde" src="img/down-arrow.png" alt="downpil">
+        </section>
+    </footer>
 
 
 
@@ -56,12 +80,22 @@
 
 
   <script>
+
+    let resultater = document.getElementById('undertekst');
      
      function forside() {
         window.location.href = "index.html";
      }
+    
+     //Hentet fra OpenAI
+     const randomNumber = Math.floor(Math.random() * (729 - 2 + 1) + 2);
+     
+
+        resultater.innerHTML = (randomNumber + " " + "Resultater");
 
 
+         //make dropdown meny in footer
+         //apply a sans serif font
 
   </script>
 

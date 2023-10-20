@@ -286,7 +286,8 @@ body{
       #produktside-grid-container {
         display: grid;
         grid-template-areas: "header"
-                              "main";
+                              "main"
+                              "footer";
       }
       #overskrift-cursor {
         cursor: pointer;
@@ -319,6 +320,164 @@ body{
         width: 75px;
         height: 20px;
       }
+      #image-flex1 {
+        display: flex;
+        margin-top: 2%;
+        margin-left: 3%;
+        gap: 2%;
+      }
+      #image-flex2 {
+        display: flex;
+        margin-top: 2%;
+        margin-left: 3%;
+        margin-top: 1%;
+        gap: 2%;
+      }
+
+      #image-resize {
+        width: 178px;
+        height: 148px;
+        border: 1px solid black;
+      }
+
+      #article-box {
+        width: 178px;
+        height: 59px;
+        border: 1px solid black;
+      }
+
+      #stor-bilde {
+        margin-top: 3%;
+        margin-left: 2%;
+         width: 372px;
+         height: 104px;
+         border: 1px solid black;
+      }
+
+      #beskrivelse-bilde {
+        width: 372px;
+        height: 57px;
+        border: 1px solid black;
+        margin-top: 2%;
+        margin-left: 2%;
+      }
+
+      #forside-footer2 {
+        margin-top: 4%;
+        grid-area: footer;
+        width: 388px;
+        height: 72px;
+        border-radius: 1px;
+        background-color: #D9D9D9;
+      }
+
+      #stor-bilde-img {
+        width: 372px;
+        height: 104px;
+      }
+
+      #wrapped-paragraf {
+        font-weight: bold;
+        margin-left: 3%;
+        margin-top: 1%;
+      }
+
+      #wrapped-stor-paragraf {
+        font-weight: bold;
+        margin-left: 3%;
+        margin-top: 0%;
+      }
+     /*Slutt på produktside-css*/
+     /*Start på returside css*/
+     #returside-grid-container {
+      display: grid;
+      grid-template-areas: "header"
+                            "main"
+                            "footer";
+    }
+
+    #retur-overskrift {
+      margin-left: 5%;
+      font-weight: bold;
+    }
+
+    #retur-paragraf {
+      font-weight: bold;
+      margin-left: 5%;
+      top: -13px;
+      position: relative;
+    }
+
+    #returknapp {
+      width: 178px;
+      height: 46px;
+      background-color: black;
+      color: white;
+      text-align: left;
+      margin-left: 5%;
+      font-size: medium;
+      position: absolute;
+      top: 23%;
+    }
+
+    #høyre-pil1 {
+      position: absolute;
+      top: 23%;
+      right: 50%;
+    }
+
+    #bakgrunn-liste1 {
+      width: 353px;
+      height: 45px;
+      background-color: #D9D9D9;
+      position: relative;
+      right: 6%;
+      margin-top: 20%;
+    }
+
+    #bakgrunn-liste2 {
+      width: 353px;
+      height: 45px;
+      background-color: #D9D9D9;
+      position: relative;
+      right: 6%;
+      margin-top: 3%;
+    }
+
+    #refusjon {
+      width: 178px;
+      height: 46px;
+      background-color: #000000;
+      color: white;
+      text-align: left;
+      margin-left: 5%;
+      margin-top: 3%;
+      font-size: medium;
+    }
+
+    #høyre-pil2 {
+      position: absolute;
+      top: 67%;
+      right: 50%;
+    }
+
+    #refusjon-paragraf {
+      font-weight: bold;
+      margin-left: 5%;
+    }
+
+    #returfooter {
+      margin-top: 14%;
+      grid-area: footer;
+      width: 390px;
+      height: 72px;
+      border-radius: 1px;
+      background-color: #D9D9D9;
+    }
+
+
+
+
 
 
 
