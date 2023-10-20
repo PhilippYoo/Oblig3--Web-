@@ -475,6 +475,17 @@ body{
       background-color: #D9D9D9;
     }
 
+    #tekst-inni-bokser {
+      margin-left: 3%;
+      top: 1%;
+      position: absolute;
+      font-weight: bold;
+    }
+
+    #pluss-margin {
+      margin-left: 85%;
+    }
+
 
 
 
