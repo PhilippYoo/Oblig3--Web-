@@ -96,6 +96,17 @@ body{
          gap: 6%;
          margin-left: 88%;
     }
+    #desktop-article-box {
+      border: 1px solid black;
+      width: 225px;
+      background-color: #D9D9D9;
+    }
+    #wrapped-paragraf {
+      font-weight: bold;
+      font-family: "Inter", sans-serif;
+      margin-left: 3%;
+      margin-top: 1%;
+    }
     #rund-sirkel1 {
         border: 1px solid black;
         border-radius: 100%;
@@ -267,26 +278,37 @@ body{
                           "nav2 nav2 nav2"
                           "nav3 main main"
                           "footer footer footer";
-   grid-template-columns: repeat(3, 1fr); /* Three equal-width columns */
+   grid-template-columns: 1fr 2fr 2fr; /* Three equal-width columns */
   grid-gap: 0px; /* Adjust the gap between columns as needed */
   }
   #image-resize {
-    width: 100px;
-    height: 100px;
+    width: 225px;
+    height: 85px;
+  }
+  #article-box {
+    border: 1px solid black;
+    width: 225px;
+    background-color: #D9D9D9;
   }
   #image-flex1 {
     display: flex;
+    gap: 23px;
+    margin-left: 3%;
+    margin-top: 2%;
   }
   #image-flex2 {
-    display: none;
+    display: flex;
+    gap: 23px;
+    margin-left: 3%;
+    margin-top: 2%;
   }
   #stor-bilde {
     display: none;
   }
 
   #image-resize-desktop {
-    width: 100px;
-    height: 100px;
+    width: 225px;
+    height: 85px;
   }
 
   #overskrift-cursor {
@@ -312,6 +334,12 @@ body{
     height: 35px;
     margin-left: 2%;
     transform: translateY(-37px);
+   }
+
+   #pluss-filter {
+    width: 22px;
+    height: 19px;
+    margin-left: 1%;
    }
 
    #li-filter {
@@ -344,6 +372,8 @@ body{
 
    #nav3-desktop {
     grid-area nav3;
+    border: 1px solid black;
+    width: 240px;
    }
 
    #filter-liste-desktop {
@@ -353,8 +383,48 @@ body{
     height: 270px;
     background-color: #D9D9D9;
     list-style: none;
+    display: flex;
+   }
+   #venstre-nav {
+      width: 300px;
+      height: 170px;
+      border: 1px solid black;
    }
 
+   #høyre-nav {
+
+   }
+   
+   #desktop-scroll-bar {
+    margin-top: 3%;
+    margin-left: 25%;
+    width: 320px;
+    height: 60px;
+   }
+   #scroll-små-tekst {
+    font-family: "Inter", sans-serif;
+    font-size: small;
+    font-weight: lighter;
+    margin-top: 2%;
+   }
+   #desktop-flex {
+    display: flex;
+    gap: 7px;
+   }
+   #desktop-list {
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    font-weight: lighter;
+    list-style: none;
+    border: 1px solid black;
+    width: 20px;
+    height: 25px;
+   }
+
+   #venstrepil2-scroll {
+    width: 25px;
+    height: 25px;
+   }
 
 
 
@@ -395,6 +465,12 @@ body{
     }
     footer {
         grid-area: footer;
+    }
+    #desktop-scroll-bar {
+      display: none;
+    }
+    #desktop-article-box {
+      display: none;
     }
     #image-resize-desktop {
       display: none;
@@ -579,6 +655,7 @@ body{
         font-size: 14px;
         font-family: "Inter", sans-serif;
       }
+
 
       #section-carousel {
         margin-top: 13px;
