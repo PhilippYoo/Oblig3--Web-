@@ -37,9 +37,25 @@ body{
       height: 190px;
     }
 
+    #footer-tekst {
+      font-family: "Inter", sans-serif;
+      font-size: 18px;
+      margin-left: 9%;
+      margin-top: 1%;
+    }
+
+    #forside-footer {
+      display: flex;
+      gap: 80px;
+      margin-top: 0%;
+      width: 100%;
+      height: 110px;
+      background-color: #D9D9D9;
+    }
+
     #to-store-bilder {
       display: flex;
-      margin-top: 3%;
+      margin-top: 1%;
       margin-left: 3%;
       gap: 12%;
     }
@@ -153,6 +169,14 @@ body{
       width: 100%;
       border-right: none;
     }
+    #kjønn2 {
+      display: flex;
+      border: 1px solid black;
+      background-color: #D9D9D9;
+      height: 50px;
+      width: 100%;
+      border-right: none;
+    }
     #left2 {
       display: none;
     }
@@ -212,7 +236,7 @@ body{
     }
     #img-jordan {
       width: 950px;
-      height: 140px;
+      height: 180px;
       margin-left: 3%;
       margin-top: 1%;
     }
@@ -229,12 +253,84 @@ body{
       grid-area: footer;
   }
   /*Slutt desktop forside CSS*/
-    
-    
-
-
-
+  /*Start på desktop produktside*/
+  #produktfilter {
+    grid-area: nav2;
   }
+
+  #produktside-grid-container {
+    display: grid;
+    grid-template-areas:  "nav nav header"
+                          "nav2 nav2 nav2"
+                          "main main main"
+                          "footer footer footer";
+   grid-template-columns: repeat(3, 1fr); /* Three equal-width columns */
+  grid-gap: 0px; /* Adjust the gap between columns as needed */
+  }
+  #image-resize {
+    display: none;
+  }
+  #image-flex1 {
+    display: none;
+  }
+  #image-flex2 {
+    display: none;
+  }
+  #stor-bilde {
+    display: none;
+  }
+
+  #overskrift-cursor {
+    display: none;
+  }
+
+  #filter-image {
+   display: none;
+  }
+  #produkt-h1 {
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    margin-left: 2%;
+    transform: translateY(-18px);
+  }
+  #undertekst {
+    font-family: "Inter", sans-serif;
+    margin-left: 2%;
+    transform: translateY(-37px);
+  }
+  #filter-image2 {
+    width: 12%;
+    height: 35px;
+    margin-left: 2%;
+    transform: translateY(-37px);
+   }
+
+   #wrapped-stor-paragraf {
+    display: none;
+   }
+
+   #desktop-hjem {
+    margin-left: 2%;
+    font-family: "Inter", sans-serif;
+    font-weight: lighter;
+   }
+
+   #desktop-filters {
+    display: flex;
+   }
+
+
+
+
+
+
+
+
+
+
+
+
+}
 
 /* Mobile media query */
 @media screen and (max-width: 600px) {
@@ -263,6 +359,27 @@ body{
     }
     footer {
         grid-area: footer;
+    }
+    #desktop-filters {
+      display: none;
+    }
+    #desktop-hjem {
+      display: none;
+    }
+    #filter-image2 {
+      display: none;
+    }
+    #desktop-paragraf {
+      display: none;
+    }
+    #desktop-retur {
+      display: none;
+    }
+    #desktop-kolleksjoner {
+      display: none;
+    }
+    #desktop-produkter {
+      display: none;
     }
     #to-store-bilder {
       display: none;
@@ -335,6 +452,9 @@ body{
         width: 388px;
         height: 40px;
         font-family: "Inter", sans-serif;
+    }
+    #kjønn2 {
+      display: none;
     }
     #flex-container {
       display: flex;
