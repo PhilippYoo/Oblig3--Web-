@@ -9,33 +9,73 @@
     <body>
         <div id="grid-div-container">
         <header id="banner">
+            <input id="input" placeholder="Søk">
+            <img src="img/glass2.png" id="glass2" width="33px" height="33px" alt="søkeglass2">
             <img id="left" src="img/Bell.png" width="33px" height="33px" alt="Bjelle">
-            <img id="left" src="img/bars.png" width="33px" height="33px" alt="Bars">
+            <img id="left2" src="img/bars.png" width="33px" height="33px" alt="Bars">
             <section id="logo">
                 <h1 id="overskrift">Trønder Tøfler</h1>
             </section>
             <section id="icon-wrapper">
-            <img id="right" src="img/shopping cart.png" width="33px" height="33px" alt="handlevogn">
-            <img id="right" src="img/man.png" width="33px" height="33px" alt="man">
-            <img id="right" src="img/glass.png" width="33px" height="33px" alt="glass">
+            <img id="right1" src="img/shopping cart.png" width="33px" height="33px" alt="handlevogn">
+            <img id="right3" src="img/man.png" width="33px" height="33px" alt="man">
+            <img id="right2" src="img/glass.png" width="33px" height="33px" alt="glass">
             </header>
         </section>
         <nav id="kjønn">
-            <p id="tekst-kjønn">Mann</p>
-            <p id="tekst-kjønn">Kvinne</p>
-            <p id="tekst-kjønn">Barn</p>
-            <p id="tekst-kjønn">Tilbud</p> <!--Skriv mere semantisk bruk tagger Li og UL her-->
+            <h1 id="desktop-overskrift">Trønder Tøfler</h1>
+            <ul id="flex-container">
+            <li onclick="klikk()" id="tekst-kjønn">Mann</li>
+            <li onclick="klikk()" id="tekst-kjønn">Kvinne</li>
+            <li onclick="klikk()" id="tekst-kjønn">Barn</li>
+            <li onclick="klikk()" id="tekst-kjønn">Tilbud</li>
+            <li onclick="klikk()" id="tekst-kjønn2">Nye utgaver</li> <!--Skriv mere semantisk bruk tagger Li og UL her-->
+        </ul id="flex-container">
         </nav>
-        <main>
+
+
+
         <section id="tilbud">
             <p onclick="klikk()" id="p-tilbud">35% Høsttilbud</p>
+            <p id="p-frakt">Gratis frakt over 500kr</p>
         </section>
+
+
+
+        <main>
         
         <section id="produktbilde-1">
-            <img onclick="klikk()" id="knapp" src="img/jordan-1.jpg" alt="Jordan 1 sko">
-
+            <img id="img-jordan" onclick="klikk()" id="knapp" src="img/jordan-1.jpg" alt="Jordan 1 sko">
         </section>
+
+        <section id="desktop-knapp-bilde">
+        <nav id="rund-sirkel1">
+              <img src="img/venstrepil2.png" id="venstrepil" alt="venstrepil2">
+        </nav>
+        <nav id="rund-sirkel2">
+          <img src="img/høyrepil2.png" id="høyrepil" alt="høyrepil2">
+        </nav>
+        </section>
+
+        <section id="desktop-bilde-section">
+             <img onclick="klikk()" src="img/hikingboots1.jpg" id="tursko1" alt="hikingshoes1">
+             <img onclick="klikk()" src="img/hikingboots2.jpg" id="tursko2" alt="hikingshoes2">
+             <img onclick="klikk()" src="img/runningshoes1.jpg" id="joggesko1" alt="runningshoes1">
+             <img onclick="klikk()" src="img/runningshoes2.jpg" id="joggesko2" alt="runningshoes2">
+        </section>
+
+        <section id="to-store-bilder">
+            <img src="img/tennissko1.jpg" onclick="klikk()" alt="tennissko1" id="tennissko1">
+            <img src="img/tennissko2.jpg" onclick="klikk()" alt="tennissko2" id="tennissko2">
+        </section>
+
         <br>
+
+          
+
+
+
+
         <nav id="grid">
             <section id="child">
              <section onclick="klikk()">Nike</section> 
@@ -67,7 +107,7 @@
     </main>
      <article id="fakta-bedrift">
            <h4 id="overskrift-fakta">Kvalitet siden 2015</h4>
-           <p id="bedrift-paragraf">Vi har siden 2015 hos Trønder Tøfler levert og servert den høyeste grad av trøndersk kvalitet. Vi sørger for å tilfredstille våre kunder, meldemmer og besøkende. Vi startet av med å selge tursko for alle som ville nyte naturen, men nå selger vi alle type sko!</p>
+           <p id="bedrift-paragraf">Vi har siden 2015 hos Trønder Tøfler levert og servert den høyeste grad av trøndersk kvalitet. Vi sørger for å tilfredstille våre kunder, meldemmer og besøkende. Vi startet av med å selge tursko for alle som ville nyte naturen.</p>
      </article>
             <footer id="forside-footer">
                 <section id="øvre-footer">
@@ -85,7 +125,7 @@
         <script>
 
             // Javascript delvis hentet fra OpenAi
-            var slide = 0; 
+            var slide = 0;                                        //Forklare all kode hentet fra openai og hva den gjør
             let img = document.getElementById('knapp2');
             let dot = document.getElementsByClassName('dots');
 

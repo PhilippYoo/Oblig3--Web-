@@ -2,14 +2,235 @@ body{
     margin: 0%;
 }
 
+@font-face {
+  font-family: "Inter";
+  src: url('./Font/Inter-VariableFont_slnt\,wght.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
 /* Desktop media query*/
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1024px) and (min-height: 768px) {
     body {
-      background-color: blue;
-      color: white;
+    margin: 0%;
+    }
+
+   /*Desktop forside CSS*/
+   
+    #grid-div-container {
+      display: grid;
+      grid-template-areas: "tilbud tilbud tilbud"
+                            "nav nav header"
+                            "main main main"
+                            "footer footer footer";
+     grid-template-columns: repeat(3, 1fr); /* Three equal-width columns */
+      grid-gap: 0px; /* Adjust the gap between columns as needed */
+    }
+
+    #tennissko1 {
+       width: 420px;
+       height: 190px;
+    }
+
+    #tennissko2 {
+      width: 420px;
+      height: 190px;
+    }
+
+    #to-store-bilder {
+      display: flex;
+      margin-top: 3%;
+      margin-left: 3%;
+      gap: 12%;
+    }
+
+    #tursko1 {
+      width: 253px;
+      height: 93px;
+
+    }
+    #tursko2 {
+      width: 253px;
+      height: 93px;
+    }
+    #joggesko1 {
+      width: 253px;
+      height: 93px;
+    }
+    #joggesko2 {
+      width: 213px;
+      height: 93px;
+    }
+    #øvre-footer-bilde {
+      display: none;
+    }
+    #nedre-footer-bilde {
+      display: none;
+    }
+
+    #desktop-bilde-section {
+      display: flex;
+      margin-top: 1%;
+      margin-left: 1%;
+      gap: 1%;
+    }
+
+    #desktop-knapp-bilde {
+         display: flex;
+         gap: 6%;
+         margin-left: 88%;
+    }
+    #rund-sirkel1 {
+        border: 1px solid black;
+        border-radius: 100%;
+        background-color: #EBEBEB;
+        width: 30px;
+        height: 30px;
+    }
+    #venstrepil {
+      height: 40px;
+      width: 40px;
+      top: -5px;
+      transform: translateX(-5px);
+      position: relative;
+    }
+    #høyrepil {
+      height: 40px;
+      width: 40px;
+      padding-left: 5%;
+      margin-top: 1%;
+      top: -5px;
+      transform: translateX(-3px);
+      position: relative;
+    }
+    #rund-sirkel2 {
+      border: 1px solid black;
+      border-radius: 100%;
+      background-color: #EBEBEB;
+      width: 30px;
+      height: 30px;
+    }
+
+    #grid {
+      display: none;
+    }
+    #glass2 {
+      margin-left: 1%;
+      margin-top: 2.8%;
+    }
+    #left {
+      margin-left: 5%;
+      margin-top: 3%;
+    }
+    #icon-wrapper {
+      display: flex;
+    }
+    #right1 {
+      margin-left: 1%;
+      margin-top: 13%;
+    }
+    #right3 {
+      margin-left: 1%;
+      margin-top: 13%;
+    }
+    #input {
+      margin-top: 2.5%;
+      width: 130px;
+      height: 30px;
+    }
+    #banner {
+      display: flex;
+      border: 1px solid black;
+      border-left: none;
+      width: 100%;
+      background-color: #D9D9D9;
+    }
+    #kjønn {
+      display: flex;
+      border: 1px solid black;
+      background-color: #D9D9D9;
+      height: 50px;
+      width: 100%;
+      border-right: none;
+    }
+    #left2 {
+      display: none;
+    }
+    #right2 {
+      display: none;
+    }
+    #tekst-kjønn {
+      font-family: "Inter", sans-serif;
+      margin-top: 3%;
+      font-size: larger;
+    }
+    #tekst-kjønn2 {
+      font-family: "Inter", sans-serif;
+      margin-top: 3%;
+      font-size: larger;
+    }
+    #overskrift {
+      display: none;
+    }
+    #flex-container {
+      display: flex;
+      gap: 18px;
+      list-style: none;
+      margin-top: 1%;
+    }
+    #tilbud {
+      display: flex;
+      grid-area: tilbud;
+      width: 100%;
+      height: 100%;
+      border: 1px solid black;
+    }
+    #desktop-overskrift {
+         font-family: "Inter", sans-serif;
+         margin-top: 1.6%;
+         margin-left: 2%;
+    }
+
+    #p-tilbud {
+      margin-left: 5%;
+      font-size: large;
+      font-family: "Inter", sans-serif;
+    }
+    #p-frakt {
+      margin-left: 60%;
+      font-size: large;
+      font-family: "Inter", sans-serif;
     }
 
 
+    #fakta-bedrift {
+      display: none;
+    }
+
+    #section-carousel {
+      display: none;
+    }
+    #img-jordan {
+      width: 950px;
+      height: 140px;
+      margin-left: 3%;
+      margin-top: 1%;
+    }
+    header{
+      grid-area: header;
+  }
+  nav {
+      grid-area: nav;
+  }
+  main {
+      grid-area: main;
+  }
+  footer {
+      grid-area: footer;
+  }
+  /*Slutt desktop forside CSS*/
+    
+    
 
 
 
@@ -25,6 +246,7 @@ body{
         display: grid;
         grid-template-areas:  "header" 
                                 "nav" 
+                                "tilbud"
                                 "main"
                                 "article"
                                 "footer";
@@ -35,11 +257,40 @@ body{
     nav {
         grid-area: nav;
     }
+
     main {
         grid-area: main;
     }
     footer {
         grid-area: footer;
+    }
+    #to-store-bilder {
+      display: none;
+    }
+    #desktop-bilde-section {
+      display: none;
+    }
+    #img-jordan {
+      height: 140px;
+      width: 331px;
+    }
+    #desktop-knapp-bilde {
+      display: none;
+    }
+    #glass2 {
+      display: none;
+    }
+    #input {
+      display: none;
+    }
+    #p-frakt {
+      display: none;
+    }
+    #tekst-kjønn2 {
+      display: none;
+    }
+    #desktop-overskrift {
+      display: none;
     }
     #left{
         width: 33px;
@@ -47,25 +298,48 @@ body{
         margin-top: 2rem;
         margin-left: 0.5rem;
     }
+    #left2{
+      width: 33px;
+      height: 33px;
+      margin-top: 2rem;
+      margin-left: 0.5rem;
+  }
     #icon-wrapper{
         margin-right: 5px;
         margin-left: 13px;
     }
-    #right{
+    #right1{
         width: 33px;
         height: 33px;
         margin-top: 2rem;
         margin-left: 0.3rem;
     }
+    #right3{
+      width: 33px;
+      height: 33px;
+      margin-top: 2rem;
+      margin-left: 0.3rem;
+  }
+    #right2{
+      width: 33px;
+      height: 33px;
+      margin-top: 2rem;
+      margin-left: 0.3rem;
+  }
     #logo{
         margin-left: 23px;
         margin-top: 0.8rem;
     }
     #kjønn{
-        display: flex;
         border: 1px solid black;
         width: 388px;
         height: 40px;
+        font-family: "Inter", sans-serif;
+    }
+    #flex-container {
+      display: flex;
+      padding-left: 5px;
+      list-style: none;
     }
     #knapp{
         width: 331px; 
@@ -111,6 +385,8 @@ body{
         border: 1px solid black;
         height: 30px;
         width: 388px;
+        font-family: "Inter", sans-serif;
+        grid-area: tilbud;
     }
     #overskrift{
         font-size: 22px;
@@ -135,6 +411,8 @@ body{
         height: 31px;
         text-align: center;
         font-weight: bold;
+        font-size: 14px;
+        font-family: "Inter", sans-serif;
       }
 
       #section-carousel {
@@ -245,11 +523,13 @@ body{
          margin-left: 20px;
          margin-top: 8px;
          font-weight: bolder;
+         font-family: "Inter", sans-serif; 
       }
       #bedrift-paragraf {
         margin-top: -14px;
         margin-left: 20px;
         font-size: 14px;
+        font-family: "Inter", sans-serif;
       }
       #forside-footer {
         margin-top: 11px;
@@ -315,10 +595,12 @@ body{
         position: absolute;
         top: 10.8%;
         left: 1.6%;
+        font-family: "Inter", sans-serif;
       }
       #h1-wrapper {
         width: 75px;
         height: 20px;
+        font-family: "Inter", sans-serif;
       }
       #image-flex1 {
         display: flex;
@@ -378,12 +660,14 @@ body{
 
       #wrapped-paragraf {
         font-weight: bold;
+        font-family: "Inter", sans-serif;
         margin-left: 3%;
         margin-top: 1%;
       }
 
       #wrapped-stor-paragraf {
         font-weight: bold;
+        font-family: "Inter", sans-serif;
         margin-left: 3%;
         margin-top: 0%;
       }
@@ -399,10 +683,11 @@ body{
     #retur-overskrift {
       margin-left: 5%;
       font-weight: bold;
+      font-family: "Inter", sans-serif;
     }
 
     #retur-paragraf {
-      font-weight: bold;
+      font-family: "Inter", sans-serif;
       margin-left: 5%;
       top: -13px;
       position: relative;
@@ -415,6 +700,7 @@ body{
       color: white;
       text-align: left;
       margin-left: 5%;
+      font-family: "Inter", sans-serif;
       font-size: medium;
       position: absolute;
       top: 23%;
@@ -452,6 +738,7 @@ body{
       text-align: left;
       margin-left: 5%;
       margin-top: 3%;
+      font-family: "Inter", sans-serif;
       font-size: medium;
     }
 
@@ -462,12 +749,12 @@ body{
     }
 
     #refusjon-paragraf {
-      font-weight: bold;
+      font-family: "Inter", sans-serif;
       margin-left: 5%;
     }
 
     #returfooter {
-      margin-top: 14%;
+      margin-top: 10%;
       grid-area: footer;
       width: 390px;
       height: 72px;
@@ -479,7 +766,7 @@ body{
       margin-left: 3%;
       top: 1%;
       position: absolute;
-      font-weight: bold;
+      font-family: "Inter", sans-serif;
     }
 
     #pluss-margin {
