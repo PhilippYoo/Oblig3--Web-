@@ -1587,59 +1587,59 @@ body{
       #image-flex1 {
         display: flex;
         margin-top: 2%;
-        margin-left: 3%;
+        margin-left: 5%;
         gap: 2%;
       }
       #image-flex2 {
         display: flex;
         margin-top: 2%;
-        margin-left: 3%;
+        margin-left: 5%;
         margin-top: 1%;
         gap: 2%;
       }
       #image-flex21 {
         display: flex;
         margin-top: 2%;
-        margin-left: 3%;
+        margin-left: 5%;
         margin-top: 1%;
         gap: 2%;
       }
       #image-flex2-pic {
         display: flex;
         margin-top: 2%;
-        margin-left: 3%;
+        margin-left: 5%;
         margin-top: 1%;
         gap: 2%;
       }
 
       #image-resize {
-        width: 41%;
+        width: 46%;
         height: 148px;
         border: 1px solid black;
       }
       #image-resize2 {
-        width: 40%;
+        width: 45%;
         height: 148px;
         border: 1px solid black;
       }
       #image-resize3 {
-        width: 41%;
+        width: 46%;
         height: 148px;
         border: 1px solid black;
       }
       #image-resize4 {
-        width: 40%;
+        width: 45%;
         height: 148px;
         border: 1px solid black;
       }
 
       #article-box {
-        width: 41%;
+        width: 46%;
         height: 59px;
         border: 1px solid black;
       }
       #article-box1 {
-        width: 40%;
+        width: 45%;
         height: 59px;
         border: 1px solid black;
       }
@@ -1654,12 +1654,12 @@ body{
         border: 1px solid black;
       }
       #article-box4 {
-        width: 41%;
+        width: 46%;
         height: 59px;
         border: 1px solid black;
       }
       #article-box5 {
-        width: 40%;
+        width: 45%;
         height: 59px;
         border: 1px solid black;
       }
@@ -1670,8 +1670,8 @@ body{
       }
 
       #stor-bilde {
-        margin-top: 3%;
-        margin-left: 2%;
+        margin-top: 2%;
+        margin-left: 7%;
          width: 83%;
          height: 104px;
          border: 1px solid black;
@@ -1682,7 +1682,7 @@ body{
         height: 57px;
         border: 1px solid black;
         margin-top: 2%;
-        margin-left: 2%;
+        margin-left: 7%;
       }
 
       #forside-footer2 {
