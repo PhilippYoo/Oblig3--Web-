@@ -189,7 +189,7 @@ body{
     }
     #bakgrunn-liste2 {
       display: flex;
-      width: 67%;
+      width: 430px;
       height: 9%;
       background-color: #D9D9D9;
       position: relative;
@@ -199,7 +199,7 @@ body{
     }
     #bakgrunn-liste3 {
       display: flex;
-      width: 67%;
+      width: 430px;
       height: 9%;
       background-color: #D9D9D9;
       position: relative;
@@ -209,7 +209,7 @@ body{
     }
     #bakgrunn-liste4 {
       display: flex;
-      width: 67%;
+      width: 430px;
       height: 9%;
       background-color: #D9D9D9;
       position: relative;
@@ -219,7 +219,7 @@ body{
     }
     #bakgrunn-liste5 {
       display: flex;
-      width: 67%;
+      width: 430px;
       height: 9%;
       background-color: #D9D9D9;
       position: relative;
@@ -229,7 +229,7 @@ body{
     }
     #bakgrunn-liste1 {
       display: flex;
-      width: 67%;
+      width: 430px;
       height: 9%;
       background-color: #D9D9D9;
       position: relative;
@@ -1221,6 +1221,8 @@ body{
     }
     #flex-container {
       display: flex;
+      margin-left: 5%;
+      gap: 15%;
       padding-left: 5px;
       list-style: none;
     }
@@ -1247,19 +1249,19 @@ body{
         margin-left: 45px;
     }
     #tekst-kjønn2{
-      margin-left: 45px;
+     
   }
   #tekst-kjønn3{
-    margin-left: 45px;
+    
 }
 #tekst-kjønn5{
-  margin-left: 45px;
+
 }
 #tekst-kjønn6{
-  margin-left: 45px;
+ 
 }
 #tekst-kjønn7{
-  margin-left: 45px;
+ 
 }
     #produktbilde-1{
         margin-top: 8px;
@@ -1549,7 +1551,7 @@ body{
       #filter-image12 {
         width: 119px;
         height: 37px;
-        margin-left: 190px;
+        margin-left: 40%;
         margin-top: 3px;
       }
       #produkt-h1 {
