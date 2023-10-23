@@ -1,15 +1,15 @@
 body{
-    margin: 0%;
+    margin: 0%; /*Fikser margin for body fjerner hvit på sidene*/
 }
 
-@font-face {
-  font-family: "Inter";
-  src: url('./Font/Inter-VariableFont_slnt\,wght.ttf') format('ttf');
-  font-weight: normal;
-  font-style: normal;
+@font-face {                /*Hentet fra: https://fonts.google.com/specimen/Inter*/
+  font-family: "Inter";  /*Lager global font-family*/
+  src: url('./Font/Inter-VariableFont_slnt\,wght.ttf') format('ttf'); /*Henter src*/
+  font-weight: normal; /*Ordner font-weight*/
+  font-style: normal; /*Lager font-style*/
 }
 
-/* Desktop media query*/
+/* Desktop media query Delvis hentet fra OpenAI*/
 @media screen and (min-width: 1024px) and (min-height: 768px) {
     body {
     margin: 0%;
@@ -17,37 +17,228 @@ body{
 
    /*Desktop forside CSS*/
    
+   /*Grid Layout delvis hentet fra OpenAI*/
     #grid-div-container {
       display: grid;
       grid-template-areas: "tilbud tilbud tilbud"
                             "nav1 nav1 header"
                             "main main main"
                             "footer footer footer";
-     grid-template-columns: repeat(3, 1fr); /* Three equal-width columns */
-      grid-gap: 0px; /* Adjust the gap between columns as needed */
+     grid-template-columns: repeat(3, 1fr); /*3-kolonner*/
     }
 
+    /*Grid Layout delvis hentet fra OpenAI*/
     #returside-grid-container {
       display: grid;
       grid-template-areas: "nav nav header"
-                            "main main article"
+                            "main main article2"
                             "footer footer footer";
-     grid-template-columns: repeat(3, 1fr); /* Three equal-width columns */
-      grid-gap: 0px; /* Adjust the gap between columns as needed */
+     grid-template-columns: repeat(3, 1fr); /*3-kolonner*/
+    }
+    #positionering {
+      margin-top: 8%;
+      margin-left: 6%;
+    }
+    #desktop-paragraf {
+      font-weight: lighter;
+      font-family: "Inter", sans-serif;
+    }
+    #desktop-paragraf2 {
+      font-weight: lighter;
+      font-family: "Inter", sans-serif;
+    }
+    #desktop-paragraf3 {
+      font-weight: lighter;
+      font-family: "Inter", sans-serif;
+    }
+    #desktop-paragraf4 {
+      font-weight: lighter;
+      font-family: "Inter", sans-serif;
+    }
+    #desktop-paragraf5 {
+      font-weight: lighter;
+      font-family: "Inter", sans-serif;
+    }
+    #desktop-paragraf6 {
+      font-weight: lighter;
+      font-family: "Inter", sans-serif;
+    }
+    #desktop-paragraf7 {
+      font-weight: lighter;
+      font-family: "Inter", sans-serif;
+    }
+    #desktop-paragraf8 {
+      font-weight: lighter;
+      font-family: "Inter", sans-serif;
+    }
+    #desktop-paragraf9 {
+      font-weight: lighter;
+      font-family: "Inter", sans-serif;
+    }
+    #desktop-paragraf10 {
+      font-weight: lighter;
+      font-family: "Inter", sans-serif;
+    }
+    #retur-article {
+      grid-area: article2;
+    }
+    #article-background2-child {
+        font-weight: bold;
+        font-family: "Inter", sans-serif;
+        margin-left: 1rem;
+        margin-top: 1rem;
+    }
+    #article-background-child {
+      font-weight: bold;
+      font-family: "Inter", sans-serif;
+      margin-left: 1rem;
+      margin-top: 1rem;
+    }
+    #article-background-child-h3 {
+      font-weight: bold;
+      font-family: "Inter", sans-serif;
+      margin-left: 1rem;
+      margin-top: 1rem;
+    }
+    #article-background2-child-h32 {
+      font-weight: bold;
+      font-family: "Inter", sans-serif;
+      margin-left: 1rem;
+      margin-top: 1rem;
+    }
+    #start-retur {
+      display: flex;
     }
 
     #retur-overskrift {
-      margin-left: 6%;
+      margin-left: 2.2rem;
       font-weight: bold;
       font-family: "Inter", sans-serif;
+    }
+    #retur-article-overskrift {
+      margin-left: 1.4rem;
+      font-weight: bold;
+      font-family: "Inter", sans-serif;
+    }
+    #article-background {
+      width: 90%;
+      margin-left: 1rem;
+      min-height: 50%;
+      background-color: #D9D9D9;
+    }
+    #article-background2 {
+      width: 90%;
+      margin-left: 1rem;
+      margin-top: 2.2rem;
+      background-color: #D9D9D9;
+      min-height: 30%;
+    }
+    #tekst-inni-bokser {
+      margin-left: 0.3rem;
+      font-family: "Inter", sans-serif;
+    }
+    #tekst-inni-bokser2 {
+      margin-left: 0.3rem;
+      font-family: "Inter", sans-serif;
+    }
+    #tekst-inni-bokser3 {
+      margin-left: 0.3rem;
+      font-family: "Inter", sans-serif;
+    }
+    #tekst-inni-bokser4 {
+      margin-left: 0.3rem;
+      font-family: "Inter", sans-serif;
+    }
+    #tekst-inni-bokser5 {
+      margin-left: 0.3rem;
+      font-family: "Inter", sans-serif;
+    }
+    #refusjon {
+      width: 11em;
+      height: 3em;
+      background-color: #000000;
+      color: white;
+      text-align: left;
+      margin-left: 2rem;
+      font-family: "Inter", sans-serif;
+      font-size: 1rem;
+    }
+    #refusjon-paragraf {
+      display: none;
+    }
+
+    #pluss-margin {
+      margin-left: 26%;
+    }
+    #pluss-margin2 {
+      margin-left: 33%;
+    }
+    #pluss-margin3 {
+      margin-left: 45%;
+    }
+    #pluss-margin4 {
+      margin-left: 47%;
+    }
+    #pluss-margin5 {
+      margin-left: 25%;
     }
     #retur-paragraf {
-      margin-left: 6%;
+      margin-left: 2rem;
       font-weight: bold;
       font-family: "Inter", sans-serif;
     }
+    #bakgrunn-liste2 {
+      display: flex;
+      width: 67%;
+      height: 9%;
+      background-color: #D9D9D9;
+      position: relative;
+      right: 6%;
+      margin-top: 1%;
+      margin-left: 5%;
+    }
+    #bakgrunn-liste3 {
+      display: flex;
+      width: 67%;
+      height: 9%;
+      background-color: #D9D9D9;
+      position: relative;
+      right: 6%;
+      margin-top: 1%;
+      margin-left: 5%;
+    }
+    #bakgrunn-liste4 {
+      display: flex;
+      width: 67%;
+      height: 9%;
+      background-color: #D9D9D9;
+      position: relative;
+      right: 6%;
+      margin-top: 1%;
+      margin-left: 5%;
+    }
+    #bakgrunn-liste5 {
+      display: flex;
+      width: 67%;
+      height: 9%;
+      background-color: #D9D9D9;
+      position: relative;
+      right: 6%;
+      margin-top: 1%;
+      margin-left: 5%;
+    }
+    #bakgrunn-liste1 {
+      display: flex;
+      width: 67%;
+      height: 9%;
+      background-color: #D9D9D9;
+      position: relative;
+      right: 6%;
+      margin-top: 0%;
+      margin-left: 5%;
+    }
     #returknapp {
-      width: 178px;
+      width: 190px;
       height: 46px;
       background-color: black;
       color: white;
@@ -60,8 +251,18 @@ body{
     }
     #høyre-pil1 {
       position: relative;
-      bottom: 6%;
-      left: 25%;
+      transform: translateY(0px);
+      transform: translateX(195px);
+      border: 1px solid none;
+    }
+    #refusjon-flex {
+      display: flex;
+      margin-top: 3%;
+    }
+    #høyre-pil2 {
+      position: relative;
+      transform: translateY(3px);
+      transform: translateX(-65px);
       border: 1px solid none;
     }
 
@@ -78,25 +279,51 @@ body{
 
     #footer-tekst {
       font-family: "Inter", sans-serif;
-      font-size: 18px;
+      font-size: 1.125rem;
+      margin-left: 9%;
+      margin-top: 1%;
+    }
+    #footer-tekst2 {
+      font-family: "Inter", sans-serif;
+      font-size: 1.125rem;
+      margin-left: 9%;
+      margin-top: 1%;
+    }
+    #footer-tekst3 {
+      font-family: "Inter", sans-serif;
+      font-size: 1.125rem;
+      margin-left: 9%;
+      margin-top: 1%;
+    }
+    #footer-tekst4 {
+      font-family: "Inter", sans-serif;
+      font-size: 1.125rem;
+      margin-left: 9%;
+      margin-top: 1%;
+    }
+    #footer-tekst5 {
+      font-family: "Inter", sans-serif;
+      font-size: 1.125rem;
       margin-left: 9%;
       margin-top: 1%;
     }
 
     #forside-footer {
       display: flex;
-      gap: 80px;
+      gap: 11%;
       margin-top: 0%;
-      width: 100%;
-      height: 110px;
       background-color: #D9D9D9;
     }
     #forside-footer-produkt {
       display: flex;
-      gap: 80px;
-      margin-top: 0%;
-      width: 100%;
-      height: 110px;
+      gap: 11%;
+      margin-top: 3%;
+      background-color: #D9D9D9;
+    }
+    #returfooter {
+      display: flex;
+      gap: 11%;
+      margin-top: 3%;
       background-color: #D9D9D9;
     }
 
@@ -148,13 +375,88 @@ body{
       width: 225px;
       background-color: #D9D9D9;
     }
+    #desktop-article-box2 {
+      border: 1px solid black;
+      width: 225px;
+      background-color: #D9D9D9;
+    }
+    #desktop-article-box3 {
+      border: 1px solid black;
+      width: 225px;
+      background-color: #D9D9D9;
+    }
+    #desktop-article-box4 {
+      border: 1px solid black;
+      width: 225px;
+      background-color: #D9D9D9;
+    }
     #wrapped-paragraf2 {
       font-weight: normal;
       font-family: "Inter", sans-serif;
       margin-left: 3%;
       margin-top: 1%;
     }
+    #wrapped-paragraf21 {
+      font-weight: normal;
+      font-family: "Inter", sans-serif;
+      margin-left: 3%;
+      margin-top: 1%;
+    }
+    #wrapped-paragraf22 {
+      font-weight: normal;
+      font-family: "Inter", sans-serif;
+      margin-left: 3%;
+      margin-top: 1%;
+    }
+    #wrapped-paragraf23 {
+      font-weight: normal;
+      font-family: "Inter", sans-serif;
+      margin-left: 3%;
+      margin-top: 1%;
+    }
+    #wrapped-paragraf24 {
+      font-weight: normal;
+      font-family: "Inter", sans-serif;
+      margin-left: 3%;
+      margin-top: 1%;
+    }
+    #wrapped-paragraf25 {
+      font-weight: normal;
+      font-family: "Inter", sans-serif;
+      margin-left: 3%;
+      margin-top: 1%;
+    }
     #wrapped-header {
+      font-weight: bold;
+      font-family: "Inter", sans-serif;
+      margin-left: 3%;
+      margin-top: 1%;
+    }
+    #wrapped-header2 {
+      font-weight: bold;
+      font-family: "Inter", sans-serif;
+      margin-left: 3%;
+      margin-top: 1%;
+    }
+    #wrapped-header3 {
+      font-weight: bold;
+      font-family: "Inter", sans-serif;
+      margin-left: 3%;
+      margin-top: 1%;
+    }
+    #wrapped-header4 {
+      font-weight: bold;
+      font-family: "Inter", sans-serif;
+      margin-left: 3%;
+      margin-top: 1%;
+    }
+    #wrapped-header5 {
+      font-weight: bold;
+      font-family: "Inter", sans-serif;
+      margin-left: 3%;
+      margin-top: 1%;
+    }
+    #wrapped-header6 {
       font-weight: bold;
       font-family: "Inter", sans-serif;
       margin-left: 3%;
@@ -218,13 +520,6 @@ body{
       width: 130px;
       height: 30px;
     }
-    #banner {
-      display: flex;
-      border: 1px solid black;
-      border-left: none;
-      width: 100%;
-      background-color: #D9D9D9;
-    }
     #kjønn {
       display: flex;
       border: 1px solid black;
@@ -238,7 +533,6 @@ body{
       display: flex;
       border: 1px solid black;
       background-color: #D9D9D9;
-      height: 50px;
       width: 100%;
       border-right: none;
       grid-area: nav;
@@ -254,6 +548,26 @@ body{
       margin-top: 3%;
       font-size: larger;
     }
+    #tekst-kjønn3 {
+      font-family: "Inter", sans-serif;
+      margin-top: 3%;
+      font-size: larger;
+    }
+    #tekst-kjønn5 {
+      font-family: "Inter", sans-serif;
+      margin-top: 3%;
+      font-size: larger;
+    }
+    #tekst-kjønn6 {
+      font-family: "Inter", sans-serif;
+      margin-top: 3%;
+      font-size: larger;
+    }
+    #tekst-kjønn7 {
+      font-family: "Inter", sans-serif;
+      margin-top: 3%;
+      font-size: larger;
+    }
     #tekst-kjønn2 {
       font-family: "Inter", sans-serif;
       margin-top: 3%;
@@ -264,7 +578,7 @@ body{
     }
     #flex-container {
       display: flex;
-      gap: 18px;
+      gap: 2rem;
       list-style: none;
       margin-top: 1%;
     }
@@ -300,15 +614,20 @@ body{
     #section-carousel {
       display: none;
     }
-    #img-jordan {
+    #jordan1-btn {
       width: 950px;
       height: 180px;
       margin-left: 3%;
       margin-top: 1%;
+      cursor:pointer;
     }
     header{
       grid-area: header;
-  }
+        display: flex;
+        border: 1px solid black;
+        border-left: none;
+        background-color: #D9D9D9;
+      }
   main {
       grid-area: main;
   }
@@ -324,21 +643,67 @@ body{
   #produkt-filter {
     display: none;
   }
-
+ /*Grid Layout delvis hentet fra OpenAI*/
   #produktside-grid-container {
     display: grid;
     grid-template-areas:  "nav nav header"
                           "nav2 nav2 nav2"
                           "nav3 main main"
                           "footer footer footer";
-   grid-template-columns: 1fr 2fr 2fr; /* Three equal-width columns */
-  grid-gap: 0px; /* Adjust the gap between columns as needed */
+   grid-template-columns: 1fr 2fr 2fr; /* Three kolonner andre kolonne litt større fraksjon enn de andre kolonnene*/
   }
   #image-resize {
     width: 225px;
     height: 85px;
   }
+  #image-resize2 {
+    width: 225px;
+    height: 85px;
+  }
+  #image-resize3 {
+    width: 225px;
+    height: 85px;
+  }
+  #image-resize4 {
+    width: 225px;
+    height: 85px;
+  }
   #article-box {
+    border: 1px solid black;
+    width: 225px;
+    background-color: #D9D9D9;
+  }
+  #article-box1 {
+    border: 1px solid black;
+    width: 225px;
+    background-color: #D9D9D9;
+  }
+  #article-box2 {
+    border: 1px solid black;
+    width: 225px;
+    background-color: #D9D9D9;
+  }
+  #article-box3 {
+    border: 1px solid black;
+    width: 225px;
+    background-color: #D9D9D9;
+  }
+  #article-box4 {
+    border: 1px solid black;
+    width: 225px;
+    background-color: #D9D9D9;
+  }
+  #article-box5 {
+    border: 1px solid black;
+    width: 225px;
+    background-color: #D9D9D9;
+  }
+  #article-box6 {
+    border: 1px solid black;
+    width: 225px;
+    background-color: #D9D9D9;
+  }
+  #article-box7 {
     border: 1px solid black;
     width: 225px;
     background-color: #D9D9D9;
@@ -350,6 +715,9 @@ body{
     margin-top: 2%;
   }
   #image-flex2 {
+    display: none;
+  }
+  #image-flex21 {
     display: none;
   }
   #image-flex2-desktop {
@@ -378,6 +746,10 @@ body{
     width: 225px;
     height: 85px;
   }
+  #image-resize-desktop2 {
+    width: 225px;
+    height: 85px;
+  }
 
   #overskrift-cursor {
     display: none;
@@ -386,7 +758,16 @@ body{
   #filter-image {
    display: none;
   }
+  #filter-image12 {
+    display: none;
+   }
   #produkt-h1 {
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    margin-left: 2%;
+    transform: translateY(-18px);
+  }
+  #produkt-h12 {
     font-family: "Inter", sans-serif;
     font-weight: bold;
     margin-left: 2%;
@@ -398,6 +779,12 @@ body{
     transform: translateY(-37px);
   }
   #filter-image2 {
+    width: 14%;
+    height: 35px;
+    margin-left: 2%;
+    transform: translateY(-37px);
+   }
+   #filter-image21 {
     width: 14%;
     height: 35px;
     margin-left: 2%;
@@ -417,7 +804,41 @@ body{
     transform: translatex(-24px);
     font-size: larger;
    }
-
+   #li-filter2 {
+    font-family: "Inter", sans-serif;
+    font-weight: bolder;
+    margin-top: 4%;
+    transform: translatex(-24px);
+    font-size: larger;
+   }
+   #li-filter3 {
+    font-family: "Inter", sans-serif;
+    font-weight: bolder;
+    margin-top: 4%;
+    transform: translatex(-24px);
+    font-size: larger;
+   }
+   #li-filter4 {
+    font-family: "Inter", sans-serif;
+    font-weight: bolder;
+    margin-top: 4%;
+    transform: translatex(-24px);
+    font-size: larger;
+   }
+   #li-filter5 {
+    font-family: "Inter", sans-serif;
+    font-weight: bolder;
+    margin-top: 4%;
+    transform: translatex(-24px);
+    font-size: larger;
+   }
+   #li-filter6 {
+    font-family: "Inter", sans-serif;
+    font-weight: bolder;
+    margin-top: 4%;
+    transform: translatex(-24px);
+    font-size: larger;
+   }
    #wrapped-stor-paragraf {
     display: none;
    }
@@ -427,11 +848,25 @@ body{
     font-family: "Inter", sans-serif;
     font-weight: lighter;
    }
+   #desktop-hjem2 {
+    margin-left: 2%;
+    font-family: "Inter", sans-serif;
+    font-weight: lighter;
+   }
 
    #desktop-filters {
     display: flex;
    }
+   #desktop-filters2 {
+    display: flex;
+   }
    #desktop-ekstra-filter {
+    transform: translateY(-39px);
+    margin-left: 64%;
+    width: 13%;
+    height: 38px;
+   }
+   #desktop-ekstra-filter2 {
     transform: translateY(-39px);
     margin-left: 64%;
     width: 13%;
@@ -441,6 +876,8 @@ body{
    #nav3-desktop {
     grid-area nav3;
     width: 240px;
+    display: flex;
+    margin-left: 5%;
    }
 
    #filter-liste-desktop {
@@ -450,7 +887,6 @@ body{
     height: 270px;
     background-color: #D9D9D9;
     list-style: none;
-    display: flex;
    }
    #venstre-nav {
       transform: translateX(-10px);
@@ -463,10 +899,33 @@ body{
       flex-direction: column;
       gap: 14px;
       margin-top: 4%;
+     margin-left: 10%;
+      width: 80%;
    }
    #pluss-desktop {
     width: 19px;
     height: 22px;
+    position: relative;
+   }
+   #pluss-desktop2 {
+    width: 19px;
+    height: 22px;
+    position: relative;
+   }
+   #pluss-desktop3 {
+    width: 19px;
+    height: 22px;
+    position: relative;
+   }
+   #pluss-desktop4 {
+    width: 19px;
+    height: 22px;
+    position: relative;
+   }
+   #pluss-desktop5 {
+    width: 19px;
+    height: 22px;
+    position: relative;
    }
    
    #desktop-scroll-bar {
@@ -481,11 +940,44 @@ body{
     font-weight: lighter;
     margin-top: 2%;
    }
+   #scroll-små-tekst2 {
+    font-family: "Inter", sans-serif;
+    font-size: small;
+    font-weight: lighter;
+    margin-top: 2%;
+   }
    #desktop-flex {
     display: flex;
     gap: 7px;
    }
    #desktop-list {
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    font-weight: lighter;
+    list-style: none;
+    border: 1px solid black;
+    width: 20px;
+    height: 25px;
+   }
+   #desktop-list3 {
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    font-weight: lighter;
+    list-style: none;
+    border: 1px solid black;
+    width: 20px;
+    height: 25px;
+   }
+   #desktop-list4 {
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    font-weight: lighter;
+    list-style: none;
+    border: 1px solid black;
+    width: 20px;
+    height: 25px;
+   }
+   #desktop-list5 {
     text-align: center;
     font-family: "Inter", sans-serif;
     font-weight: lighter;
@@ -509,6 +1001,10 @@ body{
     width: 25px;
     height: 25px;
    }
+   #venstrepil2-scroll2 {
+    width: 25px;
+    height: 25px;
+   }
 
 
 
@@ -522,12 +1018,13 @@ body{
 
 }
 
-/* Mobile media query */
+/* Mobile media query Delvis Hentet fra OpenAI */
 @media screen and (max-width: 600px) {
     body {
       margin: 0%;
     }
     /*Start på forside css*/
+    /*Grid Layout delvis hentet fra OpenAI*/
     #grid-div-container {
         display: grid;
         grid-template-areas:  "header" 
@@ -539,6 +1036,10 @@ body{
     }
     header{
         grid-area: header;
+        gap: 1%;
+          display: flex;
+          flex-direction: row;
+          background-color: #F5F5F5;
     }
     nav {
         grid-area: nav;
@@ -550,7 +1051,7 @@ body{
     footer {
         grid-area: footer;
     }
-    #forside-footer-produkt {
+    #retur-article {
       display: none;
     }
     #image-flex2-desktop {
@@ -565,7 +1066,19 @@ body{
     #desktop-article-box {
       display: none;
     }
+    #desktop-article-box2 {
+      display: none;
+    }
+    #desktop-article-box3 {
+      display: none;
+    }
+    #desktop-article-box4 {
+      display: none;
+    }
     #image-resize-desktop {
+      display: none;
+    }
+    #image-resize-desktop2 {
       display: none;
     }
     #nav3-desktop {
@@ -577,13 +1090,34 @@ body{
     #desktop-filters {
       display: none;
     }
+    #desktop-filters2 {
+      display: none;
+    }
     #desktop-hjem {
+      display: none;
+    }
+    #desktop-hjem2 {
       display: none;
     }
     #filter-image2 {
       display: none;
     }
+    #filter-image21 {
+      display: none;
+    }
     #desktop-paragraf {
+      display: none;
+    }
+    #desktop-paragraf9 {
+      display: none;
+    }
+    #desktop-paragraf10 {
+      display: none;
+    }
+    #desktop-paragraf2 {
+      display: none;
+    }
+    #desktop-paragraf3 {
       display: none;
     }
     #desktop-retur {
@@ -637,6 +1171,7 @@ body{
   }
   #start-retur {
     margin-top: 3%;
+    display: flex;
   }
     #icon-wrapper{
         margin-right: 5px;
@@ -683,7 +1218,7 @@ body{
       padding-left: 5px;
       list-style: none;
     }
-    #knapp{
+    #jordan1-btn {
         width: 331px; 
         height: 140px;
         cursor:pointer;
@@ -694,18 +1229,32 @@ body{
         height: 140px;
         cursor:pointer;
     }
-
-
-    #banner {
-        display: flex;
-        flex-direction: row;
-        width: 390px;
-        height: 80px;
-        background-color: #F5F5F5;
+    #positionering {
+      margin-left: 10%;
     }
+    #refusjon-flex {
+      margin-top: 3%;
+    }
+
+
     #tekst-kjønn{
         margin-left: 45px;
     }
+    #tekst-kjønn2{
+      margin-left: 45px;
+  }
+  #tekst-kjønn3{
+    margin-left: 45px;
+}
+#tekst-kjønn5{
+  margin-left: 45px;
+}
+#tekst-kjønn6{
+  margin-left: 45px;
+}
+#tekst-kjønn7{
+  margin-left: 45px;
+}
     #produktbilde-1{
         margin-top: 8px;
         margin-left: 25px;
@@ -731,7 +1280,7 @@ body{
         grid-area: tilbud;
     }
     #overskrift{
-        font-size: 22px;
+        font-size: 1.375rem;
     }
     #grid{
         margin-bottom: 20%;
@@ -753,9 +1302,71 @@ body{
         height: 31px;
         text-align: center;
         font-weight: bold;
-        font-size: 14px;
+        font-size: 0.875rem;
         font-family: "Inter", sans-serif;
       }
+      #child2 {
+        background-color: #D9D9D9;
+        border: 1px solid rgba(0, 0, 0, 0.8);
+        margin-top: 20px;
+        margin-left: 10px;
+        width: 90px;
+        height: 31px;
+        text-align: center;
+        font-weight: bold;
+        font-size: 0.875rem;
+        font-family: "Inter", sans-serif;
+      }
+      #child3 {
+        background-color: #D9D9D9;
+        border: 1px solid rgba(0, 0, 0, 0.8);
+        margin-top: 20px;
+        margin-left: 10px;
+        width: 90px;
+        height: 31px;
+        text-align: center;
+        font-weight: bold;
+        font-size: 0.875rem;
+        font-family: "Inter", sans-serif;
+      }
+      #child4 {
+        background-color: #D9D9D9;
+        border: 1px solid rgba(0, 0, 0, 0.8);
+        margin-top: 20px;
+        margin-left: 10px;
+        width: 90px;
+        height: 31px;
+        text-align: center;
+        font-weight: bold;
+        font-size: 0.875rem;
+        font-family: "Inter", sans-serif;
+      }
+      #child5 {
+        background-color: #D9D9D9;
+        border: 1px solid rgba(0, 0, 0, 0.8);
+        margin-top: 20px;
+        margin-left: 10px;
+        width: 90px;
+        height: 31px;
+        text-align: center;
+        font-weight: bold;
+        font-size: 0.875rem;
+        font-family: "Inter", sans-serif;
+      }
+      #child6 {
+        background-color: #D9D9D9;
+        border: 1px solid rgba(0, 0, 0, 0.8);
+        margin-top: 20px;
+        margin-left: 10px;
+        width: 90px;
+        height: 31px;
+        text-align: center;
+        font-weight: bold;
+        font-size: 0.875rem;
+        font-family: "Inter", sans-serif;
+      }
+
+      
 
 
       #section-carousel {
@@ -871,14 +1482,12 @@ body{
       #bedrift-paragraf {
         margin-top: -14px;
         margin-left: 20px;
-        font-size: 14px;
+        font-size: 0.875rem;
         font-family: "Inter", sans-serif;
       }
       #forside-footer {
         margin-top: 11px;
         grid-area: footer;
-        width: 388px;
-        height: 72px;
         border-radius: 1px;
         background-color: #D9D9D9;
       }
@@ -904,6 +1513,10 @@ body{
         margin-top: 5px;
         margin-left: 10px;
       }
+      #footer-tekst2 {
+        margin-top: 5px;
+        margin-left: 10px;
+      }
       /*Slutt på forside css*/
       /*Under er style for produktsiden*/
       #produktside-grid-container {
@@ -914,7 +1527,7 @@ body{
       }
       #overskrift-cursor {
         cursor: pointer;
-        font-size: 22px;
+        font-size: 1.375rem;
       }
       #produkt-filter {
         width: 388px;
@@ -927,11 +1540,24 @@ body{
         margin-left: 190px;
         margin-top: 3px;
       }
+      #filter-image12 {
+        width: 119px;
+        height: 37px;
+        margin-left: 190px;
+        margin-top: 3px;
+      }
       #produkt-h1 {
         margin-top: 1px;
         margin-left: 6px;
       }
+      #produkt-h12 {
+        margin-top: 1px;
+        margin-left: 6px;
+      }
       #produkt-flex {
+        display: flex;
+      }
+      #produkt-flex2 {
         display: flex;
       }
       #undertekst {
@@ -945,6 +1571,11 @@ body{
         height: 20px;
         font-family: "Inter", sans-serif;
       }
+      #h1-wrapper2 {
+        width: 75px;
+        height: 20px;
+        font-family: "Inter", sans-serif;
+      }
       #image-flex1 {
         display: flex;
         margin-top: 2%;
@@ -952,6 +1583,13 @@ body{
         gap: 2%;
       }
       #image-flex2 {
+        display: flex;
+        margin-top: 2%;
+        margin-left: 3%;
+        margin-top: 1%;
+        gap: 2%;
+      }
+      #image-flex21 {
         display: flex;
         margin-top: 2%;
         margin-left: 3%;
@@ -971,8 +1609,53 @@ body{
         height: 148px;
         border: 1px solid black;
       }
+      #image-resize2 {
+        width: 178px;
+        height: 148px;
+        border: 1px solid black;
+      }
+      #image-resize3 {
+        width: 178px;
+        height: 148px;
+        border: 1px solid black;
+      }
+      #image-resize4 {
+        width: 178px;
+        height: 148px;
+        border: 1px solid black;
+      }
 
       #article-box {
+        width: 178px;
+        height: 59px;
+        border: 1px solid black;
+      }
+      #article-box1 {
+        width: 178px;
+        height: 59px;
+        border: 1px solid black;
+      }
+      #article-box2 {
+        width: 178px;
+        height: 59px;
+        border: 1px solid black;
+      }
+      #article-box3 {
+        width: 178px;
+        height: 59px;
+        border: 1px solid black;
+      }
+      #article-box4 {
+        width: 178px;
+        height: 59px;
+        border: 1px solid black;
+      }
+      #article-box5 {
+        width: 178px;
+        height: 59px;
+        border: 1px solid black;
+      }
+      #article-box6 {
         width: 178px;
         height: 59px;
         border: 1px solid black;
@@ -1009,6 +1692,36 @@ body{
       }
 
       #wrapped-paragraf {
+        font-weight: bold;
+        font-family: "Inter", sans-serif;
+        margin-left: 3%;
+        margin-top: 1%;
+      }
+      #wrapped-paragraf10 {
+        font-weight: bold;
+        font-family: "Inter", sans-serif;
+        margin-left: 3%;
+        margin-top: 1%;
+      }
+      #wrapped-paragraf11 {
+        font-weight: bold;
+        font-family: "Inter", sans-serif;
+        margin-left: 3%;
+        margin-top: 1%;
+      }
+      #wrapped-paragraf12 {
+        font-weight: bold;
+        font-family: "Inter", sans-serif;
+        margin-left: 3%;
+        margin-top: 1%;
+      }
+      #wrapped-paragraf13 {
+        font-weight: bold;
+        font-family: "Inter", sans-serif;
+        margin-left: 3%;
+        margin-top: 1%;
+      }
+      #wrapped-paragraf14 {
         font-weight: bold;
         font-family: "Inter", sans-serif;
         margin-left: 3%;
@@ -1079,6 +1792,30 @@ body{
       right: 6%;
       margin-top: 3%;
     }
+    #bakgrunn-liste3 {
+      width: 353px;
+      height: 45px;
+      background-color: #D9D9D9;
+      position: relative;
+      right: 6%;
+      margin-top: 3%;
+    }
+    #bakgrunn-liste4 {
+      width: 353px;
+      height: 45px;
+      background-color: #D9D9D9;
+      position: relative;
+      right: 6%;
+      margin-top: 3%;
+    }
+    #bakgrunn-liste5 {
+      width: 353px;
+      height: 45px;
+      background-color: #D9D9D9;
+      position: relative;
+      right: 6%;
+      margin-top: 3%;
+    }
 
     #refusjon {
       width: 178px;
@@ -1104,10 +1841,8 @@ body{
     }
 
     #returfooter {
-      margin-top: 12%;
+      margin-top: 7%;
       grid-area: footer;
-      width: 390px;
-      height: 72px;
       border-radius: 1px;
       background-color: #D9D9D9;
     }
@@ -1118,9 +1853,49 @@ body{
       position: absolute;
       font-family: "Inter", sans-serif;
     }
+    #tekst-inni-bokser2 {
+      margin-left: 3%;
+      top: 1%;
+      position: absolute;
+      font-family: "Inter", sans-serif;
+    }
+    #tekst-inni-bokser3 {
+      margin-left: 3%;
+      top: 1%;
+      position: absolute;
+      font-family: "Inter", sans-serif;
+    }
+    #tekst-inni-bokser4 {
+      margin-left: 3%;
+      top: 1%;
+      position: absolute;
+      font-family: "Inter", sans-serif;
+    }#tekst-inni-bokser5 {
+      margin-left: 3%;
+      top: 1%;
+      position: absolute;
+      font-family: "Inter", sans-serif;
+    }
 
     #pluss-margin {
       margin-left: 85%;
+    }
+    #pluss-margin2 {
+      margin-left: 85%;
+    }
+    #pluss-margin3 {
+      margin-left: 85%;
+    }
+    #pluss-margin4 {
+      margin-left: 85%;
+    }
+    #pluss-margin5 {
+      margin-left: 85%;
+    }
+
+    #forside-footer-produkt {
+      margin-top: 1%;
+      background-color: #D9D9D9;
     }
 
 
