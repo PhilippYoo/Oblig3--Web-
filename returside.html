@@ -9,16 +9,41 @@
 <body>
  <div id="returside-grid-container">
     <header id="banner">
+        <input id="input" placeholder="Søk">
+        <img src="img/glass2.png" id="glass2" width="33px" height="33px" alt="søkeglass2">
         <img id="left" src="img/Bell.png" width="33px" height="33px" alt="Bjelle">
-        <img id="left" src="img/bars.png" width="33px" height="33px" alt="Bars">
+        <img id="left2" src="img/bars.png" width="33px" height="33px" alt="Bars">
         <section id="logo">
             <h1 onclick="forside()" id="overskrift-cursor">Trønder Tøfler</h1>
         </section>
         <section id="icon-wrapper">
-        <img id="right" src="img/shopping cart.png" width="33px" height="33px" alt="handlevogn">
-        <img id="right" src="img/man.png" width="33px" height="33px" alt="man">
-        <img id="right" src="img/glass.png" width="33px" height="33px" alt="glass">
+        <img id="right1" src="img/shopping cart.png" width="33px" height="33px" alt="handlevogn">
+        <img id="right3" src="img/man.png" width="33px" height="33px" alt="man">
+        <img id="right2" src="img/glass.png" width="33px" height="33px" alt="glass">
         </header>
+
+
+
+
+
+
+
+        <nav id="kjønn2">
+            <h1 onclick="forside()" id="desktop-overskrift">Trønder Tøfler</h1>
+            <ul id="flex-container">
+            <li onclick="klikk()" id="tekst-kjønn">Mann</li>
+            <li onclick="klikk()" id="tekst-kjønn">Kvinne</li>
+            <li onclick="klikk()" id="tekst-kjønn">Barn</li>
+            <li onclick="klikk()" id="tekst-kjønn">Tilbud</li>
+            <li onclick="klikk()" id="tekst-kjønn2">Nye utgaver</li> <!--Skriv mere semantisk bruk tagger Li og UL her-->
+        </ul id="flex-container">
+        </nav>
+
+
+
+
+
+
     </section>
 
     <main>
@@ -26,7 +51,7 @@
            <h1 id="retur-overskrift">RETURNERE VARE</h1>
            <p id="retur-paragraf">For å returnere en vare klikker du knappen under teksten, hvis det har gått 13 Dager kan du IKKE returnere varen</p>
         </article>
-        <section>
+        <section id="start-retur">
             <button id="returknapp">START RETUR</button>
             <img id="høyre-pil1" src="img/rightarrow.png" alt="right arrow">
         </section>
@@ -63,6 +88,17 @@
           <p id="refusjon-paragraf">Hvis du vil legge in en refusjon klikker du på knappen ovenfor. Pengene vil ankomme kontonummeret som ble benyttet ved kjøpet, mere informasjon om returer vil du finne ovenfor i boksene.</p>
         </article>
     </main>
+
+
+
+
+
+
+
+
+
+
+    
    
     <footer id="returfooter">
         <section id="øvre-footer">
@@ -88,6 +124,11 @@
      function forside() {
         window.location.href = "index.html";
      }
+
+     function klikk() {
+                window.location.href = "produkt.html";
+             // console.log("klikket");
+            }
 
 
 

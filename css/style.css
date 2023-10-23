@@ -27,6 +27,45 @@ body{
       grid-gap: 0px; /* Adjust the gap between columns as needed */
     }
 
+    #returside-grid-container {
+      display: grid;
+      grid-template-areas: "nav nav header"
+                            "main main article"
+                            "footer footer footer";
+     grid-template-columns: repeat(3, 1fr); /* Three equal-width columns */
+      grid-gap: 0px; /* Adjust the gap between columns as needed */
+    }
+
+    #retur-overskrift {
+      margin-left: 6%;
+      font-weight: bold;
+      font-family: "Inter", sans-serif;
+    }
+    #retur-paragraf {
+      margin-left: 6%;
+      font-weight: bold;
+      font-family: "Inter", sans-serif;
+    }
+    #returknapp {
+      width: 178px;
+      height: 46px;
+      background-color: black;
+      color: white;
+      text-align: left;
+      margin-left: 4%;
+      font-family: "Inter", sans-serif;
+      font-size: medium;
+      position: absolute;
+      top: 23%;
+    }
+    #høyre-pil1 {
+      position: relative;
+      bottom: 6%;
+      left: 25%;
+      border: 1px solid none;
+    }
+
+
     #tennissko1 {
        width: 420px;
        height: 190px;
@@ -45,6 +84,14 @@ body{
     }
 
     #forside-footer {
+      display: flex;
+      gap: 80px;
+      margin-top: 0%;
+      width: 100%;
+      height: 110px;
+      background-color: #D9D9D9;
+    }
+    #forside-footer-produkt {
       display: flex;
       gap: 80px;
       margin-top: 0%;
@@ -101,7 +148,13 @@ body{
       width: 225px;
       background-color: #D9D9D9;
     }
-    #wrapped-paragraf {
+    #wrapped-paragraf2 {
+      font-weight: normal;
+      font-family: "Inter", sans-serif;
+      margin-left: 3%;
+      margin-top: 1%;
+    }
+    #wrapped-header {
       font-weight: bold;
       font-family: "Inter", sans-serif;
       margin-left: 3%;
@@ -297,6 +350,21 @@ body{
     margin-top: 2%;
   }
   #image-flex2 {
+    display: none;
+  }
+  #image-flex2-desktop {
+    display: flex;
+    gap: 23px;
+    margin-left: 3%;
+    margin-top: 2%;
+  }
+  #image-flex2-desktop2 {
+    display: flex;
+    gap: 23px;
+    margin-left: 3%;
+    margin-top: 2%;
+  }
+  #image-flex2-pic {
     display: flex;
     gap: 23px;
     margin-left: 3%;
@@ -324,7 +392,7 @@ body{
     margin-left: 2%;
     transform: translateY(-18px);
   }
-  #undertekst {
+  #undertekst1 {
     font-family: "Inter", sans-serif;
     margin-left: 2%;
     transform: translateY(-37px);
@@ -372,7 +440,6 @@ body{
 
    #nav3-desktop {
     grid-area nav3;
-    border: 1px solid black;
     width: 240px;
    }
 
@@ -386,20 +453,27 @@ body{
     display: flex;
    }
    #venstre-nav {
-      width: 300px;
-      height: 170px;
-      border: 1px solid black;
+      transform: translateX(-10px);
+      width: 150px;
+      height: 210px;
    }
 
    #høyre-nav {
-
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      margin-top: 4%;
+   }
+   #pluss-desktop {
+    width: 19px;
+    height: 22px;
    }
    
    #desktop-scroll-bar {
-    margin-top: 3%;
+    margin-top: 2%;
     margin-left: 25%;
     width: 320px;
-    height: 60px;
+    height: 35px;
    }
    #scroll-små-tekst {
     font-family: "Inter", sans-serif;
@@ -420,6 +494,16 @@ body{
     width: 20px;
     height: 25px;
    }
+   #desktop-list1 {
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    font-weight: lighter;
+    list-style: none;
+    border: 1px solid black;
+    width: 20px;
+    height: 25px;
+   }
+
 
    #venstrepil2-scroll {
     width: 25px;
@@ -465,6 +549,15 @@ body{
     }
     footer {
         grid-area: footer;
+    }
+    #forside-footer-produkt {
+      display: none;
+    }
+    #image-flex2-desktop {
+      display: none;
+    }
+    #image-flex2-desktop2 {
+      display: none;
     }
     #desktop-scroll-bar {
       display: none;
@@ -542,10 +635,18 @@ body{
       margin-top: 2rem;
       margin-left: 0.5rem;
   }
+  #start-retur {
+    margin-top: 3%;
+  }
     #icon-wrapper{
         margin-right: 5px;
         margin-left: 13px;
     }
+    #icon-wrapper2{
+      margin-right: 5px;
+      margin-left: 13px;
+      margin-top: 7%;
+  }
     #right1{
         width: 33px;
         height: 33px;
@@ -857,6 +958,13 @@ body{
         margin-top: 1%;
         gap: 2%;
       }
+      #image-flex2-pic {
+        display: flex;
+        margin-top: 2%;
+        margin-left: 3%;
+        margin-top: 1%;
+        gap: 2%;
+      }
 
       #image-resize {
         width: 178px;
@@ -979,15 +1087,15 @@ body{
       color: white;
       text-align: left;
       margin-left: 5%;
-      margin-top: 3%;
+      margin-top: 0%;
       font-family: "Inter", sans-serif;
       font-size: medium;
     }
 
     #høyre-pil2 {
       position: absolute;
-      top: 67%;
-      right: 50%;
+      transform: translateY(-10px);
+      transform: translateX(-65px);
     }
 
     #refusjon-paragraf {
@@ -996,7 +1104,7 @@ body{
     }
 
     #returfooter {
-      margin-top: 10%;
+      margin-top: 12%;
       grid-area: footer;
       width: 390px;
       height: 72px;

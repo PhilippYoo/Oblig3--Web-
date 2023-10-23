@@ -41,7 +41,7 @@
                 </section>
            <img id="filter-image" src="img/screenshot_oblig2.png" alt="Skjermbilde oblig2 webutvikling">
            </section>
-           <p id="undertekst">X Resultat</p>
+           <p id="undertekst1">X Resultat</p>
            <section id="desktop-filters">
            <img id="filter-image2" src="img/screenshot_oblig2.png" alt="Skjermbilde oblig2 webutvikling">
            <img id="desktop-ekstra-filter" src="img/ekstra-filter.png" alt="Skjermbilde ekstra filter">
@@ -59,7 +59,11 @@
             <li id="li-filter">Pris</li>
         </section>
         <section id="høyre-nav">
-               <img id="">
+               <img src="img/pluss.png" id="pluss-desktop" alt="plusstegn">
+               <img src="img/pluss.png" id="pluss-desktop" alt="plusstegn">
+               <img src="img/pluss.png" id="pluss-desktop" alt="plusstegn">
+               <img src="img/pluss.png" id="pluss-desktop" alt="plusstegn">
+               <img src="img/pluss.png" id="pluss-desktop" alt="plusstegn">
         </section>
         </ul>
        </nav>
@@ -97,7 +101,32 @@
             </article>
         </section>
 
-        <section id="image-flex2">
+
+        <section id="image-flex2-desktop2">
+            <article id="article-box">
+                <h3 id="wrapped-header">Nike VaporMax</h3>
+                <p id="wrapped-paragraf2">Den nye Nike Vapormax 2017 med ny antislip</p>
+            </article>
+            <article id="article-box">
+                <h3 id="wrapped-header">Nike Huarache</h3>
+                <p id="wrapped-paragraf2">Den nye Nike Huarache utviklet for en universell stil</p>
+            </article>
+            <article id="desktop-article-box">
+                <h3 id="wrapped-header">Jordan 8</h3>
+                <p id="wrapped-paragraf2">Den nye Nike Air Jordan 8 kommer med en glisen rød og svart fargestil</p>
+            </article>
+        </section>
+
+
+
+
+
+
+
+
+
+
+        <section id="image-flex2-pic">
             <img id="image-resize" src="img/ultraboost.jpg" alt="Sko1">
             <img id="image-resize" src="img/Jordan4.jpg" alt="Sko2">
             <img id="image-resize-desktop" src="img/jordan13.jpg" alt="Jordan 13">
@@ -115,6 +144,34 @@
         </section>
 
 
+        <section id="image-flex2-desktop">
+            <article id="article-box">
+                <h3 id="wrapped-header">Adidas Ultraboost</h3>
+                <p id="wrapped-paragraf2">Adidas Ultraboost kommer med innebygd boost</p>
+            </article>
+            <article id="article-box">
+                <h3 id="wrapped-header">Jordan 4</h3>
+                <p id="wrapped-paragraf2">Helsvarte Jordan 4 passer for og med mange klesstiler!</p>
+            </article>
+            <article id="desktop-article-box">
+                <h3 id="wrapped-header">Jordan 11</h3>
+                <p id="wrapped-paragraf2">Jordan 11 representerer en ny stil</p>
+            </article>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         <nav id="desktop-scroll-bar">
             <ul id="desktop-flex">
           <img id="venstrepil2-scroll" src="img/venstrepil2.png" alt="venstrepil2">
@@ -123,7 +180,7 @@
           <li id="desktop-list">2</li>
           <li id="desktop-list">3</li>
           <li id="desktop-list">...</li>
-          <li id="desktop-list">44</li>
+          <li id="desktop-list1">44</li>
           <p id="scroll-små-tekst">Neste</p>
           <img id="venstrepil2-scroll" src="img/høyrepil2.png" alt="høyrepil2">
         </ul>
@@ -144,7 +201,7 @@
         </section>
     </main>
 
-    <footer id="forside-footer">
+    <footer id="forside-footer-produkt">
         <section id="øvre-footer">
              <h1 id="footer-tekst">Kundeservice</h1>
              <p id="desktop-paragraf">wwwwwwwwwwwwww</p>
@@ -177,6 +234,8 @@
   <script>
 
     let resultater = document.getElementById('undertekst');
+    let resultater2 = document.getElementById('undertekst1');
+    let sidetall = document.getElementById('desktop-list1');
      
      function forside() {
         window.location.href = "index.html";
@@ -184,9 +243,13 @@
     
      //Hentet fra OpenAI
      const randomNumber = Math.floor(Math.random() * (729 - 2 + 1) + 2);
+     const randomNumber2 = Math.floor(Math.random() * (729 - 2 + 1) + 2);
+     const randomNumber3 = Math.floor(Math.random() * 70) + 1;
      
-
+        
         resultater.innerHTML = (randomNumber + " " + "Resultater");
+        resultater2.innerHTML = (randomNumber2 + " " + "Resultater");
+        sidetall.innerHTML = (randomNumber3);
 
 
          //make dropdown meny in footer
