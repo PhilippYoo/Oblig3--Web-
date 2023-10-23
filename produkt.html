@@ -1,15 +1,15 @@
 <!DOCTYPE html> <!--ikoner hentet fra Iconfinder.com-->  <!--AI Genererte bilder hentet fra Perchance.com-->
 <html lang="en">
     <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/style.css" type="text/css">
-        <title>Produktside</title>
+        <meta charset="utf-8"> <!--Endrer charset til utf 8 støtte for norske bokstaver æøå-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Endrer viewport for tilpassing-->
+        <link rel="stylesheet" href="css/style.css" type="text/css">  <!--Linker css-->
+        <title>Produktside</title> <!--Endrer title-->
     </head>
 <body>
-    <div id="produktside-grid-container">
+    <div id="produktside-grid-container"> <!--Lager layout grid-->
     <header>
-        <input id="input" placeholder="Søk">
+        <input id="input" placeholder="Søk"> <!--Lager input felt-->
         <img src="img/glass2.png" id="glass2" width="33" height="33" alt="https://www.figma.com/file/tj2N1sqIAKd8WXZQyTILYH/Wireframes-Desktop?type=design&node-id=0-1&mode=design">
         <img id="left" src="img/Bell.png" width="33" height="33" alt="https://www.iconfinder.com/icons/7503212/notification_bell_alert_icon">
         <img id="left2" src="img/bars.png" width="33" height="33" alt="https://www.iconfinder.com/icons/8665130/bars_data_icon">
@@ -23,18 +23,18 @@
         </section>
         </header>
         
-        <nav id="kjønn2">
+        <nav id="kjønn2"> <!--Lager nav med kjønn-->
             <h1 onclick="forside()" id="desktop-overskrift">Trønder Tøfler</h1>
             <ul id="flex-container">
             <li onclick="klikk()" id="tekst-kjønn3">Mann</li>
             <li onclick="klikk()" id="tekst-kjønn5">Kvinne</li>
             <li onclick="klikk()" id="tekst-kjønn6">Barn</li>
             <li onclick="klikk()" id="tekst-kjønn7">Tilbud</li>
-            <li onclick="klikk()" id="tekst-kjønn2">Nye utgaver</li> <!--Skriv mere semantisk bruk tagger Li og UL her-->
+            <li onclick="klikk()" id="tekst-kjønn2">Nye utgaver</li> 
         </ul>
         </nav>
 
-        <nav id="produkt-filter2">
+        <nav id="produkt-filter2"> <!--Lager nav for forskjellige knapper og resutater for produkter-->
             <section id="produkt-flex">
                 <section id="h1-wrapper">
                 <h5 onclick="forside()" id="desktop-hjem">Hjem</h5>
@@ -45,11 +45,11 @@
            <p id="undertekst1">X Resultat</p>
            <section id="desktop-filters">
            <img id="filter-image2" src="img/screenshot_oblig2.png" alt="https://www.figma.com/file/Q8JcEFwCpjAZUicsd898Qw/Wireframes-mobil?type=design&node-id=0-1&mode=design (Philipp Krieger)">
-      <!--     <img id="desktop-ekstra-filter" src="img/ekstra-filter.png" alt="https://www.figma.com/file/tj2N1sqIAKd8WXZQyTILYH/Wireframes-Desktop?type=design&node-id=0-1&mode=design (Pjhilipp Krieger)"> -->
+      <!--<img id="desktop-ekstra-filter" src="img/ekstra-filter.png" alt="https://www.figma.com/file/tj2N1sqIAKd8WXZQyTILYH/Wireframes-Desktop?type=design&node-id=0-1&mode=design (Pjhilipp Krieger)"> -->
         </section>
         </nav>
 
-       <nav id="nav3-desktop">
+       <nav id="nav3-desktop"> <!--Lager nav med forskjellige kjønn i senkende rekkefølge-->
         <section id="venstre-nav">
         <ul id="filter-liste-desktop">
             <li id="li-filter">Herre størrelser</li>
@@ -60,7 +60,7 @@
             <li id="li-filter6">Pris</li>
         </ul>
         </section>
-        <section id="høyre-nav">
+        <section id="høyre-nav"> <!--Lager høyredelen med forskjellige plusstegn i senkende rekkefølge-->
                <img src="img/pluss.png" id="pluss-desktop" alt="https://www.iconfinder.com/icons/134224/add_plus_new_icon">
                <img src="img/pluss.png" id="pluss-desktop2" alt="https://www.iconfinder.com/icons/134224/add_plus_new_icon">
                <img src="img/pluss.png" id="pluss-desktop3" alt="https://www.iconfinder.com/icons/134224/add_plus_new_icon">
@@ -69,7 +69,7 @@
         </section>
        </nav>
 
-    <main>
+    <main> <!--Start på main-->
         <nav id="produkt-filter">
             <section id="produkt-flex2">
                 <section id="h1-wrapper2">
@@ -85,7 +85,7 @@
         </section>
         </nav>
 
-        <section id="image-flex1">
+        <section id="image-flex1"> <!--Start på section med bilder og produkter-->
             <img id="image-resize" src="img/vapormax.jpg" alt="Perchance promt: nike vapormax, cinematic shot, dynamic lighting, 75mm, Technicolor, Panavision, cinemascope, sharp focus, fine details, 8k, HDR, realism, realistic, key visual, film still, superb cinematic color grading, depth of field (seed:::662821288)">
             <img id="image-resize2" src="img/huarache.jpg" alt="Perchance promt: nike huarache, cinematic shot, dynamic lighting, 75mm, Technicolor, Panavision, cinemascope, sharp focus, fine details, 8k, HDR, realism, realistic, key visual, film still, superb cinematic color grading, depth of field (seed:::598058709)">
             <img id="image-resize-desktop" src="img/jordan8.jpg" alt="Perchance promt: jordan 8 sneaker, cinematic shot, dynamic lighting, 75mm, Technicolor, Panavision, cinemascope, sharp focus, fine details, 8k, HDR, realism, realistic, key visual, film still, superb cinematic color grading, depth of field (seed:::3833595040)">
@@ -103,7 +103,7 @@
         </section>
 
 
-        <section id="image-flex2-desktop2">
+        <section id="image-flex2-desktop2"> <!--Ny section med bilder og produkter-->
             <article id="article-box2">
                 <h3 id="wrapped-header">Nike VaporMax</h3>
                 <p id="wrapped-paragraf2">Den nye Nike Vapormax 2017 med ny antislip</p>
@@ -127,7 +127,7 @@
 
 
 
-        <section id="image-flex2-pic">
+        <section id="image-flex2-pic"> <!--Ny section med flere bilder og produkter for desktop support og-->
             <img id="image-resize3" src="img/ultraboost.jpg" alt="Perchance promt: adidas ultraboost, cinematic shot, dynamic lighting, 75mm, Technicolor, Panavision, cinemascope, sharp focus, fine details, 8k, HDR, realism, realistic, key visual, film still, superb cinematic color grading, depth of field (seed:::3174774937)">
             <img id="image-resize4" src="img/Jordan4.jpg" alt="Perchance promt: jordan 4, cinematic shot, dynamic lighting, 75mm, Technicolor, Panavision, cinemascope, sharp focus, fine details, 8k, HDR, realism, realistic, key visual, film still, superb cinematic color grading, depth of field (seed:::428480260)">
             <img id="image-resize-desktop2" src="img/jordan13.jpg" alt="Perchance promt: jordan 13 sneaker, cinematic shot, dynamic lighting, 75mm, Technicolor, Panavision, cinemascope, sharp focus, fine details, 8k, HDR, realism, realistic, key visual, film still, superb cinematic color grading, depth of field (seed:::887387949)">
@@ -173,7 +173,7 @@
 
 
 
-        <nav id="desktop-scroll-bar">
+        <nav id="desktop-scroll-bar"> <!--Lager en bar der du kan klikke deg gjennom sidene-->
             <img id="venstrepil2-scroll" src="img/venstrepil2.png" alt="https://www.iconfinder.com/icons/4781843/arrows_chevron_direction_left_move_next_right_icon">
             <ul id="desktop-flex">
           <li id="scroll-små-tekst">Forrige</li>
@@ -194,7 +194,7 @@
 
 
 
-        <section id="stor-bilde">
+        <section id="stor-bilde"> <!--Lager siste section for stort bilde av mange sko på rad-->
             <img id="stor-bilde-img" src="img/rowsneakers.jpg" alt="Perchance promt: multiple sneakers lined up on a row, cinematic shot, dynamic lighting, 75mm, Technicolor, Panavision, cinemascope, sharp focus, fine details, 8k, HDR, realism, realistic, key visual, film still, superb cinematic color grading, depth of field (seed:::3019307581)">
         </section>
         <section id="beskrivelse-bilde">
@@ -202,7 +202,7 @@
         </section>
     </main>
 
-    <footer id="forside-footer-produkt">
+    <footer id="forside-footer-produkt"> <!--Start på footer-->
         <section id="øvre-footer">
              <h1 id="footer-tekst" onclick="retur()">Retur,refusjon</h1>
              <p id="desktop-paragraf9" onclick="retur()">Retur & Refusjon</p>
@@ -229,14 +229,14 @@
             <p id="desktop-paragraf7">Nike</p>
             <p id="desktop-paragraf8">Jordan</p>
         </section>
-    </footer>
+    </footer> <!--Slutt på footer-->
 
 
 
 
 
 
-  <script>
+  <script> //start på javascript
  //Javascript delvis hentet fra OpenAI
     let resultater = document.getElementById('undertekst');
     let resultater2 = document.getElementById('undertekst1');
@@ -260,6 +260,6 @@
         resultater2.innerHTML = (randomNumber2 + " " + "Resultater");
         sidetall.innerHTML = (randomNumber3);
   </script>
-</div>
+</div> <!--Slutt på layout grid-->
 </body>
 </html>

@@ -1,22 +1,22 @@
 <!DOCTYPE html>     <!--ikoner hentet fra Iconfinder.com-->  <!--AI Genererte bilder hentet fra Perchance.com-->
 <html lang="en">
     <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/style.css" type="text/css">
-        <title>Returside</title>
+        <meta charset="utf-8"> <!--Konverterer til charset utf-8 for æøå-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Endrer viewport for tilpassing-->
+        <link rel="stylesheet" href="css/style.css" type="text/css"> <!--Linker css-->
+        <title>Returside</title> <!--Endrer title-->
     </head>
 <body>
- <div id="returside-grid-container">
+ <div id="returside-grid-container"> <!--Lager grid som deler opp layout-->
     <header>
-        <input id="input" placeholder="Søk">
-        <img src="img/glass2.png" id="glass2" width="33" height="33" alt="https://www.figma.com/file/tj2N1sqIAKd8WXZQyTILYH/Wireframes-Desktop?type=design&node-id=0-1&mode=design">
+        <input id="input" placeholder="Søk"> <!--Lager input felt for desktop-->
+        <img src="img/glass2.png" id="glass2" width="33" height="33" alt="https://www.figma.com/file/tj2N1sqIAKd8WXZQyTILYH/Wireframes-Desktop?type=design&node-id=0-1&mode=design"> <!--Linker bilder for header-->
         <img id="left" src="img/Bell.png" width="33" height="33" alt="https://www.iconfinder.com/icons/7503212/notification_bell_alert_icon">
         <img id="left2" src="img/bars.png" width="33" height="33" alt="https://www.iconfinder.com/icons/8665130/bars_data_icon">
-        <section id="logo">
+        <section id="logo"> <!--Lager logo i header i midten-->
             <h1 onclick="forside()" id="overskrift-cursor">Trønder Tøfler</h1>
         </section>
-        <section id="icon-wrapper">
+        <section id="icon-wrapper"> <!--Lager høyre siden av section-->
         <img id="right1" onclick="klikk()" src="img/shopping-cart.png" width="33" height="33" alt="https://www.iconfinder.com/icons/326700/cart_shopping_icon ">
         <img id="right3" src="img/man.png" width="33" height="33" alt="https://www.iconfinder.com/icons/1564534/customer_man_user_account_profile_icon">
         <img id="right2" src="img/glass.png" width="33" height="33" alt="https://www.iconfinder.com/icons/9025828/magnifying_glass_icon">
@@ -29,7 +29,7 @@
 
 
 
-        <nav id="kjønn2">
+        <nav id="kjønn2"> <!--Lager en navigation med liste for kjønn-->
             <h1 onclick="forside()" id="desktop-overskrift">Trønder Tøfler</h1>
             <ul id="flex-container">
             <li onclick="klikk()" id="tekst-kjønn3">Mann</li>
@@ -47,8 +47,8 @@
 
     
 
-    <main>
-        <article>
+    <main> <!--Start på main-->
+        <article> <!--Lager article for varer-->
            <h1 id="retur-overskrift">RETURNERE VARE</h1>
            <p id="retur-paragraf">For å returnere en vare klikker du knappen under teksten, hvis det har gått 13 Dager kan du IKKE returnere varen</p>
         </article>
@@ -57,8 +57,8 @@
         </section>
         <nav>
             <section id="positionering">
-                <section id="bakgrunn-liste1">
-                     <h1 id="tekst-inni-bokser">Hvordan returnere gjenstand?</h1>
+                <section id="bakgrunn-liste1">  <!--Lager sections for med style som inneholder pluss tegn og tekst-->
+                     <h1 id="tekst-inni-bokser">Hvordan returnere gjenstand?</h1> 
                      <img id="pluss-margin" src="img/pluss.png" alt="https://www.iconfinder.com/icons/134224/add_plus_new_icon">
                 </section>
                 <section id="bakgrunn-liste2"> 
@@ -80,7 +80,7 @@
             </section>
         </nav>
 
-        <section id="refusjon-flex">
+        <section id="refusjon-flex"> <!--Lager en knapp med tekst refusjon-->
             <button id="refusjon">REFUSJON</button>
         </section>
         <article>
@@ -94,7 +94,7 @@
 
      <article id="retur-article">
 
-        <h1 id="retur-article-overskrift">VÅRE RETNINGSLINJER</h1>
+        <h1 id="retur-article-overskrift">VÅRE RETNINGSLINJER</h1> <!--Lager forskjellige articles for desktop query-->
     
         <section id="article-background">
             <h3 id="article-background-child-h3">Returer</h3>
@@ -111,8 +111,8 @@
 
 
 
-   
-    <footer id="returfooter">
+    
+    <footer id="returfooter">   <!--Lager nettstedens footer-->
         <section id="øvre-footer">
              <h1 id="footer-tekst">Retur,refusjon</h1>
              <p id="desktop-paragraf9">Retur & Refusjon</p>
@@ -150,7 +150,7 @@
 
 
 
-   <script>
+   <script> //start av javascript
    //Funksjoner delvis hentet fra OpenAI  
      function forside() {
         window.location.href = "index.html";
@@ -160,6 +160,6 @@
                 window.location.href = "produkt.html";
             }
    </script>
-</div>
+</div> <!--Slutt på layout-->
 </body>
 </html>
