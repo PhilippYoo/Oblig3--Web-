@@ -268,12 +268,12 @@ body{
 
 
     #tennissko1 {
-       width: 420px;
+       width: 40%;
        height: 190px;
     }
 
     #tennissko2 {
-      width: 420px;
+      width: 40%;
       height: 190px;
     }
 
@@ -330,25 +330,25 @@ body{
     #to-store-bilder {
       display: flex;
       margin-top: 1%;
-      margin-left: 3%;
+      margin-left: 6%;
       gap: 12%;
     }
 
     #tursko1 {
-      width: 253px;
+      width: 23%;
       height: 93px;
 
     }
     #tursko2 {
-      width: 253px;
+      width: 23%;
       height: 93px;
     }
     #joggesko1 {
-      width: 253px;
+      width: 23%;
       height: 93px;
     }
     #joggesko2 {
-      width: 213px;
+      width: 23%;
       height: 93px;
     }
     #øvre-footer-bilde {
@@ -361,7 +361,7 @@ body{
     #desktop-bilde-section {
       display: flex;
       margin-top: 1%;
-      margin-left: 1%;
+      margin-left: 3%;
       gap: 1%;
     }
 
@@ -377,7 +377,7 @@ body{
     }
     #desktop-article-box2 {
       border: 1px solid black;
-      width: 225px;
+      width: 28%;
       background-color: #D9D9D9;
     }
     #desktop-article-box3 {
@@ -387,7 +387,7 @@ body{
     }
     #desktop-article-box4 {
       border: 1px solid black;
-      width: 225px;
+      width: 28%;
       background-color: #D9D9D9;
     }
     #wrapped-paragraf2 {
@@ -615,7 +615,7 @@ body{
       display: none;
     }
     #jordan1-btn {
-      width: 950px;
+      width: 90%;
       height: 180px;
       margin-left: 3%;
       margin-top: 1%;
@@ -647,25 +647,25 @@ body{
   #produktside-grid-container {
     display: grid;
     grid-template-areas:  "nav nav header"
-                          "nav2 nav2 nav2"
+                          "nav2 main main"
                           "nav3 main main"
                           "footer footer footer";
    grid-template-columns: 1fr 2fr 2fr; /* Three kolonner andre kolonne litt større fraksjon enn de andre kolonnene*/
   }
   #image-resize {
-    width: 225px;
+    width: 28%;
     height: 85px;
   }
   #image-resize2 {
-    width: 225px;
+    width: 28%;
     height: 85px;
   }
   #image-resize3 {
-    width: 225px;
+    width: 28%;
     height: 85px;
   }
   #image-resize4 {
-    width: 225px;
+    width: 28%;
     height: 85px;
   }
   #article-box {
@@ -680,12 +680,12 @@ body{
   }
   #article-box2 {
     border: 1px solid black;
-    width: 225px;
+    width: 28%;
     background-color: #D9D9D9;
   }
   #article-box3 {
     border: 1px solid black;
-    width: 225px;
+    width: 28%;
     background-color: #D9D9D9;
   }
   #article-box4 {
@@ -700,12 +700,12 @@ body{
   }
   #article-box6 {
     border: 1px solid black;
-    width: 225px;
+    width: 28%;
     background-color: #D9D9D9;
   }
   #article-box7 {
     border: 1px solid black;
-    width: 225px;
+    width: 28%;
     background-color: #D9D9D9;
   }
   #image-flex1 {
@@ -743,11 +743,11 @@ body{
   }
 
   #image-resize-desktop {
-    width: 225px;
+    width: 28%;
     height: 85px;
   }
   #image-resize-desktop2 {
-    width: 225px;
+    width: 28%;
     height: 85px;
   }
 
@@ -779,7 +779,7 @@ body{
     transform: translateY(-37px);
   }
   #filter-image2 {
-    width: 14%;
+    width: 40%;
     height: 35px;
     margin-left: 2%;
     transform: translateY(-37px);
@@ -933,22 +933,28 @@ body{
     margin-left: 25%;
     width: 320px;
     height: 35px;
+    display: flex;
    }
    #scroll-små-tekst {
     font-family: "Inter", sans-serif;
     font-size: small;
     font-weight: lighter;
     margin-top: 2%;
+    list-style-type: none;
    }
    #scroll-små-tekst2 {
     font-family: "Inter", sans-serif;
     font-size: small;
     font-weight: lighter;
     margin-top: 2%;
+    list-style-type: none;
    }
    #desktop-flex {
+    margin-left: 0%;
     display: flex;
     gap: 7px;
+    margin-top: 0%;
+
    }
    #desktop-list {
     text-align: center;
@@ -1206,7 +1212,7 @@ body{
     }
     #kjønn{
         border: 1px solid black;
-        width: 388px;
+        width: 99%;
         height: 40px;
         font-family: "Inter", sans-serif;
     }
@@ -1219,13 +1225,13 @@ body{
       list-style: none;
     }
     #jordan1-btn {
-        width: 331px; 
+        width: 100%; 
         height: 140px;
         cursor:pointer;
     }
 
     #knapp2 {
-        width: 331px; 
+        width: 100%;
         height: 140px;
         cursor:pointer;
     }
@@ -1257,11 +1263,11 @@ body{
 }
     #produktbilde-1{
         margin-top: 8px;
-        margin-left: 25px;
+        margin-left: 7%;
         border: 1px solid black;
         border-radius: 1%;
-        height: 140px;
-        width: 331px;
+        height: 29%;
+        width: 81%;
     }
     #p-tilbud{
         margin-top: 4px;
@@ -1275,7 +1281,7 @@ body{
     #tilbud{
         border: 1px solid black;
         height: 30px;
-        width: 388px;
+        width: 99%;
         font-family: "Inter", sans-serif;
         grid-area: tilbud;
     }
@@ -1371,11 +1377,11 @@ body{
 
       #section-carousel {
         margin-top: 13px;
-        height: 139px;
-        width: 331px;
+        height: 30%;
+        width: 85%;
         border: 1px solid black;
         border-radius: 2px;
-        margin-left: 29px;
+        margin-left: 7%;
 
         display: inline-block;
         position: relative;
@@ -1466,12 +1472,12 @@ body{
         border-radius: 100%;
       }
       #fakta-bedrift {
-         width: 331px;
+         width: 85%;
          margin-left: 29px;
          height: 124px;
          border: 1px solid black;
          grid-area: article;
-         margin-top: 13px;
+         margin-top: 2%;
       }
       #overskrift-fakta {
          margin-left: 20px;
@@ -1530,7 +1536,7 @@ body{
         font-size: 1.375rem;
       }
       #produkt-filter {
-        width: 388px;
+        width: 99%px;
         height: 45px;
         border: 1px solid black;
       }
@@ -1605,33 +1611,33 @@ body{
       }
 
       #image-resize {
-        width: 178px;
+        width: 41%;
         height: 148px;
         border: 1px solid black;
       }
       #image-resize2 {
-        width: 178px;
+        width: 40%;
         height: 148px;
         border: 1px solid black;
       }
       #image-resize3 {
-        width: 178px;
+        width: 41%;
         height: 148px;
         border: 1px solid black;
       }
       #image-resize4 {
-        width: 178px;
+        width: 40%;
         height: 148px;
         border: 1px solid black;
       }
 
       #article-box {
-        width: 178px;
+        width: 41%;
         height: 59px;
         border: 1px solid black;
       }
       #article-box1 {
-        width: 178px;
+        width: 40%;
         height: 59px;
         border: 1px solid black;
       }
@@ -1646,12 +1652,12 @@ body{
         border: 1px solid black;
       }
       #article-box4 {
-        width: 178px;
+        width: 41%;
         height: 59px;
         border: 1px solid black;
       }
       #article-box5 {
-        width: 178px;
+        width: 40%;
         height: 59px;
         border: 1px solid black;
       }
@@ -1664,13 +1670,13 @@ body{
       #stor-bilde {
         margin-top: 3%;
         margin-left: 2%;
-         width: 372px;
+         width: 83%;
          height: 104px;
          border: 1px solid black;
       }
 
       #beskrivelse-bilde {
-        width: 372px;
+        width: 83%;
         height: 57px;
         border: 1px solid black;
         margin-top: 2%;
@@ -1687,7 +1693,7 @@ body{
       }
 
       #stor-bilde-img {
-        width: 372px;
+        width: 100%;
         height: 104px;
       }
 
