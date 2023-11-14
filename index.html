@@ -1,148 +1,172 @@
-<!DOCTYPE html> <!--ikoner hentet fra Iconfinder.com--> <!--AI Genererte bilder hentet fra Perchance.com-->
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/style.css" type="text/css">
-        <title>Forside</title>
-    </head>
-    <body>
-        <div id="grid-div-container">
-        <header>
-            <input id="input" placeholder="Søk">
-            <img src="img/glass2.png" id="glass2" width="33" height="33" alt="https://www.figma.com/file/tj2N1sqIAKd8WXZQyTILYH/Wireframes-Desktop?type=design&node-id=0-1&mode=design">
-            <img id="left" src="img/Bell.png" width="33" height="33" alt="https://www.iconfinder.com/icons/7503212/notification_bell_alert_icon">
-            <img id="left2" src="img/bars.png" width="33" height="33" alt="https://www.iconfinder.com/icons/8665130/bars_data_icon">
-            <section id="logo">
-                <h1 id="overskrift">Trønder Tøfler</h1>
-            </section>
-            <section id="icon-wrapper">
-            <img id="right1" onclick="klikk()" src="img/shopping-cart.png" width="33" height="33" alt="https://www.iconfinder.com/icons/326700/cart_shopping_icon ">
-            <img id="right3" src="img/man.png" width="33" height="33" alt="https://www.iconfinder.com/icons/1564534/customer_man_user_account_profile_icon">
-            <img id="right2" src="img/glass.png" width="33" height="33" alt="https://www.iconfinder.com/icons/9025828/magnifying_glass_icon">
-        </section>
-            </header>
-      
-        <nav id="kjønn">
-            <h1 id="desktop-overskrift">Trønder Tøfler</h1>
-            <ul id="flex-container">
-            <li onclick="klikk()" id="tekst-kjønn3">Mann</li>
-            <li onclick="klikk()" id="tekst-kjønn5">Kvinne</li>
-            <li onclick="klikk()" id="tekst-kjønn6">Barn</li>
-            <li onclick="klikk()" id="tekst-kjønn7">Tilbud</li>
+<!DOCTYPE html> 
+<html lang="nb">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/style.css" type="text/css">
+<title>Forside</title>
+</head>
+<body>
+<div id="grid-div-container">
+<header>
+    <nav id="kjønn">
+        <h1>Trønder Tøfler</h1>
+            <ul>
+            <li onclick="klikk()">Mann</li>
+            <li onclick="klikk()">Kvinne</li>
+            <li onclick="klikk()">Barn</li>
+            <li onclick="klikk()">Tilbud</li>
             <li onclick="klikk()" id="tekst-kjønn2">Nye utgaver</li> 
         </ul>
+    </nav>
+<form>
+     <input id="input" placeholder="Søk">
+     <img src="img/glass2.png" id="glass2" width="33" height="33" alt="https://www.figma.com/file/tj2N1sqIAKd8WXZQyTILYH/Wireframes-Desktop?type=design&node-id=0-1&mode=design">
+ </form>
+ <figure>
+     <img id="Bell" src="img/Bell.png" width="33" height="33" alt="https://www.iconfinder.com/icons/7503212/notification_bell_alert_icon">
+     <img id="left2" src="img/bars.png" width="33" height="33" alt="https://www.iconfinder.com/icons/8665130/bars_data_icon">
+ </figure>
+             
+            <h1 id="overskrift">Trønder Tøfler</h1>
+           
+     <nav id="icon-wrapper">
+        <img id="left" src="img/Bell.png" width="33" height="33" alt="https://www.iconfinder.com/icons/7503212/notification_bell_alert_icon">
+        <img id="right1" onclick="klikk()" src="img/shopping-cart.png" width="33" height="33" alt="https://www.iconfinder.com/icons/326700/cart_shopping_icon ">
+        <img id="right3" src="img/man.png" width="33" height="33" alt="https://www.iconfinder.com/icons/1564534/customer_man_user_account_profile_icon">
+        <img id="right2" src="img/glass.png" width="33" height="33" alt="https://www.iconfinder.com/icons/9025828/magnifying_glass_icon">
+    </nav>
+</header>
+      
+<nav id="mobil-kjønn">
+        <ul>
+        <li onclick="klikk()">Mann</li>
+        <li onclick="klikk()">Kvinne</li>
+        <li onclick="klikk()">Barn</li>
+        <li onclick="klikk()">Tilbud</li>
+    </ul>
+</nav>
+
+<nav id="tilbud">
+    <a href="produkt.html" id="p-tilbud">35% Høsttilbud</a>
+    <a href="produkt.html" id="p-frakt">Gratis frakt over 500kr</a>
+</nav>
+
+
+
+
+
+
+
+
+<main>
+    <figure id="produktbilde-1">
+        <img onclick="klikk()" src="img/jordan-1.jpg" alt="Perchance.com promt: jordan 1s, cinematic shot, dynamic lighting, 75mm, Technicolor, Panavision, cinemascope, sharp focus, fine details, 8k, HDR, realism, realistic, key visual, film still, superb cinematic color grading, depth of field (seed:::2475579706)">
+    </figure>
+
+<span id="desktop-knapp-bilde">
+    <button>
+       <img src="img/venstrepil2.png" alt="https://www.iconfinder.com/icons/4781843/arrows_chevron_direction_left_move_next_right_icon">
+    </button>
+    <button>
+        <img src="img/høyrepil2.png" alt="https://www.iconfinder.com/icons/4781843/arrows_chevron_direction_left_move_next_right_icon">
+    </button>
+</span>
+
+ <figure id="desktop-bilde-section">
+    <img onclick="klikk()" src="img/hikingboots1.jpg"  alt="Perchance promt: hiking sneakers, cinematic shot, dynamic lighting, 75mm, Technicolor, Panavision, cinemascope, sharp focus, fine details, 8k, HDR, realism, realistic, key visual, film still, superb cinematic color grading, depth of field (seed:::1710889509)">
+    <img onclick="klikk()" src="img/hikingboots2.jpg"  alt="Perchacne promt: hiking sneakers, cinematic shot, dynamic lighting, 75mm, Technicolor, Panavision, cinemascope, sharp focus, fine details, 8k, HDR, realism, realistic, key visual, film still, superb cinematic color grading, depth of field (seed:::121301791)">
+    <img onclick="klikk()" src="img/runningshoes1.jpg" alt="Perchance promt: running shoes, cinematic shot, dynamic lighting, 75mm, Technicolor, Panavision, cinemascope, sharp focus, fine details, 8k, HDR, realism, realistic, key visual, film still, superb cinematic color grading, depth of field (seed:::626893127)">
+    <img onclick="klikk()" src="img/runningshoes2.jpg" alt="Perchance promt: running shoes, cinematic shot, dynamic lighting, 75mm, Technicolor, Panavision, cinemascope, sharp focus, fine details, 8k, HDR, realism, realistic, key visual, film still, superb cinematic color grading, depth of field (seed:::3882992785)">
+ </figure>
+
+        <figure id="to-store-bilder">
+            <img src="img/tennissko1.jpg" onclick="klikk()" alt="Perchance promt: tennis shoes, cinematic shot, dynamic lighting, 75mm, Technicolor, Panavision, cinemascope, sharp focus, fine details, 8k, HDR, realism, realistic, key visual, film still, superb cinematic color grading, depth of field (seed:::1274418557)" class="tennissko">
+            <img src="img/tennissko2.jpg" onclick="klikk()" alt="Perchance promt: tennis shoes, cinematic shot, dynamic lighting, 75mm, Technicolor, Panavision, cinemascope, sharp focus, fine details, 8k, HDR, realism, realistic, key visual, film still, superb cinematic color grading, depth of field (seed:::962961221)" class="tennissko">
+        </figure>
+      
+
+
+
+
+        <nav class="grid-mobil">
+            <ul>
+            <li><a href="produkt.html">Nike</a></li>
+            <li><a href="produkt.html">Adidas</a></li>
+            <li><a href="produkt.html">Jordan</a></li>
+            <li><a href="produkt.html">Fila</a></li>
+            <li><a href="produkt.html">Newbalance</a></li>
+            <li><a href="produkt.html">Hoka</a></li>
+            </ul>
         </nav>
 
+         
 
-
-        <section id="tilbud">
-            <p onclick="klikk()" id="p-tilbud">35% Høsttilbud</p>
-            <p id="p-frakt">Gratis frakt over 500kr</p>
-        </section>
-
-
-
-        <main>
-        
-        <section id="produktbilde-1">
-            <img onclick="klikk()" id="jordan1-btn" src="img/jordan-1.jpg" alt="Perchance.com promt: jordan 1s, cinematic shot, dynamic lighting, 75mm, Technicolor, Panavision, cinemascope, sharp focus, fine details, 8k, HDR, realism, realistic, key visual, film still, superb cinematic color grading, depth of field (seed:::2475579706)">
-        </section>
-
-        <section id="desktop-knapp-bilde">
-        <nav id="rund-sirkel1">
-              <img src="img/venstrepil2.png" id="venstrepil" alt="https://www.iconfinder.com/icons/4781843/arrows_chevron_direction_left_move_next_right_icon">
-        </nav>
-        <nav id="rund-sirkel2">
-          <img src="img/høyrepil2.png" id="høyrepil" alt="https://www.iconfinder.com/icons/4781843/arrows_chevron_direction_left_move_next_right_icon">
-        </nav>
-        </section>
-
-        <section id="desktop-bilde-section">
-             <img onclick="klikk()" src="img/hikingboots1.jpg" id="tursko1" alt="Perchance promt: hiking sneakers, cinematic shot, dynamic lighting, 75mm, Technicolor, Panavision, cinemascope, sharp focus, fine details, 8k, HDR, realism, realistic, key visual, film still, superb cinematic color grading, depth of field (seed:::1710889509)">
-             <img onclick="klikk()" src="img/hikingboots2.jpg" id="tursko2" alt="Perchacne promt: hiking sneakers, cinematic shot, dynamic lighting, 75mm, Technicolor, Panavision, cinemascope, sharp focus, fine details, 8k, HDR, realism, realistic, key visual, film still, superb cinematic color grading, depth of field (seed:::121301791)">
-             <img onclick="klikk()" src="img/runningshoes1.jpg" id="joggesko1" alt="Perchance promt: running shoes, cinematic shot, dynamic lighting, 75mm, Technicolor, Panavision, cinemascope, sharp focus, fine details, 8k, HDR, realism, realistic, key visual, film still, superb cinematic color grading, depth of field (seed:::626893127)">
-             <img onclick="klikk()" src="img/runningshoes2.jpg" id="joggesko2" alt="Perchance promt: running shoes, cinematic shot, dynamic lighting, 75mm, Technicolor, Panavision, cinemascope, sharp focus, fine details, 8k, HDR, realism, realistic, key visual, film still, superb cinematic color grading, depth of field (seed:::3882992785)">
-        </section>
-
-        <section id="to-store-bilder">
-            <img src="img/tennissko1.jpg" onclick="klikk()" alt="Perchance promt: tennis shoes, cinematic shot, dynamic lighting, 75mm, Technicolor, Panavision, cinemascope, sharp focus, fine details, 8k, HDR, realism, realistic, key visual, film still, superb cinematic color grading, depth of field (seed:::1274418557)" id="tennissko1">
-            <img src="img/tennissko2.jpg" onclick="klikk()" alt="Perchance promt: tennis shoes, cinematic shot, dynamic lighting, 75mm, Technicolor, Panavision, cinemascope, sharp focus, fine details, 8k, HDR, realism, realistic, key visual, film still, superb cinematic color grading, depth of field (seed:::962961221)" id="tennissko2">
-        </section>
-
-        <br>
-
-          
-
-
-
-
-        <nav id="grid">
-            <section id="child">
-             <section onclick="klikk()">Nike</section> 
-            </section>
-            <section onclick="klikk()" id="child2">
-               <section>Adidas</section>
-            </section>
-            <section onclick="klikk()" id="child3">
-               <section>Jordan</section>
-            </section>
-            <section id="child4">
-                <section onclick="klikk()">Fila</section>    
-            </section>
-            <section onclick="klikk()" id="child5">
-               <section>Newbalance</section>
-            </section>
-            <section onclick="klikk()" id="child6">
-                <section>Hoka</section>
-            </section>
-        </nav>
-        <section id="section-carousel">
+        <figure id="section-carousel">
           <img onclick="klikk()" class="img-carousell" id="knapp2" src="img/infrared.jpg" alt="Nettside:Perchance.org promt: nike infrared, cinematic shot, dynamic lighting, 75mm, Technicolor, Panavision, cinemascope, sharp focus, fine details, 8k, HDR, realism, realistic, key visual, film still, superb cinematic color grading, depth of field"> 
-          <button id="bildeknapp" onclick="toggleImage()"><img src="img/arrow.png" alt="https://www.iconfinder.com/icons/211607/right_arrow_icon"></button>
-          <section id="first-dot"></section>
-          <section id="second-dot"></section>
-          <section id="third-dot"></section>
-          <section class="dots" id="second-dot-black"></section>  
-        </section>
+          <button onclick="toggleImage()"><img src="img/arrow.png" alt="https://www.iconfinder.com/icons/211607/right_arrow_icon"></button>
+          <span id="first-dot"></span>
+          <span id="second-dot"></span>
+          <span id="third-dot"></span>
+          <span id="second-dot-black"></span>  
+        </figure>
     </main>
+
+
+
+
      <article id="fakta-bedrift">
-           <h4 id="overskrift-fakta">Kvalitet siden 2015</h4>
-           <p id="bedrift-paragraf">Vi har siden 2015 hos Trønder Tøfler levert og servert den høyeste grad av trøndersk kvalitet. Vi sørger for å tilfredstille våre kunder, meldemmer og besøkende. Vi startet av med å selge tursko for alle som ville nyte naturen.</p>
+           <h4>Kvalitet siden 2015</h4>
+           <p>Vi har siden 2015 hos Trønder Tøfler levert og servert den høyeste grad av trøndersk kvalitet. Vi sørger for å tilfredstille våre kunder, meldemmer og besøkende. Vi startet av med å selge tursko for alle som ville nyte naturen.</p>
      </article>
-            <footer id="forside-footer">
-                <section id="øvre-footer">
-                     <h1 id="footer-tekst" onclick="retur()">Retur,refusjon</h1>
-                     <p id="desktop-paragraf9" onclick="retur()">Retur & Refusjon</p>
-                     <p id="desktop-paragraf10">Tracking</p>
-                     <img id="øvre-footer-bilde" src="img/down-arrow.png" alt="https://www.iconfinder.com/icons/211614/down_b_arrow_icon">
-                </section>
-                <section id="nedre-footer">
-                    <h1 id="footer-tekst2">Om oss</h1>
-                    <p id="desktop-paragraf">Ledige stillinger</p>
-                    <p id="desktop-paragraf2">Nyheter</p>
-                    <img id="nedre-footer-bilde" src="img/down-arrow.png" alt="https://www.iconfinder.com/icons/211614/down_b_arrow_icon">
-                </section>
-                <section id="desktop-retur">
-                   <h1 id="footer-tekst3">Kundeservice</h1>
-                   <p id="desktop-paragraf3">Bærekraft</p>
-                   <p id="desktop-paragraf4">Investering</p>
-                </section>
-                <section id="desktop-kolleksjoner">
-                    <h1 id="footer-tekst4">Kolleksjoner</h1>
-                    <p id="desktop-paragraf5">Vinter</p>
-                    <p id="desktop-paragraf6">Sommer</p>
-                </section>
-                <section id="desktop-produkter">
-                    <h1 id="footer-tekst5">Produkter</h1>
-                    <p id="desktop-paragraf7">Nike</p>
-                    <p id="desktop-paragraf8">Jordan</p>
-                </section>
+
+
+     
+            <footer>
+                <ul>
+                     <li class="footer-tekst" onclick="retur()">Tilbakesending</li>
+                     <li onclick="retur()">Retur & Refusjon</li>
+                     <li>Tracking</li>
+                 </ul>
+                <ul>
+                    <li class="footer-tekst">Om oss</li>
+                    <li>Ledige stillinger</li>
+                    <li>Nyheter</li>
+                </ul>
+                <ul class="desktop-footer">
+                   <li class="footer-tekst">Kundeservice</li>
+                   <li>Bærekraft</li>
+                   <li>Investering</li>
+                </ul>
+                <ul class="desktop-footer">
+                    <li class="footer-tekst">Kolleksjoner</li>
+                    <li>Vinter</li>
+                    <li>Sommer</li>
+                </ul>
+                <ul class="desktop-footer">
+                    <li class="footer-tekst">Produkter</li>
+                    <li>Nike</li>
+                    <li>Jordan</li>
+                </ul>
             </footer>
        
 
 
-        <script>
+
+
+
+
+
+
+
+
+
+
+
+
+            
+
+<script>
 
             // Javascript delvis hentet fra OpenAi
             var slide = 0;                                        
@@ -187,7 +211,7 @@
         // Initial display
         roll(slide);
 
-        </script>
+</script>
 </div>
 </body>
 </html>

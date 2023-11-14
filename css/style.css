@@ -2,6 +2,12 @@ body{
     margin: 0%; /*Fikser margin for body fjerner hvit på sidene*/
 }
 
+a {
+  text-decoration:none;
+  color: black;
+}
+
+
 @font-face {                /*Hentet fra: https://fonts.google.com/specimen/Inter*/
   font-family: "Inter";  /*Lager global font-family*/
   src: url('./Font/Inter-VariableFont_slnt\,wght.ttf') format('ttf'); /*Henter src*/
@@ -21,17 +27,22 @@ body{
     #grid-div-container {
       display: grid;
       grid-template-areas: "tilbud tilbud tilbud"
-                            "nav1 nav1 header"
+                            "header header header"
                             "main main main"
                             "footer footer footer";
      grid-template-columns: repeat(3, 1fr); /*3-kolonner*/
     }
 
+    form {
+      display: flex;
+      margin-top: 0.7%;
+    }
+
     /*Grid Layout delvis hentet fra OpenAI*/
     #returside-grid-container {
       display: grid;
-      grid-template-areas: "nav nav header"
-                            "main main article2"
+      grid-template-areas: "header header header"
+                            "main main aside"
                             "footer footer footer";
      grid-template-columns: repeat(3, 1fr); /*3-kolonner*/
     }
@@ -39,75 +50,31 @@ body{
       margin-top: 8%;
       margin-left: 6%;
     }
-    #desktop-paragraf {
+
+    footer ul li:not(#footer-tekst) {
       font-weight: lighter;
       font-family: "Inter", sans-serif;
+      list-style-type: none;
     }
-    #desktop-paragraf2 {
-      font-weight: lighter;
-      font-family: "Inter", sans-serif;
-    }
-    #desktop-paragraf3 {
-      font-weight: lighter;
-      font-family: "Inter", sans-serif;
-    }
-    #desktop-paragraf4 {
-      font-weight: lighter;
-      font-family: "Inter", sans-serif;
-    }
-    #desktop-paragraf5 {
-      font-weight: lighter;
-      font-family: "Inter", sans-serif;
-    }
-    #desktop-paragraf6 {
-      font-weight: lighter;
-      font-family: "Inter", sans-serif;
-    }
-    #desktop-paragraf7 {
-      font-weight: lighter;
-      font-family: "Inter", sans-serif;
-    }
-    #desktop-paragraf8 {
-      font-weight: lighter;
-      font-family: "Inter", sans-serif;
-    }
-    #desktop-paragraf9 {
-      font-weight: lighter;
-      font-family: "Inter", sans-serif;
-    }
-    #desktop-paragraf10 {
-      font-weight: lighter;
-      font-family: "Inter", sans-serif;
-    }
+
+
+
     #retur-article {
-      grid-area: article2;
+      grid-area: aside;
     }
-    #article-background2-child {
-        font-weight: bold;
-        font-family: "Inter", sans-serif;
-        margin-left: 1rem;
-        margin-top: 1rem;
-    }
-    #article-background-child {
+    aside article h4, aside article p {
       font-weight: bold;
       font-family: "Inter", sans-serif;
       margin-left: 1rem;
       margin-top: 1rem;
     }
-    #article-background-child-h3 {
-      font-weight: bold;
-      font-family: "Inter", sans-serif;
-      margin-left: 1rem;
-      margin-top: 1rem;
-    }
-    #article-background2-child-h32 {
-      font-weight: bold;
-      font-family: "Inter", sans-serif;
-      margin-left: 1rem;
-      margin-top: 1rem;
-    }
+
     #start-retur {
       display: flex;
+    }
+
+    #mobil-nav {
+      display: none;
     }
 
     #retur-overskrift {
@@ -115,11 +82,14 @@ body{
       font-weight: bold;
       font-family: "Inter", sans-serif;
     }
-    #retur-article-overskrift {
+    
+    #retur-article h3 {
       margin-left: 1.4rem;
       font-weight: bold;
       font-family: "Inter", sans-serif;
     }
+
+    
     #article-background {
       width: 90%;
       margin-left: 1rem;
@@ -133,38 +103,28 @@ body{
       background-color: #D9D9D9;
       min-height: 30%;
     }
-    #tekst-inni-bokser {
+    #positionering h4 {
       margin-left: 0.3rem;
       font-family: "Inter", sans-serif;
     }
-    #tekst-inni-bokser2 {
-      margin-left: 0.3rem;
-      font-family: "Inter", sans-serif;
-    }
-    #tekst-inni-bokser3 {
-      margin-left: 0.3rem;
-      font-family: "Inter", sans-serif;
-    }
-    #tekst-inni-bokser4 {
-      margin-left: 0.3rem;
-      font-family: "Inter", sans-serif;
-    }
-    #tekst-inni-bokser5 {
-      margin-left: 0.3rem;
-      font-family: "Inter", sans-serif;
-    }
+
     #refusjon {
       width: 11em;
       height: 3em;
       background-color: #000000;
       color: white;
       text-align: left;
+      margin-top: 2rem;
       margin-left: 2rem;
       font-family: "Inter", sans-serif;
       font-size: 1rem;
     }
     #refusjon-paragraf {
       display: none;
+    }
+
+    .pluss-margin {
+      margin-left: 26%;
     }
 
     #pluss-margin {
@@ -183,11 +143,14 @@ body{
       margin-left: 25%;
     }
     #retur-paragraf {
+      font-size: 13px;
       margin-left: 2rem;
       font-weight: bold;
       font-family: "Inter", sans-serif;
     }
-    #bakgrunn-liste2 {
+
+    
+    .bakgrunn-liste {
       display: flex;
       width: 430px;
       height: 9%;
@@ -197,37 +160,8 @@ body{
       margin-top: 1%;
       margin-left: 5%;
     }
-    #bakgrunn-liste3 {
-      display: flex;
-      width: 430px;
-      height: 9%;
-      background-color: #D9D9D9;
-      position: relative;
-      right: 6%;
-      margin-top: 1%;
-      margin-left: 5%;
-    }
-    #bakgrunn-liste4 {
-      display: flex;
-      width: 430px;
-      height: 9%;
-      background-color: #D9D9D9;
-      position: relative;
-      right: 6%;
-      margin-top: 1%;
-      margin-left: 5%;
-    }
-    #bakgrunn-liste5 {
-      display: flex;
-      width: 430px;
-      height: 9%;
-      background-color: #D9D9D9;
-      position: relative;
-      right: 6%;
-      margin-top: 1%;
-      margin-left: 5%;
-    }
-    #bakgrunn-liste1 {
+
+    #bakgrunn-liste-plass {
       display: flex;
       width: 430px;
       height: 9%;
@@ -247,84 +181,26 @@ body{
       font-family: "Inter", sans-serif;
       font-size: medium;
       position: absolute;
-      top: 23%;
+      top: 17%;
     }
-    #høyre-pil1 {
-      position: relative;
-      transform: translateY(0px);
-      transform: translateX(195px);
-      border: 1px solid none;
-    }
+
     #refusjon-flex {
       display: flex;
       margin-top: 3%;
     }
-    #høyre-pil2 {
-      position: relative;
-      transform: translateY(3px);
-      transform: translateX(-65px);
-      border: 1px solid none;
-    }
 
-
-    #tennissko1 {
-       width: 40%;
-       height: 190px;
-    }
-
-    #tennissko2 {
+    .tennissko {
       width: 40%;
       height: 190px;
     }
 
-    #footer-tekst {
-      font-family: "Inter", sans-serif;
-      font-size: 1.125rem;
-      margin-left: 9%;
-      margin-top: 1%;
-    }
-    #footer-tekst2 {
-      font-family: "Inter", sans-serif;
-      font-size: 1.125rem;
-      margin-left: 9%;
-      margin-top: 1%;
-    }
-    #footer-tekst3 {
-      font-family: "Inter", sans-serif;
-      font-size: 1.125rem;
-      margin-left: 9%;
-      margin-top: 1%;
-    }
-    #footer-tekst4 {
-      font-family: "Inter", sans-serif;
-      font-size: 1.125rem;
-      margin-left: 9%;
-      margin-top: 1%;
-    }
-    #footer-tekst5 {
-      font-family: "Inter", sans-serif;
-      font-size: 1.125rem;
-      margin-left: 9%;
-      margin-top: 1%;
-    }
 
-    #forside-footer {
-      display: flex;
-      gap: 11%;
-      margin-top: 0%;
-      background-color: #D9D9D9;
-    }
-    #forside-footer-produkt {
-      display: flex;
-      gap: 11%;
-      margin-top: 3%;
-      background-color: #D9D9D9;
-    }
-    #returfooter {
-      display: flex;
-      gap: 11%;
-      margin-top: 3%;
-      background-color: #D9D9D9;
+    .footer-tekst {
+      font-family: "Inter", sans-serif;
+      font-size: 1.125rem;
+      margin-left: 9%;
+      margin-top: 1%;
+      list-style-type: none;
     }
 
     #to-store-bilder {
@@ -334,27 +210,12 @@ body{
       gap: 12%;
     }
 
-    #tursko1 {
+    #desktop-bilde-section img {
       width: 23%;
       height: 93px;
+    }
 
-    }
-    #tursko2 {
-      width: 23%;
-      height: 93px;
-    }
-    #joggesko1 {
-      width: 23%;
-      height: 93px;
-    }
-    #joggesko2 {
-      width: 23%;
-      height: 93px;
-    }
-    #øvre-footer-bilde {
-      display: none;
-    }
-    #nedre-footer-bilde {
+    footer ul img {
       display: none;
     }
 
@@ -369,131 +230,40 @@ body{
          display: flex;
          gap: 6%;
          margin-left: 88%;
+         background: none;
+         border: none;
     }
-    #desktop-article-box {
+    .desktop-article-box {
       border: 1px solid black;
       width: 225px;
       background-color: #D9D9D9;
     }
-    #desktop-article-box2 {
+    .desktop-article-box2 {
       border: 1px solid black;
       width: 28%;
       background-color: #D9D9D9;
     }
-    #desktop-article-box3 {
-      border: 1px solid black;
-      width: 225px;
-      background-color: #D9D9D9;
-    }
-    #desktop-article-box4 {
-      border: 1px solid black;
-      width: 28%;
-      background-color: #D9D9D9;
-    }
-    #wrapped-paragraf2 {
-      font-weight: normal;
-      font-family: "Inter", sans-serif;
-      margin-left: 3%;
-      margin-top: 1%;
-    }
-    #wrapped-paragraf21 {
-      font-weight: normal;
-      font-family: "Inter", sans-serif;
-      margin-left: 3%;
-      margin-top: 1%;
-    }
-    #wrapped-paragraf22 {
-      font-weight: normal;
-      font-family: "Inter", sans-serif;
-      margin-left: 3%;
-      margin-top: 1%;
-    }
-    #wrapped-paragraf23 {
-      font-weight: normal;
-      font-family: "Inter", sans-serif;
-      margin-left: 3%;
-      margin-top: 1%;
-    }
-    #wrapped-paragraf24 {
-      font-weight: normal;
-      font-family: "Inter", sans-serif;
-      margin-left: 3%;
-      margin-top: 1%;
-    }
-    #wrapped-paragraf25 {
-      font-weight: normal;
-      font-family: "Inter", sans-serif;
-      margin-left: 3%;
-      margin-top: 1%;
-    }
-    #wrapped-header {
-      font-weight: bold;
-      font-family: "Inter", sans-serif;
-      margin-left: 3%;
-      margin-top: 1%;
-    }
-    #wrapped-header2 {
-      font-weight: bold;
-      font-family: "Inter", sans-serif;
-      margin-left: 3%;
-      margin-top: 1%;
-    }
-    #wrapped-header3 {
-      font-weight: bold;
-      font-family: "Inter", sans-serif;
-      margin-left: 3%;
-      margin-top: 1%;
-    }
-    #wrapped-header4 {
-      font-weight: bold;
-      font-family: "Inter", sans-serif;
-      margin-left: 3%;
-      margin-top: 1%;
-    }
-    #wrapped-header5 {
-      font-weight: bold;
-      font-family: "Inter", sans-serif;
-      margin-left: 3%;
-      margin-top: 1%;
-    }
-    #wrapped-header6 {
-      font-weight: bold;
-      font-family: "Inter", sans-serif;
-      margin-left: 3%;
-      margin-top: 1%;
-    }
-    #rund-sirkel1 {
-        border: 1px solid black;
-        border-radius: 100%;
-        background-color: #EBEBEB;
-        width: 30px;
-        height: 30px;
-    }
-    #venstrepil {
-      height: 40px;
-      width: 40px;
-      top: -5px;
-      transform: translateX(-5px);
-      position: relative;
-    }
-    #høyrepil {
-      height: 40px;
-      width: 40px;
-      padding-left: 5%;
-      margin-top: 1%;
-      top: -5px;
-      transform: translateX(-3px);
-      position: relative;
-    }
-    #rund-sirkel2 {
+ 
+    #desktop-knapp-bilde button {
       border: 1px solid black;
       border-radius: 100%;
       background-color: #EBEBEB;
       width: 30px;
       height: 30px;
     }
+ 
+    main span button img {
+      height: 40px;
+      width: 40px;
+      top: -7px;
+      right: 42%;
+      transform: translateX(-5px);
+      position: relative;
+    }
 
-    #grid {
+  
+
+    .grid-mobil {
       display: none;
     }
     #glass2 {
@@ -502,8 +272,23 @@ body{
     }
     #left {
       margin-left: 5%;
-      margin-top: 3%;
+      margin-top: 11.7%;
     }
+
+    section article h3 {
+         margin-left: 0.5em;
+          font-weight: bold;
+          font-family: "Inter", sans-serif;
+          margin-left: 3%;
+          margin-top: 1%;
+    }
+    section article p {
+       font-weight: normal;
+       font-family: "Inter", sans-serif;
+       margin-left: 3%;
+       margin-top: 1%;
+ }
+  
     #icon-wrapper {
       display: flex;
     }
@@ -522,84 +307,67 @@ body{
     }
     #kjønn {
       display: flex;
-      border: 1px solid black;
       background-color: #D9D9D9;
       height: 50px;
-      width: 100%;
-      border-right: none;
-      grid-area: nav1;
-    }
-    #kjønn2 {
-      display: flex;
-      border: 1px solid black;
-      background-color: #D9D9D9;
-      width: 100%;
+      width: 58%;
       border-right: none;
       grid-area: nav;
     }
+ 
     #left2 {
+      display: none;
+    }
+    #Bell {
       display: none;
     }
     #right2 {
       display: none;
     }
-    #tekst-kjønn {
+
+    header nav ul li:not(#tekst-kjønn2) {
       font-family: "Inter", sans-serif;
       margin-top: 3%;
       font-size: larger;
     }
-    #tekst-kjønn3 {
-      font-family: "Inter", sans-serif;
-      margin-top: 3%;
-      font-size: larger;
-    }
-    #tekst-kjønn5 {
-      font-family: "Inter", sans-serif;
-      margin-top: 3%;
-      font-size: larger;
-    }
-    #tekst-kjønn6 {
-      font-family: "Inter", sans-serif;
-      margin-top: 3%;
-      font-size: larger;
-    }
-    #tekst-kjønn7 {
-      font-family: "Inter", sans-serif;
-      margin-top: 3%;
-      font-size: larger;
-    }
+
     #tekst-kjønn2 {
       font-family: "Inter", sans-serif;
       margin-top: 3%;
       font-size: larger;
     }
+    
     #overskrift {
       display: none;
     }
-    #flex-container {
+    header nav ul {
       display: flex;
       gap: 2rem;
       list-style: none;
       margin-top: 1%;
     }
+  
     #tilbud {
       display: flex;
       grid-area: tilbud;
       width: 100%;
       height: 100%;
       border: 1px solid black;
+      
     }
-    #desktop-overskrift {
-         font-family: "Inter", sans-serif;
-         margin-top: 1.6%;
-         margin-left: 2%;
-    }
+
+     #kjønn h1 {
+      font-family: "Inter", sans-serif;
+      margin-top: 1.6%;
+      margin-left: 2%;
+     }
+
 
     #p-tilbud {
       margin-left: 5%;
       font-size: large;
       font-family: "Inter", sans-serif;
     }
+
     #p-frakt {
       margin-left: 60%;
       font-size: large;
@@ -614,13 +382,14 @@ body{
     #section-carousel {
       display: none;
     }
-    #jordan1-btn {
+    #produktbilde-1 img {
       width: 90%;
       height: 180px;
       margin-left: 3%;
       margin-top: 1%;
       cursor:pointer;
     }
+
     header{
       grid-area: header;
         display: flex;
@@ -633,11 +402,15 @@ body{
   }
   footer {
       grid-area: footer;
+      display: flex;
+      gap: 7%;
+      margin-top: 0%;
+      background-color: #D9D9D9;
   }
   /*Slutt desktop forside CSS*/
   /*Start på desktop produktside*/
   #produkt-filter2 {
-    grid-area: nav2;
+    grid-area: aside;
     height: 130px;
   }
   #produkt-filter {
@@ -646,227 +419,117 @@ body{
  /*Grid Layout delvis hentet fra OpenAI*/
   #produktside-grid-container {
     display: grid;
-    grid-template-areas:  "nav nav header"
-                          "nav2 main main"
-                          "nav3 main main"
+    grid-template-areas:  "header header header"
+                          "aside main main"
+                          "aside main main"
                           "footer footer footer";
    grid-template-columns: 1fr 2fr 2fr; /* Three kolonner andre kolonne litt større fraksjon enn de andre kolonnene*/
   }
-  #image-resize {
-    width: 28%;
+  .image-resize {
+    width: 30%;
     height: 85px;
   }
-  #image-resize2 {
-    width: 28%;
-    height: 85px;
-  }
-  #image-resize3 {
-    width: 28%;
-    height: 85px;
-  }
-  #image-resize4 {
-    width: 28%;
-    height: 85px;
-  }
-  #article-box {
+
+  .article-box {
     border: 1px solid black;
     width: 225px;
     background-color: #D9D9D9;
   }
-  #article-box1 {
-    border: 1px solid black;
-    width: 225px;
-    background-color: #D9D9D9;
-  }
-  #article-box2 {
+
+  .article-box2 {
     border: 1px solid black;
     width: 28%;
     background-color: #D9D9D9;
   }
-  #article-box3 {
-    border: 1px solid black;
-    width: 28%;
-    background-color: #D9D9D9;
-  }
-  #article-box4 {
-    border: 1px solid black;
-    width: 225px;
-    background-color: #D9D9D9;
-  }
-  #article-box5 {
-    border: 1px solid black;
-    width: 225px;
-    background-color: #D9D9D9;
-  }
-  #article-box6 {
-    border: 1px solid black;
-    width: 28%;
-    background-color: #D9D9D9;
-  }
-  #article-box7 {
-    border: 1px solid black;
-    width: 28%;
-    background-color: #D9D9D9;
-  }
-  #image-flex1 {
-    display: flex;
-    gap: 23px;
-    margin-left: 3%;
-    margin-top: 2%;
-  }
+
+
   #image-flex2 {
     display: none;
   }
   #image-flex21 {
     display: none;
   }
-  #image-flex2-desktop {
+  #image-desktop {
+    display: flex;
+    gap: 28px;
+    margin-left: 3%;
+    margin-top: 2%;
+  }
+  #image-desktop2 {
     display: flex;
     gap: 23px;
     margin-left: 3%;
     margin-top: 2%;
   }
-  #image-flex2-desktop2 {
-    display: flex;
-    gap: 23px;
-    margin-left: 3%;
-    margin-top: 2%;
-  }
-  #image-flex2-pic {
-    display: flex;
-    gap: 23px;
-    margin-left: 3%;
-    margin-top: 2%;
-  }
+
   #stor-bilde {
     display: none;
   }
-
-  #image-resize-desktop {
-    width: 28%;
-    height: 85px;
-  }
-  #image-resize-desktop2 {
-    width: 28%;
-    height: 85px;
-  }
-
-  #overskrift-cursor {
+  #mobil-kjønn {
     display: none;
   }
 
-  #filter-image {
-   display: none;
+  .image-resize-desktop {
+    width: 28%;
+    height: 85px;
   }
-  #filter-image12 {
+
+  .filter-image {
     display: none;
-   }
-  #produkt-h1 {
+  }
+
+  .h3-style {
     font-family: "Inter", sans-serif;
     font-weight: bold;
     margin-left: 2%;
     transform: translateY(-18px);
   }
-  #produkt-h12 {
-    font-family: "Inter", sans-serif;
-    font-weight: bold;
-    margin-left: 2%;
-    transform: translateY(-18px);
-  }
-  #undertekst1 {
+ 
+  #undertekst {
     font-family: "Inter", sans-serif;
     margin-left: 2%;
     transform: translateY(-37px);
   }
-  #filter-image2 {
-    width: 40%;
+
+  
+
+  #filter-image1 {
+    width: 57%;
     height: 35px;
     margin-left: 2%;
     transform: translateY(-37px);
    }
-   #filter-image21 {
+   #filter-image2 {
     width: 14%;
     height: 35px;
     margin-left: 2%;
     transform: translateY(-37px);
    }
 
-   #pluss-filter {
-    width: 22px;
-    height: 19px;
-    margin-left: 1%;
+
+   nav section ul li {
+    font-family: "Inter", sans-serif;
+    font-weight: bolder;
+    margin-top: 4%;
+    transform: translatex(-24px);
+    font-size: larger;
    }
 
-   #li-filter {
-    font-family: "Inter", sans-serif;
-    font-weight: bolder;
-    margin-top: 4%;
-    transform: translatex(-24px);
-    font-size: larger;
-   }
-   #li-filter2 {
-    font-family: "Inter", sans-serif;
-    font-weight: bolder;
-    margin-top: 4%;
-    transform: translatex(-24px);
-    font-size: larger;
-   }
-   #li-filter3 {
-    font-family: "Inter", sans-serif;
-    font-weight: bolder;
-    margin-top: 4%;
-    transform: translatex(-24px);
-    font-size: larger;
-   }
-   #li-filter4 {
-    font-family: "Inter", sans-serif;
-    font-weight: bolder;
-    margin-top: 4%;
-    transform: translatex(-24px);
-    font-size: larger;
-   }
-   #li-filter5 {
-    font-family: "Inter", sans-serif;
-    font-weight: bolder;
-    margin-top: 4%;
-    transform: translatex(-24px);
-    font-size: larger;
-   }
-   #li-filter6 {
-    font-family: "Inter", sans-serif;
-    font-weight: bolder;
-    margin-top: 4%;
-    transform: translatex(-24px);
-    font-size: larger;
-   }
-   #wrapped-stor-paragraf {
+   #beskrivelse-bilde p {
     display: none;
    }
-
-   #desktop-hjem {
-    margin-left: 2%;
-    font-family: "Inter", sans-serif;
-    font-weight: lighter;
-   }
-   #desktop-hjem2 {
+   
+   .hjem {
     margin-left: 2%;
     font-family: "Inter", sans-serif;
     font-weight: lighter;
    }
 
-   #desktop-filters {
+   .desktop-filters {
     display: flex;
    }
-   #desktop-filters2 {
-    display: flex;
-   }
-   #desktop-ekstra-filter {
-    transform: translateY(-39px);
-    margin-left: 64%;
-    width: 13%;
-    height: 38px;
-   }
-   #desktop-ekstra-filter2 {
+
+   .desktop-filters img :not(#filter-image2) :not(#filter-image1) {
     transform: translateY(-39px);
     margin-left: 64%;
     width: 13%;
@@ -874,59 +537,44 @@ body{
    }
 
    #nav3-desktop {
-    grid-area nav3;
-    width: 240px;
+    grid-area: aside;
+    width: 80%;
     display: flex;
-    margin-left: 5%;
+    margin-left: 9%;
+    margin-top: 5%;
+    background-color: #D9D9D9;
    }
 
-   #filter-liste-desktop {
+   aside nav ul {
     margin-top: 0%;
-    margin-left: 4%;
     width: 180px;
     height: 270px;
-    background-color: #D9D9D9;
     list-style: none;
    }
+
    #venstre-nav {
       transform: translateX(-10px);
       width: 150px;
       height: 210px;
    }
 
+ 
    #høyre-nav {
       display: flex;
       flex-direction: column;
-      gap: 14px;
+      gap: 9px;
       margin-top: 4%;
-     margin-left: 10%;
+     margin-left: 33%;
       width: 80%;
    }
-   #pluss-desktop {
+
+   #høyre-nav img {
     width: 19px;
     height: 22px;
     position: relative;
    }
-   #pluss-desktop2 {
-    width: 19px;
-    height: 22px;
-    position: relative;
-   }
-   #pluss-desktop3 {
-    width: 19px;
-    height: 22px;
-    position: relative;
-   }
-   #pluss-desktop4 {
-    width: 19px;
-    height: 22px;
-    position: relative;
-   }
-   #pluss-desktop5 {
-    width: 19px;
-    height: 22px;
-    position: relative;
-   }
+
+ 
    
    #desktop-scroll-bar {
     margin-top: 2%;
@@ -935,82 +583,35 @@ body{
     height: 35px;
     display: flex;
    }
-   #scroll-små-tekst {
+   .forrige-neste {
     font-family: "Inter", sans-serif;
     font-size: small;
     font-weight: lighter;
     margin-top: 2%;
-    list-style-type: none;
    }
-   #scroll-små-tekst2 {
-    font-family: "Inter", sans-serif;
-    font-size: small;
-    font-weight: lighter;
-    margin-top: 2%;
-    list-style-type: none;
-   }
+
    #desktop-flex {
     margin-left: 0%;
     display: flex;
     gap: 7px;
     margin-top: 0%;
+    list-style-type: none;
+   }
 
-   }
-   #desktop-list {
+   main nav ul li:not(.forrige-neste) {
     text-align: center;
     font-family: "Inter", sans-serif;
     font-weight: lighter;
-    list-style: none;
-    border: 1px solid black;
-    width: 20px;
-    height: 25px;
-   }
-   #desktop-list3 {
-    text-align: center;
-    font-family: "Inter", sans-serif;
-    font-weight: lighter;
-    list-style: none;
-    border: 1px solid black;
-    width: 20px;
-    height: 25px;
-   }
-   #desktop-list4 {
-    text-align: center;
-    font-family: "Inter", sans-serif;
-    font-weight: lighter;
-    list-style: none;
-    border: 1px solid black;
-    width: 20px;
-    height: 25px;
-   }
-   #desktop-list5 {
-    text-align: center;
-    font-family: "Inter", sans-serif;
-    font-weight: lighter;
-    list-style: none;
-    border: 1px solid black;
-    width: 20px;
-    height: 25px;
-   }
-   #desktop-list1 {
-    text-align: center;
-    font-family: "Inter", sans-serif;
-    font-weight: lighter;
-    list-style: none;
     border: 1px solid black;
     width: 20px;
     height: 25px;
    }
 
-
-   #venstrepil2-scroll {
+   #desktop-scroll-bar img {
     width: 25px;
     height: 25px;
    }
-   #venstrepil2-scroll2 {
-    width: 25px;
-    height: 25px;
-   }
+  
 
 
 
@@ -1054,16 +655,16 @@ body{
     main {
         grid-area: main;
     }
-    footer {
-        grid-area: footer;
-    }
     #retur-article {
       display: none;
     }
-    #image-flex2-desktop {
+    #image-desktop {
       display: none;
     }
-    #image-flex2-desktop2 {
+    .desktop-article-box {
+      display: none;
+    }
+    #image-desktop2 {
       display: none;
     }
     #desktop-scroll-bar {
@@ -1075,66 +676,39 @@ body{
     #desktop-article-box2 {
       display: none;
     }
-    #desktop-article-box3 {
+   
+    .image-resize-desktop {
       display: none;
     }
-    #desktop-article-box4 {
-      display: none;
-    }
-    #image-resize-desktop {
-      display: none;
-    }
-    #image-resize-desktop2 {
-      display: none;
-    }
+
     #nav3-desktop {
       display: none;
     }
     #produkt-filter2 {
       display: none;
     }
-    #desktop-filters {
+    .desktop-filters {
       display: none;
     }
-    #desktop-filters2 {
+
+    .hjem {
       display: none;
     }
-    #desktop-hjem {
-      display: none;
-    }
-    #desktop-hjem2 {
+
+    #filter-image1 {
       display: none;
     }
     #filter-image2 {
       display: none;
     }
-    #filter-image21 {
+    footer ul li:not(.footer-tekst) {
       display: none;
     }
-    #desktop-paragraf {
-      display: none;
-    }
-    #desktop-paragraf9 {
-      display: none;
-    }
-    #desktop-paragraf10 {
-      display: none;
-    }
-    #desktop-paragraf2 {
-      display: none;
-    }
-    #desktop-paragraf3 {
-      display: none;
-    }
-    #desktop-retur {
-      display: none;
-    }
-    #desktop-kolleksjoner {
-      display: none;
-    }
-    #desktop-produkter {
-      display: none;
-    }
+
+   .desktop-footer {
+    display: none;
+   }
+    
     #to-store-bilder {
       display: none;
     }
@@ -1155,19 +729,17 @@ body{
       display: none;
     }
     #p-frakt {
-      display: none;
+      margin-top: 0.3em;
     }
     #tekst-kjønn2 {
       display: none;
     }
-    #desktop-overskrift {
+    #kjønn h1 {
       display: none;
     }
+   
     #left{
-        width: 33px;
-        height: 33px;
-        margin-top: 2rem;
-        margin-left: 0.5rem;
+        display: none;
     }
     #left2{
       width: 33px;
@@ -1175,19 +747,36 @@ body{
       margin-top: 2rem;
       margin-left: 0.5rem;
   }
+  #Bell{
+    width: 33px;
+    height: 33px;
+    margin-top: 2rem;
+    margin-left: 0.5rem;
+}
   #start-retur {
-    margin-top: 3%;
     display: flex;
   }
     #icon-wrapper{
         margin-right: 5px;
         margin-left: 13px;
+        display: flex;
     }
-    #icon-wrapper2{
-      margin-right: 5px;
-      margin-left: 13px;
-      margin-top: 7%;
-  }
+    header figure {
+      display: flex;
+      margin-left: 1%;
+      margin-top: 0%;
+    }
+
+    #mobil-kjønn {
+      grid-area: nav;
+      border: 1px solid black;
+    }
+    #mobil-kjønn ul {
+      list-style-type: none;
+      display: flex;
+      gap: 17%;
+    }
+
     #right1{
         width: 33px;
         height: 33px;
@@ -1206,30 +795,41 @@ body{
       margin-top: 2rem;
       margin-left: 0.3rem;
   }
-    #logo{
-        margin-left: 23px;
-        margin-top: 0.8rem;
-    }
+ 
     #kjønn{
-        border: 1px solid black;
-        width: 99%;
-        height: 40px;
-        font-family: "Inter", sans-serif;
+        display: none;
     }
-    #kjønn2 {
+
+    #mobil-nav h1 {
       display: none;
     }
-    #flex-container {
+
+    #mobil-nav ul {
+      display: flex;
+      list-style-type: none;
+      gap: 11%;
+    }
+
+    #mobil-nav {
+      border: 1px solid black;
+      width: 99%;
+      height: 40px;
+      font-family: "Inter", sans-serif;
+      grid-area: nav;
+    }
+  
+    header nav ul {
       display: flex;
       margin-left: 5%;
       gap: 15%;
       padding-left: 5px;
       list-style: none;
     }
-    #jordan1-btn {
-        width: 100%; 
-        height: 140px;
-        cursor:pointer;
+
+    #produktbilde-1 img {
+      width: 100%; 
+      height: 140px;
+      cursor:pointer;
     }
 
     #knapp2 {
@@ -1239,30 +839,10 @@ body{
     }
     #positionering {
       margin-left: 10%;
-    }
-    #refusjon-flex {
-      margin-top: 3%;
+      position: relative;
+      bottom: 5%;
     }
 
-
-    #tekst-kjønn{
-        margin-left: 45px;
-    }
-    #tekst-kjønn2{
-     
-  }
-  #tekst-kjønn3{
-    
-}
-#tekst-kjønn5{
-
-}
-#tekst-kjønn6{
- 
-}
-#tekst-kjønn7{
- 
-}
     #produktbilde-1{
         margin-top: 8px;
         margin-left: 7%;
@@ -1272,13 +852,8 @@ body{
         width: 81%;
     }
     #p-tilbud{
-        margin-top: 4px;
-        text-align: center;
-    }
-    #p-tilbud:hover{
-        margin-top: 4px;
-        text-align: center;
-        cursor:pointer;
+        margin-top: 0.3em;
+        margin-left: 7%;
     }
     #tilbud{
         border: 1px solid black;
@@ -1286,96 +861,43 @@ body{
         width: 99%;
         font-family: "Inter", sans-serif;
         grid-area: tilbud;
+        display: flex;
+        gap: 17%;
     }
     #overskrift{
         font-size: 1.375rem;
+        margin-top: 1.5em;
     }
-    #grid{
-        margin-bottom: 20%;
+    .grid-mobil{
         border: 1px solid black;
         border-radius: 1%;
         height: 139px;
         width: 331px;
         margin: auto;
-        display: grid;
-        grid-template-columns: auto auto auto auto;
-        grid-template-columns: repeat(3, 1fr);
     }
-    #child {
-        background-color: #D9D9D9;
-        border: 1px solid rgba(0, 0, 0, 0.8);
-        margin-top: 20px;
-        margin-left: 10px;
-        width: 90px;
-        height: 31px;
-        text-align: center;
-        font-weight: bold;
-        font-size: 0.875rem;
-        font-family: "Inter", sans-serif;
-      }
-      #child2 {
-        background-color: #D9D9D9;
-        border: 1px solid rgba(0, 0, 0, 0.8);
-        margin-top: 20px;
-        margin-left: 10px;
-        width: 90px;
-        height: 31px;
-        text-align: center;
-        font-weight: bold;
-        font-size: 0.875rem;
-        font-family: "Inter", sans-serif;
-      }
-      #child3 {
-        background-color: #D9D9D9;
-        border: 1px solid rgba(0, 0, 0, 0.8);
-        margin-top: 20px;
-        margin-left: 10px;
-        width: 90px;
-        height: 31px;
-        text-align: center;
-        font-weight: bold;
-        font-size: 0.875rem;
-        font-family: "Inter", sans-serif;
-      }
-      #child4 {
-        background-color: #D9D9D9;
-        border: 1px solid rgba(0, 0, 0, 0.8);
-        margin-top: 20px;
-        margin-left: 10px;
-        width: 90px;
-        height: 31px;
-        text-align: center;
-        font-weight: bold;
-        font-size: 0.875rem;
-        font-family: "Inter", sans-serif;
-      }
-      #child5 {
-        background-color: #D9D9D9;
-        border: 1px solid rgba(0, 0, 0, 0.8);
-        margin-top: 20px;
-        margin-left: 10px;
-        width: 90px;
-        height: 31px;
-        text-align: center;
-        font-weight: bold;
-        font-size: 0.875rem;
-        font-family: "Inter", sans-serif;
-      }
-      #child6 {
-        background-color: #D9D9D9;
-        border: 1px solid rgba(0, 0, 0, 0.8);
-        margin-top: 20px;
-        margin-left: 10px;
-        width: 90px;
-        height: 31px;
-        text-align: center;
-        font-weight: bold;
-        font-size: 0.875rem;
-        font-family: "Inter", sans-serif;
-      }
+    .grid-mobil ul {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      position: relative;
+      right: 9%;
+      bottom: 5%;
+    }
+    .grid-mobil ul li {
+      background-color: #D9D9D9;
+      border: 1px solid rgba(0, 0, 0, 0.8);
+      margin-top: 20px;
+      margin-left: 10px;
+      width: 90px;
+      height: 31px;
+      text-align: center;
+      font-weight: bold;
+      font-size: 0.875rem;
+      font-family: "Inter", sans-serif;
+      list-style-type: none;
+    }
+    
 
       
-
 
       #section-carousel {
         margin-top: 13px;
@@ -1384,11 +906,10 @@ body{
         border: 1px solid black;
         border-radius: 2px;
         margin-left: 7%;
-
         display: inline-block;
         position: relative;
       }
-      #bildeknapp {
+      #section-carousel button {
         position: absolute;
         transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
@@ -1400,6 +921,7 @@ body{
         border-radius: 100%;
         border: 0px solid white;
       }
+   
       #first-dot {
         position: absolute;
         transform: translate(-50%, -50%);
@@ -1481,19 +1003,20 @@ body{
          grid-area: article;
          margin-top: 2%;
       }
-      #overskrift-fakta {
-         margin-left: 20px;
-         margin-top: 8px;
-         font-weight: bolder;
-         font-family: "Inter", sans-serif; 
+      #fakta-bedrift h4 {
+        margin-left: 20px;
+        margin-top: 8px;
+        font-weight: bolder;
+        font-family: "Inter", sans-serif; 
       }
-      #bedrift-paragraf {
+      #fakta-bedrift p {
         margin-top: -14px;
         margin-left: 20px;
         font-size: 0.875rem;
         font-family: "Inter", sans-serif;
       }
-      #forside-footer {
+
+      footer {
         margin-top: 11px;
         grid-area: footer;
         border-radius: 1px;
@@ -1501,29 +1024,16 @@ body{
       }
 
 
-      #øvre-footer {
-        height: 50%;
-        border: 1px solid black;
-        display: flex;
+      footer ul {
+        list-style-type: none;
       }
-      #øvre-footer-bilde {
-        margin-left: 190px;
-      }
-      #nedre-footer {
-        height: 50%;
-        border: 1px solid black;
-        display: flex;
-      }
-      #nedre-footer-bilde {
-        margin-left: 255px;
-      }
-      #footer-tekst {
+
+      .footer-tekst {
         margin-top: 5px;
         margin-left: 10px;
-      }
-      #footer-tekst2 {
-        margin-top: 5px;
-        margin-left: 10px;
+        font-family: "Inter", sans-serif;
+        font-size: medium;
+        font-weight: bold;
       }
       /*Slutt på forside css*/
       /*Under er style for produktsiden*/
@@ -1533,62 +1043,48 @@ body{
                               "main"
                               "footer";
       }
-      #overskrift-cursor {
-        cursor: pointer;
-        font-size: 1.375rem;
-      }
+
       #produkt-filter {
-        width: 99%px;
+        width: 99%;
         height: 45px;
         border: 1px solid black;
       }
-      #filter-image {
+      .filter-image {
         width: 119px;
         height: 37px;
-        margin-left: 190px;
+        margin-left: 46%;
         margin-top: 3px;
       }
-      #filter-image12 {
-        width: 119px;
-        height: 37px;
-        margin-left: 40%;
-        margin-top: 3px;
-      }
-      #produkt-h1 {
+      .h3-style {
         margin-top: 1px;
         margin-left: 6px;
       }
-      #produkt-h12 {
-        margin-top: 1px;
-        margin-left: 6px;
-      }
-      #produkt-flex {
+    
+      .produkt-flex {
         display: flex;
       }
-      #produkt-flex2 {
-        display: flex;
-      }
-      #undertekst {
+
+  
+
+      #undertekst2 {
         position: absolute;
-        top: 10.8%;
+        top: 12.8%;
         left: 1.6%;
         font-family: "Inter", sans-serif;
       }
-      #h1-wrapper {
+  
+
+      .h2-wrap {
         width: 75px;
         height: 20px;
         font-family: "Inter", sans-serif;
       }
-      #h1-wrapper2 {
-        width: 75px;
-        height: 20px;
-        font-family: "Inter", sans-serif;
-      }
-      #image-flex1 {
+
+      .image-flex {
         display: flex;
         margin-top: 2%;
         margin-left: 5%;
-        gap: 2%;
+        gap: 12%;
       }
       #image-flex2 {
         display: flex;
@@ -1604,66 +1100,22 @@ body{
         margin-top: 1%;
         gap: 2%;
       }
-      #image-flex2-pic {
-        display: flex;
-        margin-top: 2%;
-        margin-left: 5%;
-        margin-top: 1%;
-        gap: 2%;
+     
+      
+      .image-resize {
+        width: 46%;
+        height: 148px;
+        border: 1px solid black;
       }
+      
 
-      #image-resize {
+      .article-box {
         width: 46%;
-        height: 148px;
-        border: 1px solid black;
-      }
-      #image-resize2 {
-        width: 45%;
-        height: 148px;
-        border: 1px solid black;
-      }
-      #image-resize3 {
-        width: 46%;
-        height: 148px;
-        border: 1px solid black;
-      }
-      #image-resize4 {
-        width: 45%;
-        height: 148px;
+        height: 59px;
         border: 1px solid black;
       }
 
-      #article-box {
-        width: 46%;
-        height: 59px;
-        border: 1px solid black;
-      }
-      #article-box1 {
-        width: 45%;
-        height: 59px;
-        border: 1px solid black;
-      }
-      #article-box2 {
-        width: 178px;
-        height: 59px;
-        border: 1px solid black;
-      }
-      #article-box3 {
-        width: 178px;
-        height: 59px;
-        border: 1px solid black;
-      }
-      #article-box4 {
-        width: 46%;
-        height: 59px;
-        border: 1px solid black;
-      }
-      #article-box5 {
-        width: 45%;
-        height: 59px;
-        border: 1px solid black;
-      }
-      #article-box6 {
+      .article-box2 {
         width: 178px;
         height: 59px;
         border: 1px solid black;
@@ -1685,68 +1137,39 @@ body{
         margin-left: 7%;
       }
 
-      #forside-footer2 {
-        margin-top: 4%;
-        grid-area: footer;
-        width: 388px;
-        height: 72px;
-        border-radius: 1px;
-        background-color: #D9D9D9;
-      }
-
-      #stor-bilde-img {
+      #stor-bilde img {
         width: 100%;
         height: 104px;
       }
+      
 
-      #wrapped-paragraf {
-        font-weight: bold;
+     section article h3 {
+      font-weight: bold;
         font-family: "Inter", sans-serif;
         margin-left: 3%;
         margin-top: 1%;
-      }
-      #wrapped-paragraf10 {
-        font-weight: bold;
-        font-family: "Inter", sans-serif;
-        margin-left: 3%;
-        margin-top: 1%;
-      }
-      #wrapped-paragraf11 {
-        font-weight: bold;
-        font-family: "Inter", sans-serif;
-        margin-left: 3%;
-        margin-top: 1%;
-      }
-      #wrapped-paragraf12 {
-        font-weight: bold;
-        font-family: "Inter", sans-serif;
-        margin-left: 3%;
-        margin-top: 1%;
-      }
-      #wrapped-paragraf13 {
-        font-weight: bold;
-        font-family: "Inter", sans-serif;
-        margin-left: 3%;
-        margin-top: 1%;
-      }
-      #wrapped-paragraf14 {
-        font-weight: bold;
-        font-family: "Inter", sans-serif;
-        margin-left: 3%;
-        margin-top: 1%;
-      }
+ }
+ section article p {
+    font-weight: normal;
+    font-family: "Inter", sans-serif;
+    margin-left: 3%;
+    margin-top: 1%;
+}
 
-      #wrapped-stor-paragraf {
-        font-weight: bold;
-        font-family: "Inter", sans-serif;
-        margin-left: 3%;
-        margin-top: 0%;
-      }
+    #beskrivelse-bilde p {
+      font-weight: bold;
+      font-family: "Inter", sans-serif;
+      margin-left: 3%;
+      margin-top: 0%;
+    }
+
+  
      /*Slutt på produktside-css*/
      /*Start på returside css*/
      #returside-grid-container {
       display: grid;
       grid-template-areas: "header"
+                            "nav"
                             "main"
                             "footer";
     }
@@ -1773,56 +1196,26 @@ body{
       margin-left: 5%;
       font-family: "Inter", sans-serif;
       font-size: medium;
-      position: absolute;
-      top: 23%;
+      position: relative;
     }
 
-    #høyre-pil1 {
-      position: absolute;
-      top: 23%;
-      right: 50%;
+
+    .bakgrunn-liste {
+      width: 85%;
+      height: 45px;
+      background-color: #D9D9D9;
+      position: relative;
+      right: 6%;
+      margin-top: 3%;
     }
 
-    #bakgrunn-liste1 {
+    #bakgrunn-liste-plass {
       width: 85%;
       height: 45px;
       background-color: #D9D9D9;
       position: relative;
       right: 6%;
       margin-top: 20%;
-    }
-
-    #bakgrunn-liste2 {
-      width: 85%;
-      height: 45px;
-      background-color: #D9D9D9;
-      position: relative;
-      right: 6%;
-      margin-top: 3%;
-    }
-    #bakgrunn-liste3 {
-      width: 85%;
-      height: 45px;
-      background-color: #D9D9D9;
-      position: relative;
-      right: 6%;
-      margin-top: 3%;
-    }
-    #bakgrunn-liste4 {
-      width: 85%;
-      height: 45px;
-      background-color: #D9D9D9;
-      position: relative;
-      right: 6%;
-      margin-top: 3%;
-    }
-    #bakgrunn-liste5 {
-      width: 85%;
-      height: 45px;
-      background-color: #D9D9D9;
-      position: relative;
-      right: 6%;
-      margin-top: 3%;
     }
 
     #refusjon {
@@ -1837,87 +1230,19 @@ body{
       font-size: medium;
     }
 
-    #høyre-pil2 {
-      position: absolute;
-      transform: translateY(-10px);
-      transform: translateX(-65px);
-    }
-
     #refusjon-paragraf {
       font-family: "Inter", sans-serif;
       margin-left: 5%;
     }
 
-    #returfooter {
-      margin-top: 7%;
-      grid-area: footer;
-      border-radius: 1px;
-      background-color: #D9D9D9;
-    }
-
-    #tekst-inni-bokser {
+    #positionering h4 {
       margin-left: 3%;
       top: 1%;
       position: absolute;
       font-family: "Inter", sans-serif;
     }
-    #tekst-inni-bokser2 {
-      margin-left: 3%;
-      top: 1%;
-      position: absolute;
-      font-family: "Inter", sans-serif;
-    }
-    #tekst-inni-bokser3 {
-      margin-left: 3%;
-      top: 1%;
-      position: absolute;
-      font-family: "Inter", sans-serif;
-    }
-    #tekst-inni-bokser4 {
-      margin-left: 3%;
-      top: 1%;
-      position: absolute;
-      font-family: "Inter", sans-serif;
-    }#tekst-inni-bokser5 {
-      margin-left: 3%;
-      top: 1%;
-      position: absolute;
-      font-family: "Inter", sans-serif;
-    }
-
-    #pluss-margin {
+    
+    #positionering img {
       margin-left: 85%;
     }
-    #pluss-margin2 {
-      margin-left: 85%;
     }
-    #pluss-margin3 {
-      margin-left: 85%;
-    }
-    #pluss-margin4 {
-      margin-left: 85%;
-    }
-    #pluss-margin5 {
-      margin-left: 85%;
-    }
-
-    #forside-footer-produkt {
-      margin-top: 1%;
-      background-color: #D9D9D9;
-    }
-
-
-
-
-
-
-
-
-
-
-
-
-
-    }
-
-        /* Bruk display none for å skille mellom desktop og mobile versjon */

@@ -1,5 +1,5 @@
-<!DOCTYPE html> <!--ikoner hentet fra Iconfinder.com-->  <!--AI Genererte bilder hentet fra Perchance.com-->
-<html lang="en">
+<!DOCTYPE html> 
+<html lang="nb">
     <head>
         <meta charset="utf-8"> <!--Endrer charset til utf 8 støtte for norske bokstaver æøå-->
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Endrer viewport for tilpassing-->
@@ -8,113 +8,176 @@
     </head>
 <body>
     <div id="produktside-grid-container"> <!--Lager layout grid-->
+
     <header>
-        <input id="input" placeholder="Søk"> <!--Lager input felt-->
-        <img src="img/glass2.png" id="glass2" width="33" height="33" alt="https://www.figma.com/file/tj2N1sqIAKd8WXZQyTILYH/Wireframes-Desktop?type=design&node-id=0-1&mode=design">
-        <img id="left" src="img/Bell.png" width="33" height="33" alt="https://www.iconfinder.com/icons/7503212/notification_bell_alert_icon">
-        <img id="left2" src="img/bars.png" width="33" height="33" alt="https://www.iconfinder.com/icons/8665130/bars_data_icon">
-        <section id="logo">
-            <h1 onclick="forside()" id="overskrift-cursor">Trønder Tøfler</h1>
-        </section>
-        <section id="icon-wrapper">
-        <img id="right1" onclick="klikk()" src="img/shopping-cart.png" width="33" height="33" alt="https://www.iconfinder.com/icons/326700/cart_shopping_icon ">
-        <img id="right3" src="img/man.png" width="33" height="33" alt="https://www.iconfinder.com/icons/1564534/customer_man_user_account_profile_icon">
-        <img id="right2" src="img/glass.png" width="33" height="33" alt="https://www.iconfinder.com/icons/9025828/magnifying_glass_icon">
-        </section>
-        </header>
-        
-        <nav id="kjønn2"> <!--Lager nav med kjønn-->
-            <h1 onclick="forside()" id="desktop-overskrift">Trønder Tøfler</h1>
-            <ul id="flex-container">
-            <li onclick="klikk()" id="tekst-kjønn3">Mann</li>
-            <li onclick="klikk()" id="tekst-kjønn5">Kvinne</li>
-            <li onclick="klikk()" id="tekst-kjønn6">Barn</li>
-            <li onclick="klikk()" id="tekst-kjønn7">Tilbud</li>
+
+        <nav id="kjønn"> <!--Lager nav med kjønn-->
+            <h1 onclick="forside()">Trønder Tøfler</h1>
+            <ul>
+            <li onclick="klikk()">Mann</li>
+            <li onclick="klikk()">Kvinne</li>
+            <li onclick="klikk()">Barn</li>
+            <li onclick="klikk()">Tilbud</li>
             <li onclick="klikk()" id="tekst-kjønn2">Nye utgaver</li> 
         </ul>
         </nav>
 
+
+
+
+    <form>
+        <input id="input" placeholder="Søk"> <!--Lager input felt-->
+        <img src="img/glass2.png" id="glass2" width="33" height="33" alt="https://www.figma.com/file/tj2N1sqIAKd8WXZQyTILYH/Wireframes-Desktop?type=design&node-id=0-1&mode=design">
+    </form>
+    <figure>
+        <img id="Bell" src="img/Bell.png" width="33" height="33" alt="https://www.iconfinder.com/icons/7503212/notification_bell_alert_icon">
+        <img id="left2" src="img/bars.png" width="33" height="33" alt="https://www.iconfinder.com/icons/8665130/bars_data_icon">
+    </figure>
+        
+            <h1 onclick="forside()" id="overskrift">Trønder Tøfler</h1>
+      
+        <nav id="icon-wrapper">
+        <img id="left" src="img/Bell.png" width="33" height="33" alt="https://www.iconfinder.com/icons/7503212/notification_bell_alert_icon">
+        <img id="right1" onclick="klikk()" src="img/shopping-cart.png" width="33" height="33" alt="https://www.iconfinder.com/icons/326700/cart_shopping_icon ">
+        <img id="right3" src="img/man.png" width="33" height="33" alt="https://www.iconfinder.com/icons/1564534/customer_man_user_account_profile_icon">
+        <img id="right2" src="img/glass.png" width="33" height="33" alt="https://www.iconfinder.com/icons/9025828/magnifying_glass_icon">
+        </nav>
+        </header>
+
+
+
+
+
+
+
+        
+
+   <aside>
         <nav id="produkt-filter2"> <!--Lager nav for forskjellige knapper og resutater for produkter-->
-            <section id="produkt-flex">
-                <section id="h1-wrapper">
-                <h5 onclick="forside()" id="desktop-hjem">Hjem</h5>
-           <h3 id="produkt-h1">Produkt</h3>
-                </section>
-           <img id="filter-image" src="img/screenshot_oblig2.png" alt="https://www.figma.com/file/Q8JcEFwCpjAZUicsd898Qw/Wireframes-mobil?type=design&node-id=0-1&mode=design (Philipp Krieger)">
+            <section class="produkt-flex">
+                <article class="h2-wrap">
+                <h2 onclick="forside()" class="hjem">Hjem</h2>
+           <h3 class="h3-style">Produkt</h3>
+                </article>
+           <img class="filter-image" src="img/screenshot_oblig2.png" alt="https://www.figma.com/file/Q8JcEFwCpjAZUicsd898Qw/Wireframes-mobil?type=design&node-id=0-1&mode=design (Philipp Krieger)">
            </section>
-           <p id="undertekst1">X Resultat</p>
-           <section id="desktop-filters">
-           <img id="filter-image2" src="img/screenshot_oblig2.png" alt="https://www.figma.com/file/Q8JcEFwCpjAZUicsd898Qw/Wireframes-mobil?type=design&node-id=0-1&mode=design (Philipp Krieger)">
-      <!--<img id="desktop-ekstra-filter" src="img/ekstra-filter.png" alt="https://www.figma.com/file/tj2N1sqIAKd8WXZQyTILYH/Wireframes-Desktop?type=design&node-id=0-1&mode=design (Pjhilipp Krieger)"> -->
-        </section>
+           <p id="undertekst">X Resultat</p>
+           <figure class="desktop-filters">
+           <img id="filter-image1" src="img/screenshot_oblig2.png" alt="https://www.figma.com/file/Q8JcEFwCpjAZUicsd898Qw/Wireframes-mobil?type=design&node-id=0-1&mode=design (Philipp Krieger)">
+           </figure>
         </nav>
 
        <nav id="nav3-desktop"> <!--Lager nav med forskjellige kjønn i senkende rekkefølge-->
-        <section id="venstre-nav">
-        <ul id="filter-liste-desktop">
-            <li id="li-filter">Herre størrelser</li>
-            <li id="li-filter2">Dame størrelser</li>
-            <li id="li-filter3">Barne størrelser</li>
-            <li id="li-filter4">Farger</li>
-            <li id="li-filter5">Merker</li>
-            <li id="li-filter6">Pris</li>
+        <ul id="venstre-nav">
+            <li>Herre størrelser</li>
+            <li>Dame størrelser</li>
+            <li>Barne størrelser</li>
+            <li>Farger</li>
+            <li>Merker</li>
+            <li>Pris</li>
         </ul>
-        </section>
-        <section id="høyre-nav"> <!--Lager høyredelen med forskjellige plusstegn i senkende rekkefølge-->
-               <img src="img/pluss.png" id="pluss-desktop" alt="https://www.iconfinder.com/icons/134224/add_plus_new_icon">
-               <img src="img/pluss.png" id="pluss-desktop2" alt="https://www.iconfinder.com/icons/134224/add_plus_new_icon">
-               <img src="img/pluss.png" id="pluss-desktop3" alt="https://www.iconfinder.com/icons/134224/add_plus_new_icon">
-               <img src="img/pluss.png" id="pluss-desktop4" alt="https://www.iconfinder.com/icons/134224/add_plus_new_icon">
-               <img src="img/pluss.png" id="pluss-desktop5" alt="https://www.iconfinder.com/icons/134224/add_plus_new_icon">
-        </section>
+        <figure id="høyre-nav"> <!--Lager høyredelen med forskjellige plusstegn i senkende rekkefølge-->
+               <img src="img/pluss.png" alt="https://www.iconfinder.com/icons/134224/add_plus_new_icon">
+               <img src="img/pluss.png" alt="https://www.iconfinder.com/icons/134224/add_plus_new_icon">
+               <img src="img/pluss.png" alt="https://www.iconfinder.com/icons/134224/add_plus_new_icon">
+               <img src="img/pluss.png" alt="https://www.iconfinder.com/icons/134224/add_plus_new_icon">
+               <img src="img/pluss.png" alt="https://www.iconfinder.com/icons/134224/add_plus_new_icon">
+        </figure>
        </nav>
+  </aside>
+
+
+
+
+
+
+
+
+
+
+
+
 
     <main> <!--Start på main-->
         <nav id="produkt-filter">
-            <section id="produkt-flex2">
-                <section id="h1-wrapper2">
-                <h5 id="desktop-hjem2">Hjem</h5>
-           <h3 id="produkt-h12">Produkt</h3>
-                </section>
-           <img id="filter-image12" src="img/screenshot_oblig2.png" alt="https://www.figma.com/file/Q8JcEFwCpjAZUicsd898Qw/Wireframes-mobil?type=design&node-id=0-1&mode=design (Philipp Krieger)">
+            <section class="produkt-flex">
+                <article class="h2-wrap">
+                <h2 onclick="forside()" class="hjem">Hjem</h2>
+           <h3 class="h3-style">Produkt</h3>
+                </article>
+           <img class="filter-image" src="img/screenshot_oblig2.png" alt="https://www.figma.com/file/Q8JcEFwCpjAZUicsd898Qw/Wireframes-mobil?type=design&node-id=0-1&mode=design (Philipp Krieger)">
            </section>
-           <p id="undertekst">X Resultat</p>
-           <section id="desktop-filters2">
-           <img id="filter-image21" src="img/screenshot_oblig2.png" alt="https://www.figma.com/file/Q8JcEFwCpjAZUicsd898Qw/Wireframes-mobil?type=design&node-id=0-1&mode=design (Philipp Krieger)">
-           <img id="desktop-ekstra-filter2" src="img/ekstra-filter.png" alt="https://www.figma.com/file/tj2N1sqIAKd8WXZQyTILYH/Wireframes-Desktop?type=design&node-id=0-1&mode=design (Pjhilipp Krieger)">
-        </section>
+           <p id="undertekst2">X Resultat</p>
+           <figure class="desktop-filters">
+           <img id="filter-image2" src="img/screenshot_oblig2.png" alt="https://www.figma.com/file/Q8JcEFwCpjAZUicsd898Qw/Wireframes-mobil?type=design&node-id=0-1&mode=design (Philipp Krieger)">
+           <img src="img/ekstra-filter.png" alt="https://www.figma.com/file/tj2N1sqIAKd8WXZQyTILYH/Wireframes-Desktop?type=design&node-id=0-1&mode=design (Pjhilipp Krieger)">
+           </figure>
         </nav>
 
-        <section id="image-flex1"> <!--Start på section med bilder og produkter-->
-            <img id="image-resize" src="img/vapormax.jpg" alt="Perchance promt: nike vapormax, cinematic shot, dynamic lighting, 75mm, Technicolor, Panavision, cinemascope, sharp focus, fine details, 8k, HDR, realism, realistic, key visual, film still, superb cinematic color grading, depth of field (seed:::662821288)">
-            <img id="image-resize2" src="img/huarache.jpg" alt="Perchance promt: nike huarache, cinematic shot, dynamic lighting, 75mm, Technicolor, Panavision, cinemascope, sharp focus, fine details, 8k, HDR, realism, realistic, key visual, film still, superb cinematic color grading, depth of field (seed:::598058709)">
-            <img id="image-resize-desktop" src="img/jordan8.jpg" alt="Perchance promt: jordan 8 sneaker, cinematic shot, dynamic lighting, 75mm, Technicolor, Panavision, cinemascope, sharp focus, fine details, 8k, HDR, realism, realistic, key visual, film still, superb cinematic color grading, depth of field (seed:::3833595040)">
-        </section>
+        <figure class="image-flex"> <!--Start på section med bilder og produkter-->
+            <img class="image-resize" src="img/vapormax.jpg" alt="Perchance promt: nike vapormax, cinematic shot, dynamic lighting, 75mm, Technicolor, Panavision, cinemascope, sharp focus, fine details, 8k, HDR, realism, realistic, key visual, film still, superb cinematic color grading, depth of field (seed:::662821288)">
+            <img class="image-resize" src="img/huarache.jpg" alt="Perchance promt: nike huarache, cinematic shot, dynamic lighting, 75mm, Technicolor, Panavision, cinemascope, sharp focus, fine details, 8k, HDR, realism, realistic, key visual, film still, superb cinematic color grading, depth of field (seed:::598058709)">
+            <img class="image-resize-desktop" src="img/jordan8.jpg" alt="Perchance promt: jordan 8 sneaker, cinematic shot, dynamic lighting, 75mm, Technicolor, Panavision, cinemascope, sharp focus, fine details, 8k, HDR, realism, realistic, key visual, film still, superb cinematic color grading, depth of field (seed:::3833595040)">
+        </figure>
         <section id="image-flex21">
-            <article id="article-box">
-                <p id="wrapped-paragraf">Nike VaporMax Svart 2020 modell</p>
+            <article class="article-box">
+                <p>Nike VaporMax Svart 2020 modell</p>
             </article>
-            <article id="article-box1">
-                <p id="wrapped-paragraf10">Nike Huarache 2013-Re-Release</p>
+            <article class="article-box">
+                <p>Nike Huarache 2013-Re-Release</p>
+            </article>
+            <article class="desktop-article-box">
+                <p>Jordan 8 special edition</p>
+            </article>
+        </section>
+
+
+        <section id="image-desktop2"> <!--Ny section med bilder og produkter-->
+            <article class="article-box2">
+                <h3>Nike VaporMax</h3>
+                <p>Den nye Nike Vapormax 2017 med ny antislip</p>
+            </article>
+            <article class="article-box2">
+                <h3>Nike Huarache</h3>
+                <p>Den nye Nike Huarache utviklet for en universell stil</p>
+            </article>
+            <article class="desktop-article-box2">
+                <h3>Jordan 8</h3>
+                <p>Den nye Nike Air Jordan 8 kommer med en glisen rød og svart fargestil</p>
+            </article>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <figure class="image-flex"> <!--Ny section med flere bilder og produkter for desktop support og-->
+            <img class="image-resize" src="img/ultraboost.jpg" alt="Perchance promt: adidas ultraboost, cinematic shot, dynamic lighting, 75mm, Technicolor, Panavision, cinemascope, sharp focus, fine details, 8k, HDR, realism, realistic, key visual, film still, superb cinematic color grading, depth of field (seed:::3174774937)">
+            <img class="image-resize" src="img/Jordan4.jpg" alt="Perchance promt: jordan 4, cinematic shot, dynamic lighting, 75mm, Technicolor, Panavision, cinemascope, sharp focus, fine details, 8k, HDR, realism, realistic, key visual, film still, superb cinematic color grading, depth of field (seed:::428480260)">
+            <img class="image-resize-desktop" src="img/jordan13.jpg" alt="Perchance promt: jordan 13 sneaker, cinematic shot, dynamic lighting, 75mm, Technicolor, Panavision, cinemascope, sharp focus, fine details, 8k, HDR, realism, realistic, key visual, film still, superb cinematic color grading, depth of field (seed:::887387949)">
+        </figure>
+
+
+        <section id="image-flex2">
+            <article class="article-box">
+                <p>Adidas Ultraboost med ny boost material</p>
+            </article>
+            <article class="article-box">
+                <p>Jordan 4 av Nike Air Jordan kolleksjonen</p>
             </article>
             <article id="desktop-article-box">
-                <p id="wrapped-paragraf11">Jordan 8 special edition</p>
-            </article>
-        </section>
-
-
-        <section id="image-flex2-desktop2"> <!--Ny section med bilder og produkter-->
-            <article id="article-box2">
-                <h3 id="wrapped-header">Nike VaporMax</h3>
-                <p id="wrapped-paragraf2">Den nye Nike Vapormax 2017 med ny antislip</p>
-            </article>
-            <article id="article-box3">
-                <h3 id="wrapped-header2">Nike Huarache</h3>
-                <p id="wrapped-paragraf21">Den nye Nike Huarache utviklet for en universell stil</p>
-            </article>
-            <article id="desktop-article-box2">
-                <h3 id="wrapped-header3">Jordan 8</h3>
-                <p id="wrapped-paragraf22">Den nye Nike Air Jordan 8 kommer med en glisen rød og svart fargestil</p>
+                <p>Jordan 11 special edition</p>
             </article>
         </section>
 
@@ -123,40 +186,18 @@
 
 
 
-
-
-
-
-        <section id="image-flex2-pic"> <!--Ny section med flere bilder og produkter for desktop support og-->
-            <img id="image-resize3" src="img/ultraboost.jpg" alt="Perchance promt: adidas ultraboost, cinematic shot, dynamic lighting, 75mm, Technicolor, Panavision, cinemascope, sharp focus, fine details, 8k, HDR, realism, realistic, key visual, film still, superb cinematic color grading, depth of field (seed:::3174774937)">
-            <img id="image-resize4" src="img/Jordan4.jpg" alt="Perchance promt: jordan 4, cinematic shot, dynamic lighting, 75mm, Technicolor, Panavision, cinemascope, sharp focus, fine details, 8k, HDR, realism, realistic, key visual, film still, superb cinematic color grading, depth of field (seed:::428480260)">
-            <img id="image-resize-desktop2" src="img/jordan13.jpg" alt="Perchance promt: jordan 13 sneaker, cinematic shot, dynamic lighting, 75mm, Technicolor, Panavision, cinemascope, sharp focus, fine details, 8k, HDR, realism, realistic, key visual, film still, superb cinematic color grading, depth of field (seed:::887387949)">
-        </section>
-        <section id="image-flex2">
-            <article id="article-box4">
-                <p id="wrapped-paragraf12">Adidas Ultraboost med ny boost material</p>
+        <section id="image-desktop">
+            <article class="article-box2">
+                <h3>Adidas Ultraboost</h3>
+                <p>Adidas Ultraboost kommer med innebygd boost</p>
             </article>
-            <article id="article-box5">
-                <p id="wrapped-paragraf13">Jordan 4 av Nike Air Jordan kolleksjonen</p>
+            <article class="article-box2">
+                <h3>Jordan 4</h3>
+                <p>Helsvarte Jordan 4 passer for og med mange klesstiler!</p>
             </article>
-            <article id="desktop-article-box3">
-                <p id="wrapped-paragraf14">Jordan 11 special edition</p>
-            </article>
-        </section>
-
-
-        <section id="image-flex2-desktop">
-            <article id="article-box6">
-                <h3 id="wrapped-header4">Adidas Ultraboost</h3>
-                <p id="wrapped-paragraf23">Adidas Ultraboost kommer med innebygd boost</p>
-            </article>
-            <article id="article-box7">
-                <h3 id="wrapped-header5">Jordan 4</h3>
-                <p id="wrapped-paragraf24">Helsvarte Jordan 4 passer for og med mange klesstiler!</p>
-            </article>
-            <article id="desktop-article-box4">
-                <h3 id="wrapped-header6">Jordan 11</h3>
-                <p id="wrapped-paragraf25">Jordan 11 representerer en ny stil</p>
+            <article class="desktop-article-box">
+                <h3>Jordan 11</h3>
+                <p>Jordan 11 representerer en ny stil</p>
             </article>
         </section>
 
@@ -174,17 +215,17 @@
 
 
         <nav id="desktop-scroll-bar"> <!--Lager en bar der du kan klikke deg gjennom sidene-->
-            <img id="venstrepil2-scroll" src="img/venstrepil2.png" alt="https://www.iconfinder.com/icons/4781843/arrows_chevron_direction_left_move_next_right_icon">
+            <img src="img/venstrepil2.png" alt="https://www.iconfinder.com/icons/4781843/arrows_chevron_direction_left_move_next_right_icon">
             <ul id="desktop-flex">
-          <li id="scroll-små-tekst">Forrige</li>
-          <li id="desktop-list">1</li>
-          <li id="desktop-list3">2</li>
-          <li id="desktop-list4">3</li>
-          <li id="desktop-list5">...</li>
-          <li id="desktop-list1">44</li>
-          <li id="scroll-små-tekst2">Neste</li>
+          <li class="forrige-neste">Forrige</li>
+          <li>1</li>
+          <li>2</li>
+          <li>3</li>
+          <li>...</li>
+          <li>44</li>
+          <li class="forrige-neste">Neste</li>
         </ul>
-        <img id="venstrepil2-scroll2" src="img/høyrepil2.png" alt="https://www.iconfinder.com/icons/4781843/arrows_chevron_direction_left_move_next_right_icon">
+        <img src="img/høyrepil2.png" alt="https://www.iconfinder.com/icons/4781843/arrows_chevron_direction_left_move_next_right_icon">
         </nav>
 
 
@@ -194,42 +235,44 @@
 
 
 
-        <section id="stor-bilde"> <!--Lager siste section for stort bilde av mange sko på rad-->
-            <img id="stor-bilde-img" src="img/rowsneakers.jpg" alt="Perchance promt: multiple sneakers lined up on a row, cinematic shot, dynamic lighting, 75mm, Technicolor, Panavision, cinemascope, sharp focus, fine details, 8k, HDR, realism, realistic, key visual, film still, superb cinematic color grading, depth of field (seed:::3019307581)">
-        </section>
-        <section id="beskrivelse-bilde">
-            <p id="wrapped-stor-paragraf">Vi selger også mange andre typer av sko noen av kategoriene våre er Tursko, joggesko og vintersko</p>
-        </section>
+        <figure id="stor-bilde"> <!--Lager siste section for stort bilde av mange sko på rad-->
+            <img src="img/rowsneakers.jpg" alt="Perchance promt: multiple sneakers lined up on a row, cinematic shot, dynamic lighting, 75mm, Technicolor, Panavision, cinemascope, sharp focus, fine details, 8k, HDR, realism, realistic, key visual, film still, superb cinematic color grading, depth of field (seed:::3019307581)">
+        </figure>
+        <article id="beskrivelse-bilde">
+            <p>Vi selger også mange andre typer av sko noen av kategoriene våre er Tursko, joggesko og vintersko</p>
+        </article>
     </main>
 
-    <footer id="forside-footer-produkt"> <!--Start på footer-->
-        <section id="øvre-footer">
-             <h1 id="footer-tekst" onclick="retur()">Retur,refusjon</h1>
-             <p id="desktop-paragraf9" onclick="retur()">Retur & Refusjon</p>
-             <p id="desktop-paragraf10">Tracking</p>
-             <img id="øvre-footer-bilde" src="img/down-arrow.png" alt="https://www.iconfinder.com/icons/211614/down_b_arrow_icon">
-        </section>
-        <section id="nedre-footer">
-            <h1 id="footer-tekst2">Om oss</h1>
-            <p id="desktop-paragraf">Ledige stillinger</p>
-            <img id="nedre-footer-bilde" src="img/down-arrow.png" alt="https://www.iconfinder.com/icons/211614/down_b_arrow_icon">
-        </section>
-        <section id="desktop-retur">
-           <h1 id="footer-tekst3">Kundeservice</h1>
-           <p id="desktop-paragraf3">Bærekraft</p>
-           <p id="desktop-paragraf4">Investering</p>
-        </section>
-        <section id="desktop-kolleksjoner">
-            <h1 id="footer-tekst4">Kolleksjoner</h1>
-            <p id="desktop-paragraf5">Vinter</p>
-            <p id="desktop-paragraf6">Sommer</p>
-        </section>
-        <section id="desktop-produkter">
-            <h1 id="footer-tekst5">Produkter</h1>
-            <p id="desktop-paragraf7">Nike</p>
-            <p id="desktop-paragraf8">Jordan</p>
-        </section>
-    </footer> <!--Slutt på footer-->
+
+
+
+    <footer>
+        <ul>
+             <li class="footer-tekst" onclick="retur()">Tilbakesending</li>
+             <li onclick="retur()">Retur & Refusjon</li>
+             <li>Tracking</li>
+         </ul>
+        <ul>
+            <li class="footer-tekst">Om oss</li>
+            <li>Ledige stillinger</li>
+            <li>Nyheter</li>
+        </ul>
+        <ul class="desktop-footer">
+           <li class="footer-tekst">Kundeservice</li>
+           <li>Bærekraft</li>
+           <li>Investering</li>
+        </ul>
+        <ul class="desktop-footer">
+            <li class="footer-tekst">Kolleksjoner</li>
+            <li>Vinter</li>
+            <li>Sommer</li>
+        </ul>
+        <ul class="desktop-footer">
+            <li class="footer-tekst">Produkter</li>
+            <li>Nike</li>
+            <li>Jordan</li>
+        </ul>
+    </footer>
 
 
 
@@ -239,7 +282,7 @@
   <script> //start på javascript
  //Javascript delvis hentet fra OpenAI
     let resultater = document.getElementById('undertekst');
-    let resultater2 = document.getElementById('undertekst1');
+    let resultater2 = document.getElementById('undertekst2');
     let sidetall = document.getElementById('desktop-list1');
      
     //Funksjoner delvis hentet fra OpenAI
