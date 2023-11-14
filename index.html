@@ -23,10 +23,10 @@
      <input id="input" placeholder="Søk">
      <img src="img/glass2.png" id="glass2" width="33" height="33" alt="https://www.figma.com/file/tj2N1sqIAKd8WXZQyTILYH/Wireframes-Desktop?type=design&node-id=0-1&mode=design">
  </form>
- <figure>
+ <nav>
      <img id="Bell" src="img/Bell.png" width="33" height="33" alt="https://www.iconfinder.com/icons/7503212/notification_bell_alert_icon">
      <img id="left2" src="img/bars.png" width="33" height="33" alt="https://www.iconfinder.com/icons/8665130/bars_data_icon">
- </figure>
+ </nav>
              
             <h1 id="overskrift">Trønder Tøfler</h1>
            
@@ -105,10 +105,6 @@
         <figure id="section-carousel">
           <img onclick="klikk()" class="img-carousell" id="knapp2" src="img/infrared.jpg" alt="Nettside:Perchance.org promt: nike infrared, cinematic shot, dynamic lighting, 75mm, Technicolor, Panavision, cinemascope, sharp focus, fine details, 8k, HDR, realism, realistic, key visual, film still, superb cinematic color grading, depth of field"> 
           <button onclick="toggleImage()"><img src="img/arrow.png" alt="https://www.iconfinder.com/icons/211607/right_arrow_icon"></button>
-          <span id="first-dot"></span>
-          <span id="second-dot"></span>
-          <span id="third-dot"></span>
-          <span id="second-dot-black"></span>  
         </figure>
     </main>
 
@@ -171,7 +167,6 @@
             // Javascript delvis hentet fra OpenAi
             var slide = 0;                                        
             let img = document.getElementById('knapp2');
-            let dot = document.getElementsByClassName('dots');
 
             const bilder = [
             'img/infrared.jpg', // Nettside:Perchance.org promt: nike infrared, cinematic shot, dynamic lighting, 75mm, Technicolor, Panavision, cinemascope, sharp focus, fine details, 8k, HDR, realism, realistic, key visual, film still, superb cinematic color grading, depth of field
@@ -179,13 +174,6 @@
             'img/timberlands.jpg', //perchance.com promt: timberlands, cinematic shot, dynamic lighting, 75mm, Technicolor, Panavision, cinemascope, sharp focus, fine details, 8k, HDR, realism, realistic, key visual, film still, superb cinematic color grading, depth of field (seed:::4072174210)
         ]; 
         
-        const dots2 = [
-           "second-dot-black",
-            "first-dot-black",
-            "third-dot-black",
-        ];
-            
-
 
             function klikk() {
                 window.location.href = "produkt.html";
@@ -194,22 +182,16 @@
                 window.location.href = "returside.html";
             }
 
-             //Funksjon delvis hentet fra OpenAI
-        function roll(i) {
-            img.src = bilder[i];
-            dot[0].id = dots2[i];
-            console.log(dot.id);
-            console.log("bilde knappen ble klikket");
-                console.log(slide);
-        }
+
+            function roll(slide) {
+          img.src = bilder[slide];
+           }
+
      //Funksjon delvis hentet fra OpenAI
         function toggleImage() {
             slide = (slide + 1) % bilder.length;
-            roll(slide);
+           roll(slide);
         }
-
-        // Initial display
-        roll(slide);
 
 </script>
 </div>
